@@ -1,0 +1,20 @@
+{
+  "name": "monorepo",
+  "version": "1.0.0",
+  "description": "multi packages repository, excluding project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitee.com/cjfpersonality/monorepo.git"
+  },
+  "keywords": [
+    "monorepo",
+    "typescript"
+  ],
+  "author": "cjf",
+  "license": "ISC",
+  "private": true
+}
