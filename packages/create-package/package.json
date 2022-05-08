@@ -1,0 +1,15 @@
+{
+  "name": "create-package",
+  "version": "1.0.0",
+  "description": "Creating package and project simply",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "template",
+    "typescript"
+  ],
+  "author": "c233jf",
+  "license": "ISC"
+}

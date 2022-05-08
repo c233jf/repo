@@ -1,8 +1,6 @@
 {
   "name": "monorepo",
-  "version": "1.0.0",
-  "description": "multi packages repository, excluding project",
-  "main": "index.js",
+  "description": "multi packages repository",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -14,7 +12,7 @@
     "monorepo",
     "typescript"
   ],
-  "author": "cjf",
+  "author": "c233jf",
   "license": "ISC",
   "private": true,
   "devDependencies": {
