@@ -1,7 +1,7 @@
 {
-  "name": "@chenjf/create-package",
+  "name": "@chenjf/template-package",
   "version": "1.0.0",
-  "description": "Creating package and project simply",
+  "description": "",
   "types": "index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,10 +9,9 @@
   "repository": {
     "type": "git",
     "url": "https://gitee.com/cjfpersonality/monorepo.git",
-    "directory": "packages/create-package"
+    "directory": "packages/template-package"
   },
   "keywords": [
-    "template",
     "typescript"
   ],
   "author": "chenjf <1143141874@qq.com>",

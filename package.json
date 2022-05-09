@@ -13,7 +13,7 @@
     "monorepo",
     "typescript"
   ],
-  "author": "c233jf",
+  "author": "chenjf",
   "license": "ISC",
   "private": true,
   "devDependencies": {
