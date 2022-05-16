@@ -15,5 +15,3 @@ With pnpm:
 `pnpm create @chenjf/package`
 
 ## Supported template presets:
-
-- package

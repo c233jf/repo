@@ -1,3 +1,3 @@
 # monorepo
 
-多包仓库，不包含 project
+个人monorepo项目

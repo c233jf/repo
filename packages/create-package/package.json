@@ -2,7 +2,10 @@
   "name": "@chenjf/create-package",
   "version": "1.0.0",
   "description": "Creating package and project simply",
-  "types": "index.ts",
+  "main": "index.js",
+  "bin": {
+    "create-package": "./index.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
