@@ -2,12 +2,13 @@
   "name": "@chenjf/create-package",
   "version": "1.0.0",
   "description": "Creating package and project simply",
-  "main": "index.js",
+  "main": "index.mjs",
   "bin": {
-    "create-package": "./index.js"
+    "create-package": "./index.mjs"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "vitest --ui",
+    "coverage": "vitest run --coverage"
   },
   "repository": {
     "type": "git",
@@ -19,5 +20,18 @@
     "typescript"
   ],
   "author": "chenjf <1143141874@qq.com>",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^5.0.1",
+    "fs-extra": "^10.1.0",
+    "minimist": "^1.2.6",
+    "prompts": "^2.4.2"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^9.0.13",
+    "@vitest/ui": "^0.17.1",
+    "c8": "^7.11.3",
+    "execa": "^6.1.0",
+    "vitest": "^0.17.0"
+  }
 }
