@@ -154,10 +154,8 @@ async function init() {
     pkg.name = packageName
     writeJsonSync(join(targetDir, PKG_CONFIG_FILE), pkg, { spaces: 2 })
 
-    console.log(success(`\nDone. Now run: cd ${relative(cwd, targetDir)}\n`))
-    console.log(
-      success(' and install dependencies using your favorite package manager')
-    )
+    success(`\nDone. Now run: cd ${relative(cwd, targetDir)}\n`)
+    success(' and install dependencies using your favorite package manager')
   } catch (e) {
     error(e.message)
   }
