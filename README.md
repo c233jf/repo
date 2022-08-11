@@ -1,3 +1,3 @@
 # monorepo
 
-个人monorepo项目
+This repo is collection of packages, utils and helpers from my other projects
