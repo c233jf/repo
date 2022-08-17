@@ -1,0 +1,19 @@
+{
+  "name": "@chenjf/tsconfig",
+  "version": "1.0.0",
+  "description": "tsconfig",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/c233jf/tools.git",
+    "directory": "packages/tsconfig"
+  },
+  "keywords": [
+    "typescript",
+    "tsconfig"
+  ],
+  "author": "chenjf <1143141874@qq.com>",
+  "license": "ISC"
+}
