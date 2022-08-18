@@ -3,7 +3,9 @@
   "description": "multi packages repository",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "pub": "pnpm --filter \"./packages/*\" publish --otp",
+    "pub-dry": "pnpm pub --dry-run"
   },
   "repository": {
     "type": "git",
