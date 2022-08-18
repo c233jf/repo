@@ -3,6 +3,7 @@
     "strict": true,
     "lib": ["ESNext", "DOM"],
     "module": "ESNext",
+    "moduleResolution": "Node",
     "target": "ES2020",
     "esModuleInterop": true,
     "skipLibCheck": true,
