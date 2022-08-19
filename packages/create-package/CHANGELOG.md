@@ -1,5 +1,11 @@
 # @chenjf/create-package
 
+## 1.1.3
+
+### Patch Changes
+
+- Add Vue eslint
+
 ## 1.1.2
 
 ### Patch Changes
