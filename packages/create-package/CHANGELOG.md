@@ -1,5 +1,11 @@
 # @chenjf/create-package
 
+## 1.1.2
+
+### Patch Changes
+
+- Add husky config
+
 ## 1.1.1
 
 ### Patch Changes
