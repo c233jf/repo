@@ -1,5 +1,11 @@
 # @chenjf/create-package
 
+## 1.1.1
+
+### Patch Changes
+
+- Fix dependencies workspace error
+
 ## 1.1.0
 
 ### Minor Changes
