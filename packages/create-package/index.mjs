@@ -14,6 +14,7 @@ const {
   existsSync,
   readdirSync,
   readJsonSync,
+  renameSync,
   writeJsonSync,
 } = fse
 const argv = minimist(process.argv.slice(2), { string: ['_'] })
@@ -23,7 +24,7 @@ const DIR = join(fileURLToPath(import.meta.url), '..')
 const PREFIX = 'template-'
 const TEMPLATES = readdirSync(DIR)
   .filter((e) => e.startsWith(PREFIX))
-  .map((e) => e.split('-')[1])
+  .map((e) => e.substring(9))
 const TEMPLATES_NAME = TEMPLATES.map((e) => PREFIX + e)
 const PKG_CONFIG_FILE = 'package.json'
 
@@ -101,10 +102,10 @@ async function init() {
           inactive: 'no',
         },
         {
-          type: template && TEMPLATES_NAME.includes(template) ? null : 'select',
+          type: template && TEMPLATES.includes(template) ? null : 'select',
           name: 'template',
           message:
-            typeof template === 'string' && !TEMPLATES_NAME.includes(template)
+            typeof template === 'string' && !TEMPLATES.includes(template)
               ? `"${template}" isn't a valid template. Please choose from below: `
               : 'Select a template:',
           initial: 0,
@@ -149,6 +150,12 @@ async function init() {
 
     const templatePath = join(DIR, template)
     copySync(templatePath, targetDir)
+    if (template.includes('git')) {
+      renameSync(
+        resolve(targetDir, '_gitignore'),
+        resolve(targetDir, '.gitignore')
+      )
+    }
 
     const pkg = readJsonSync(join(templatePath, PKG_CONFIG_FILE))
     pkg.name = packageName

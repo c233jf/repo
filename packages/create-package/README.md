@@ -18,16 +18,16 @@ Or directly specify the project name and the template:
 
 ```
 # npm 6.x
-npm init @chenjf/package my-project --template element-admin
+npm init @chenjf/package my-project --template vue-ts-git
 
 # npm 7+
-npm init @chenjf/package -- my-project --template element-admin
+npm init @chenjf/package -- my-project --template vue-ts-git
 
 # yarn
-yarn create @chenjf/package my-project --template element-admin
+yarn create @chenjf/package my-project --template vue-ts-git
 
 # pnpm
-pnpm create @chenjf/package my-project --template element-admin
+pnpm create @chenjf/package my-project --template vue-ts-git
 ```
 
 ## Options
@@ -39,3 +39,4 @@ pnpm create @chenjf/package my-project --template element-admin
 ## Supported template presets:
 
 - package
+- vue-ts-git
