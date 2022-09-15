@@ -40,3 +40,7 @@ pnpm create @chenjf/package my-project --template vue-ts-git
 
 - package
 - vue-ts-git
+
+## Notice
+
+After installing packages, executing script `hooks-enabled` if hooks can not run

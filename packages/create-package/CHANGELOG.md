@@ -1,5 +1,11 @@
 # @chenjf/create-package
 
+## 1.1.4
+
+### Patch Changes
+
+- Fix hooks not running at macOS/Linux
+
 ## 1.1.3
 
 ### Patch Changes
