@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "hooks-enabled": "chmod +x .husky/commit-msg .husky/pre-commit",
+    "enable:hooks": "chmod +x .husky/commit-msg .husky/pre-commit",
     "prepare": "husky install",
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
