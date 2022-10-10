@@ -5,7 +5,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky install",
     "pub": "pnpm --filter \"./packages/*\" publish --otp",
-    "pub-dry": "pnpm --filter \"./packages/*\" publish --dry-run"
+    "pub:dry": "pnpm --filter \"./packages/*\" publish --dry-run"
   },
   "repository": {
     "type": "git",
