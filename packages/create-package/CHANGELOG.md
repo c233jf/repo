@@ -1,5 +1,11 @@
 # @chenjf/create-package
 
+## 1.2.2
+
+### Patch Changes
+
+- Update repository
+
 ## 1.2.1
 
 ### Patch Changes
