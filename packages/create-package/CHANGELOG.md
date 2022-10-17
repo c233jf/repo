@@ -1,5 +1,11 @@
 # @chenjf/create-package
 
+## 1.2.0
+
+### Minor Changes
+
+- Add admin management system template
+
 ## 1.1.5
 
 ### Patch Changes

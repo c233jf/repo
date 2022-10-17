@@ -1,0 +1,64 @@
+{
+  "name": "@chenjf/template-vue-admin-ts-git",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "enable:hooks": "chmod +x .husky/commit-msg .husky/pre-commit",
+    "prepare": "husky install",
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview"
+  },
+  "author": "chenjf <1143141874@qq.com>",
+  "private": true,
+  "dependencies": {
+    "@vueuse/core": "^9.1.1",
+    "axios": "^0.27.2",
+    "element-plus": "^2.2.15",
+    "fuse.js": "^6.6.2",
+    "nprogress": "^0.2.0",
+    "path-browserify": "^1.0.1",
+    "pinia": "^2.0.21",
+    "pinia-plugin-persistedstate": "^2.3.0",
+    "pinyin": "3.0.0-alpha.5",
+    "screenfull": "^6.0.2",
+    "vue": "^3.2.37",
+    "vue-router": "^4.1.5"
+  },
+  "devDependencies": {
+    "@chenjf/tsconfig": "^1.0.0",
+    "@commitlint/cli": "^16.2.3",
+    "@commitlint/config-conventional": "^16.2.1",
+    "@commitlint/prompt-cli": "^17.0.0",
+    "@iconify-json/ep": "^1.1.7",
+    "@types/nprogress": "^0.2.0",
+    "@types/path-browserify": "^1.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.15.0",
+    "@typescript-eslint/parser": "^5.15.0",
+    "@vitejs/plugin-vue": "^3.0.3",
+    "csstype": "^3.1.0",
+    "eslint": "^8.11.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-vue": "^9.3.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.3.5",
+    "msw": "^0.46.1",
+    "prettier": "^2.5.1",
+    "typescript": "^4.6.2",
+    "unplugin-auto-import": "^0.11.2",
+    "unplugin-icons": "^0.14.8",
+    "unplugin-vue-components": "^0.22.4",
+    "vite": "^3.0.8",
+    "vite-plugin-windicss": "^1.8.7",
+    "vue-eslint-parser": "^9.0.3",
+    "vue-tsc": "^1.0.3",
+    "windicss": "^3.5.6"
+  },
+  "lint-staged": {
+    "*.{js,ts,vue,tsx}": "eslint --cache --fix",
+    "*.{js,css,md,ts,vue,tsx}": "prettier --write"
+  },
+  "msw": {
+    "workerDirectory": "public"
+  }
+}

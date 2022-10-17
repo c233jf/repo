@@ -1,0 +1,22 @@
+{
+  "extends": "@chenjf/tsconfig/tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "api/*": ["src/api/*"],
+      "layout/*": ["src/layout/*"],
+      "views/*": ["src/views/*"],
+      "router/*": ["src/router/*"],
+      "store/*": ["src/store/*"]
+    },
+    "types": ["unplugin-icons/types/vue"]
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "mocks/**/*.ts"
+  ],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}

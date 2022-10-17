@@ -40,6 +40,7 @@ pnpm create @chenjf/package my-project --template vue-ts-git
 
 - package
 - vue-ts-git
+- vue-admin-ts-git
 
 ## Notice
 
