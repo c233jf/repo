@@ -150,11 +150,14 @@ async function init() {
 
     const templatePath = join(DIR, template)
     copySync(templatePath, targetDir)
-    if (template.includes('git')) {
-      renameSync(
-        resolve(targetDir, '_gitignore'),
-        resolve(targetDir, '.gitignore')
-      )
+
+    const gitignore = resolve(targetDir, '_gitignore')
+    const npmrc = resolve(targetDir, '_npmrc')
+    if (existsSync(gitignore)) {
+      renameSync(gitignore, resolve(targetDir, '.gitignore'))
+    }
+    if (existsSync(npmrc)) {
+      renameSync(npmrc, resolve(targetDir, '.npmrc'))
     }
 
     const pkg = readJsonSync(join(templatePath, PKG_CONFIG_FILE))

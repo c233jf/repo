@@ -1,5 +1,11 @@
 # @chenjf/create-package
 
+## 1.2.3
+
+### Patch Changes
+
+- Fix npmrc file name typo
+
 ## 1.2.2
 
 ### Patch Changes
