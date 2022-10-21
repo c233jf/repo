@@ -1,5 +1,11 @@
 # @chenjf/create-package
 
+## 1.2.4
+
+### Patch Changes
+
+- Update msw from 0.46.1 to 0.47.4
+
 ## 1.2.3
 
 ### Patch Changes
