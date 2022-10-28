@@ -1,5 +1,11 @@
 # @chenjf/create-package
 
+## 1.2.5
+
+### Patch Changes
+
+- Upgrade @chenjf/tsconfig from 1.0.0 to 1.0.2
+
 ## 1.2.4
 
 ### Patch Changes

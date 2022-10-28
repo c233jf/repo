@@ -1,6 +1,6 @@
 {
   "name": "@chenjf/create-package",
-  "version": "1.2.4",
+  "version": "1.2.5",
   "description": "Creating package and project simply",
   "main": "index.mjs",
   "bin": {
