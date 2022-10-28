@@ -4,4 +4,10 @@
 
 ### Patch Changes
 
+- Remove outDir
+
+## 1.0.2
+
+### Patch Changes
+
 - Set module resolution as Node
