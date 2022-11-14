@@ -4,5 +4,6 @@
     ".": {},
     "packages/create-package": {},
     "packages/tsconfig": {}
-  }
+  },
+  "bootstrap-sha": "bbe239423f46b9caaf443019635b7e09430ccf5f"
 }
