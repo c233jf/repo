@@ -2,8 +2,12 @@
   "group-pull-request-title-pattern": "chore: release ${version}",
   "packages": {
     ".": {},
-    "packages/create-package": {},
-    "packages/tsconfig": {}
+    "packages/create-package": {
+      "skip-github-release": true
+    },
+    "packages/tsconfig": {
+      "skip-github-release": true
+    }
   },
   "bootstrap-sha": "bbe239423f46b9caaf443019635b7e09430ccf5f"
 }
