@@ -1,5 +1,5 @@
 {
   ".": "1.2.5",
   "packages/create-package": "1.2.5",
-  "packages/tsconfig": "1.0.2"
+  "packages/tsconfig": "1.1.0"
 }
