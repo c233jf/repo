@@ -1,3 +1,8 @@
-# monorepo
+# Repo
 
-This repo is collection of packages, utils and helpers from my other projects
+Tools, libs and packages collection
+
+## Packages
+
+- [create-package](./packages/create-package/README.md)
+- [tsconfig](./packages/tsconfig/README.md)

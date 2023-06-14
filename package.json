@@ -1,6 +1,6 @@
 {
-  "name": "@chenjf/tools",
-  "description": "multi packages repository",
+  "name": "@chenjf/repo",
+  "description": "tools, libs and packages collection",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky install",
@@ -14,7 +14,8 @@
   },
   "keywords": [
     "monorepo",
-    "typescript"
+    "typescript",
+    "use"
   ],
   "author": "chenjf",
   "license": "ISC",
