@@ -20,3 +20,6 @@ dist
 
 # Test directories and files
 coverage/
+
+# .vitepress
+docs/.vitepress/cache/

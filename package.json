@@ -5,7 +5,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky install",
     "pub": "pnpm --filter \"./packages/*\" publish --otp",
-    "pub:dry": "pnpm --filter \"./packages/*\" publish --dry-run"
+    "pub:dry": "pnpm --filter \"./packages/*\" publish --dry-run",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
   },
   "repository": {
     "type": "git",
@@ -32,7 +35,8 @@
     "husky": "^7.0.4",
     "lint-staged": "^12.3.5",
     "prettier": "^2.5.1",
-    "typescript": "^4.6.2"
+    "typescript": "^4.6.2",
+    "vitepress": "1.0.0-beta.2"
   },
   "lint-staged": {
     "*.{js,ts,vue,tsx}": "eslint --cache --fix",
