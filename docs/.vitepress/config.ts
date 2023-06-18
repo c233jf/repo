@@ -38,4 +38,5 @@ export default defineConfig({
 
     socialLinks: [{ icon: 'github', link: 'https://github.com/c233jf' }],
   },
+  base: '/repo/',
 })
