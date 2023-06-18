@@ -1,0 +1,35 @@
+name: Build and Deploy docs
+
+on:
+  push:
+    paths:
+      - docs/**
+
+env:
+  REGION_ID: cn-hongkong
+  REGISTRY: registry.cn-hongkong.aliyuncs.com
+  NAMESPACE: ${{ secrets.NAMESPACE }}
+  ACCESS_KEY_ID: ${{ secrets.ACCESS_KEY_ID }}
+  ACCESS_KEY_SECRET: ${{ secrets.ACCESS_KEY_SECRET }}
+  INS_ID: ${{ secrets.INS_ID }}
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Login to ACR
+        uses: aliyun/acr-login@v1
+        with:
+          login-server: ${{ env.REGISTRY }}
+          username: ${{ secrets.REGISTRY_USERNAME }}
+          password: ${{ secrets.REGISTRY_PASSWORD }}
+      - name: Build and push docs image
+        run: |
+          docker build -t $REGISTRY/$NAMESPACE/repo-docs .
+          docker push $REGISTRY/$NAMESPACE/repo-docs
+      - name: Run ecs task
+        run: |
+          pip install --upgrade pip setuptools wheel
+          pip install aliyun-python-sdk-ecs
+          python3 scripts/ecs-task.py $ACCESS_KEY_ID $ACCESS_KEY_SECRET $REGION_ID $INS_ID
