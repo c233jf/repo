@@ -1,0 +1,40 @@
+{
+  "name": "@chenjf/markdown-it-plugin-mermaid",
+  "version": "0.0.1",
+  "description": "mermaid plugin for markdown-it",
+  "private": true,
+  "types": "index.ts",
+  "files": [
+    "dist"
+  ],
+  "main": "dist/markdown-it-plugin-mermaid.cjs",
+  "module": "dist/markdown-it-plugin-mermaid.js",
+  "exports": {
+    ".": {
+      "import": "dist/markdown-it-plugin-mermaid.js",
+      "require": "dist/markdown-it-plugin-mermaid.cjs"
+    }
+  },
+  "type": "module",
+  "scripts": {
+    "build": "vite build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/c233jf/repo.git",
+    "directory": "packages/markdown-it-plugin-mermaid"
+  },
+  "keywords": [
+    "markdown",
+    "mermaid",
+    "markdown-it-plugin"
+  ],
+  "author": "chenjf <1143141874@qq.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@chenjf/tsconfig": "workspace:^",
+    "@types/markdown-it": "^12.2.3",
+    "markdown-it": "^13.0.1",
+    "vite": "^4.3.9"
+  }
+}
