@@ -1,3 +1,4 @@
+import { markdownItPluginMermaid } from '@chenjf/markdown-it-plugin-mermaid'
 import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
@@ -29,14 +30,41 @@ export default defineConfig({
         {
           text: 'Practices',
           items: [
-            { text: 'Markdown Example', link: '/practices/markdown-examples' },
-            { text: 'Api Example', link: '/practices/api-examples' },
+            {
+              text: 'Vue',
+              link: '/practices/vue/',
+              items: [
+                { text: 'Renderer', link: '/practices/vue/renderer/' },
+                { text: 'Reactivity', link: '/practices/vue/reactivity/' },
+                { text: 'Mini Vue', link: '/practices/vue/mini-vue/' },
+                {
+                  text: 'Composition API',
+                  link: '/practices/vue/composition/',
+                },
+              ],
+            },
           ],
         },
       ],
     },
 
+    outline: 'deep',
+
     socialLinks: [{ icon: 'github', link: 'https://github.com/c233jf' }],
   },
   base: '/repo/',
+  markdown: {
+    config(md) {
+      md.use(markdownItPluginMermaid)
+    },
+  },
+  head: [
+    [
+      'script',
+      { type: 'module', defer: '' },
+      `import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+      mermaid.initialize({ startOnLoad: false });
+      mermaid.run();`,
+    ],
+  ],
 })
