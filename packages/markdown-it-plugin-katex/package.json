@@ -1,0 +1,43 @@
+{
+  "name": "@chenjf/markdown-it-plugin-katex",
+  "version": "0.0.1",
+  "description": "katex plugin for markdown-it",
+  "private": true,
+  "types": "index.ts",
+  "files": [
+    "dist"
+  ],
+  "main": "dist/markdown-it-plugin-katex.cjs",
+  "module": "dist/markdown-it-plugin-katex.js",
+  "exports": {
+    ".": {
+      "import": "dist/markdown-it-plugin-katex.js",
+      "require": "dist/markdown-it-plugin-katex.cjs"
+    }
+  },
+  "type": "module",
+  "scripts": {
+    "build": "vite build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/c233jf/repo.git",
+    "directory": "packages/markdown-it-plugin-katex"
+  },
+  "keywords": [
+    "markdown",
+    "katex",
+    "markdown-it-plugin"
+  ],
+  "author": "chenjf <1143141874@qq.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/katex": "^0.16.0",
+    "@types/markdown-it": "^12.2.3",
+    "markdown-it": "^13.0.1",
+    "vite": "^4.3.9"
+  },
+  "dependencies": {
+    "katex": "^0.16.8"
+  }
+}
