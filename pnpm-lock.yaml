@@ -8,6 +8,9 @@ importers:
 
   .:
     devDependencies:
+      '@chenjf/markdown-it-plugin-katex':
+        specifier: workspace:^
+        version: link:packages/markdown-it-plugin-katex
       '@chenjf/markdown-it-plugin-mermaid':
         specifier: workspace:^
         version: link:packages/markdown-it-plugin-mermaid
@@ -23,6 +26,9 @@ importers:
       '@commitlint/prompt-cli':
         specifier: ^17.0.0
         version: 17.0.0
+      '@types/markdown-it-footnote':
+        specifier: ^3.0.0
+        version: 3.0.0
       '@typescript-eslint/eslint-plugin':
         specifier: ^5.15.0
         version: 5.23.0(@typescript-eslint/parser@5.23.0)(eslint@8.15.0)(typescript@4.6.4)
@@ -41,6 +47,9 @@ importers:
       lint-staged:
         specifier: ^12.3.5
         version: 12.4.1
+      markdown-it-footnote:
+        specifier: ^3.0.3
+        version: 3.0.3
       prettier:
         specifier: ^2.5.1
         version: 2.6.2
@@ -82,6 +91,25 @@ importers:
         specifier: ^0.17.0
         version: 0.17.0(@vitest/ui@0.17.1)(c8@7.11.3)
 
+  packages/markdown-it-plugin-katex:
+    dependencies:
+      katex:
+        specifier: ^0.16.8
+        version: 0.16.8
+    devDependencies:
+      '@types/katex':
+        specifier: ^0.16.0
+        version: 0.16.0
+      '@types/markdown-it':
+        specifier: ^12.2.3
+        version: 12.2.3
+      markdown-it:
+        specifier: ^13.0.1
+        version: 13.0.1
+      vite:
+        specifier: ^4.3.9
+        version: 4.3.9(@types/node@17.0.33)
+
   packages/markdown-it-plugin-mermaid:
     devDependencies:
       '@chenjf/tsconfig':
@@ -95,7 +123,7 @@ importers:
         version: 13.0.1
       vite:
         specifier: ^4.3.9
-        version: 4.3.9
+        version: 4.3.9(@types/node@17.0.33)
 
   packages/tsconfig: {}
 
@@ -937,8 +965,18 @@ packages:
     resolution: {integrity: sha512-wOuvG1SN4Us4rez+tylwwwCV1psiNVOkJeM3AUWUNWg/jDQY2+HE/444y5gc+jBmRqASOm2Oeh5c1axHobwRKQ==, tarball: https://registry.npmjs.com/@types/json-schema/-/json-schema-7.0.11.tgz}
     dev: true
 
+  /@types/katex@0.16.0:
+    resolution: {integrity: sha512-hz+S3nV6Mym5xPbT9fnO8dDhBFQguMYpY0Ipxv06JMi1ORgnEM4M1ymWDUhUNer3ElLmT583opRo4RzxKmh9jw==}
+    dev: true
+
   /@types/linkify-it@3.0.2:
     resolution: {integrity: sha512-HZQYqbiFVWufzCwexrvh694SOim8z2d+xJl5UNamcvQFejLY/2YUtzXHYi3cHdI7PMlS8ejH2slRAOJQ32aNbA==}
+    dev: true
+
+  /@types/markdown-it-footnote@3.0.0:
+    resolution: {integrity: sha512-d6KGv1ZhzDdjMB0F+PmuCFuc4QPIsiyWbzldwxAqWz0TZHvSiHwTp5cj5D/6Qfqfv8mJ0HScaMgLt1zlcKjpyw==}
+    dependencies:
+      '@types/markdown-it': 12.2.3
     dev: true
 
   /@types/markdown-it@12.2.3:
@@ -1610,7 +1648,6 @@ packages:
   /commander@8.3.0:
     resolution: {integrity: sha512-OkTL9umf+He2DZkUq8f8J9of7yL6RJKI24dVITBmNfZBmri9zYZQrKkuXiKhyfPSu8tUhnVBB1iKXevvnlR4Ww==, tarball: https://registry.npmjs.com/commander/-/commander-8.3.0.tgz}
     engines: {node: '>= 12'}
-    dev: true
 
   /compare-func@2.0.0:
     resolution: {integrity: sha512-zHig5N+tPWARooBnb0Zx1MFcdfpyJrfTJ3Y5L+IFvUm8rM74hHz66z0gw0x4tijh5CorKkKUCnW82R2vmpeCRA==}
@@ -2670,6 +2707,13 @@ packages:
     engines: {'0': node >= 0.2.0}
     dev: true
 
+  /katex@0.16.8:
+    resolution: {integrity: sha512-ftuDnJbcbOckGY11OO+zg3OofESlbR5DRl2cmN8HeWeeFIV7wTXvAOx8kEjZjobhA+9wh2fbKeO6cdcA9Mnovg==}
+    hasBin: true
+    dependencies:
+      commander: 8.3.0
+    dev: false
+
   /kind-of@6.0.3:
     resolution: {integrity: sha512-dcS1ul+9tmeD95T+x28/ehLgd9mENa3LsvDTtzm3vyBEO7RPptvAD+t44WVXaUjTBRcrpFeFlC8WCruUR456hw==}
     engines: {node: '>=0.10.0'}
@@ -2825,6 +2869,10 @@ packages:
 
   /mark.js@8.11.1:
     resolution: {integrity: sha512-1I+1qpDt4idfgLQG+BNWmrqku+7/2bi5nLf4YwF8y8zXvmfiTBY3PV3ZibfrjBueCByROpuBjLLFCajqkgYoLQ==}
+    dev: true
+
+  /markdown-it-footnote@3.0.3:
+    resolution: {integrity: sha512-YZMSuCGVZAjzKMn+xqIco9d1cLGxbELHZ9do/TSYVzraooV8ypsppKNmUJ0fVH5ljkCInQAtFpm8Rb3eXSrt5w==}
     dev: true
 
   /markdown-it@13.0.1:
@@ -3816,38 +3864,6 @@ packages:
       postcss: 8.4.14
       resolve: 1.22.0
       rollup: 2.75.7
-    optionalDependencies:
-      fsevents: 2.3.2
-    dev: true
-
-  /vite@4.3.9:
-    resolution: {integrity: sha512-qsTNZjO9NoJNW7KnOrgYwczm0WctJ8m/yqYAMAK9Lxt4SoySUfS5S8ia9K7JHpa3KEeMfyF8LoJ3c5NeBJy6pg==}
-    engines: {node: ^14.18.0 || >=16.0.0}
-    hasBin: true
-    peerDependencies:
-      '@types/node': '>= 14'
-      less: '*'
-      sass: '*'
-      stylus: '*'
-      sugarss: '*'
-      terser: ^5.4.0
-    peerDependenciesMeta:
-      '@types/node':
-        optional: true
-      less:
-        optional: true
-      sass:
-        optional: true
-      stylus:
-        optional: true
-      sugarss:
-        optional: true
-      terser:
-        optional: true
-    dependencies:
-      esbuild: 0.17.19
-      postcss: 8.4.24
-      rollup: 3.25.1
     optionalDependencies:
       fsevents: 2.3.2
     dev: true

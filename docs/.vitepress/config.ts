@@ -1,4 +1,6 @@
+import { markdownItPluginKatex } from '@chenjf/markdown-it-plugin-katex'
 import { markdownItPluginMermaid } from '@chenjf/markdown-it-plugin-mermaid'
+import mf from 'markdown-it-footnote'
 import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
@@ -31,17 +33,26 @@ export default defineConfig({
           text: 'Practices',
           items: [
             {
-              text: 'Vue',
-              link: '/practices/vue/',
+              text: 'Framework',
               items: [
-                { text: 'Renderer', link: '/practices/vue/renderer/' },
-                { text: 'Reactivity', link: '/practices/vue/reactivity/' },
-                { text: 'Mini Vue', link: '/practices/vue/mini-vue/' },
                 {
-                  text: 'Composition API',
-                  link: '/practices/vue/composition/',
+                  text: 'Vue',
+                  link: '/practices/vue/',
+                  items: [
+                    { text: 'Renderer', link: '/practices/vue/renderer/' },
+                    { text: 'Reactivity', link: '/practices/vue/reactivity/' },
+                    { text: 'Mini Vue', link: '/practices/vue/mini-vue/' },
+                    {
+                      text: 'Composition API',
+                      link: '/practices/vue/composition/',
+                    },
+                  ],
                 },
               ],
+            },
+            {
+              text: 'Data Structure',
+              link: '/practices/data-structure/',
             },
           ],
         },
@@ -55,10 +66,22 @@ export default defineConfig({
   base: '/repo/',
   markdown: {
     config(md) {
+      md.use(markdownItPluginKatex, { output: 'html' })
       md.use(markdownItPluginMermaid)
+      md.use(mf)
     },
   },
   head: [
+    [
+      'link',
+      {
+        rel: 'stylesheet',
+        href: 'https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css',
+        integrity:
+          'sha384-GvrOXuhMATgEsSwCs4smul74iXGOixntILdUW9XmUC6+HX0sLNAK3q71HotJqlAn',
+        crossorigin: 'anonymous',
+      },
+    ],
     [
       'script',
       { type: 'module', defer: '' },
