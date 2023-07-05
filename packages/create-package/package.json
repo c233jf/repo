@@ -7,7 +7,7 @@
     "create-package": "./index.mjs"
   },
   "scripts": {
-    "test": "vitest --ui",
+    "test": "vitest",
     "coverage": "vitest run --coverage"
   },
   "repository": {

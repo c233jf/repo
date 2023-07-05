@@ -2,7 +2,6 @@ import { ensureDirSync, remove, writeFileSync } from 'fs-extra'
 import { join } from 'path'
 import { execaCommandSync } from 'execa'
 import type { SyncOptions } from 'execa'
-import { afterAll, beforeAll, expect, test } from 'vitest'
 
 const CLI_PATH = join(__dirname, '..', 'index.mjs')
 const projectName = 'test-package'

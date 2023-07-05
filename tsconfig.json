@@ -1,3 +1,6 @@
 {
-  "extends": "@chenjf/tsconfig/tsconfig.json"
+  "extends": "@chenjf/tsconfig/tsconfig.json",
+  "compilerOptions": {
+    "types": ["vitest/globals"]
+  }
 }
