@@ -84,6 +84,7 @@
   - [Vue Router](https://router.vuejs.org/zh/) —— Vue 的官方路由
   - [VueUse](https://vueuse.org/) —— 基于 Composition API 的通用函数集
 - [Nuxt](https://nuxt.com/) —— 直观的 Web 框架
+- [VitePress](https://vitepress.dev/)
 - [Nest](https://docs.nestjs.cn/9/introduction) —— 服务器端框架
 - [Electron](https://www.electronjs.org/zh/) —— 使用 JS、HTML、CSS 构建跨平台桌面应用
 
