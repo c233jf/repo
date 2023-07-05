@@ -1,4 +1,4 @@
-import { ensureDirSync, readdirSync, remove, writeFileSync } from 'fs-extra'
+import { ensureDirSync, remove, writeFileSync } from 'fs-extra'
 import { join } from 'path'
 import { execaCommandSync } from 'execa'
 import type { SyncOptions } from 'execa'

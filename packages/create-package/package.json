@@ -29,9 +29,7 @@
   },
   "devDependencies": {
     "@types/fs-extra": "^9.0.13",
-    "@vitest/ui": "^0.17.1",
     "c8": "^7.11.3",
-    "execa": "^6.1.0",
-    "vitest": "^0.17.0"
+    "execa": "^6.1.0"
   }
 }

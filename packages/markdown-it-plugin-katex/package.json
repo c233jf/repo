@@ -34,8 +34,7 @@
   "devDependencies": {
     "@types/katex": "^0.16.0",
     "@types/markdown-it": "^12.2.3",
-    "markdown-it": "^13.0.1",
-    "vite": "^4.3.9"
+    "markdown-it": "^13.0.1"
   },
   "dependencies": {
     "katex": "^0.16.8"
