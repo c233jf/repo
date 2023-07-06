@@ -11,5 +11,5 @@ hero:
       link: /collections/
     - theme: alt
       text: Practices
-      link: /practices/markdown-examples
+      link: /practices/vue/renderer/
 ---
