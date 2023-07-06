@@ -12,7 +12,7 @@ export default defineConfig({
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Collections', link: '/collections/' },
-      { text: 'Practices', link: '/practices/markdown-examples' },
+      { text: 'Practices', link: '/practices/vue/renderer/' },
     ],
 
     sidebar: {
@@ -49,10 +49,24 @@ export default defineConfig({
                   ],
                 },
               ],
+              collapsed: true,
             },
             {
               text: 'Data Structure',
               link: '/practices/data-structure/',
+              items: [
+                {
+                  text: 'Linear List',
+                  link: '/practices/data-structure/linear-list/',
+                  items: [
+                    {
+                      text: 'examples',
+                      link: '/practices/data-structure/linear-list/examples/',
+                    },
+                  ],
+                },
+              ],
+              collapsed: true,
             },
           ],
         },
