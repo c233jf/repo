@@ -2,15 +2,14 @@ FROM node:18-alpine AS build
 WORKDIR /repo
 RUN wget -O- https://get.pnpm.io/v6.16.js | node - add --global pnpm
 
-COPY pnpm-lock.yaml ./
+COPY pnpm-lock.yaml pnpm-workspace.yaml ./
 COPY packages/tsconfig packages/tsconfig
 COPY packages/markdown-it-plugin-katex packages/markdown-it-plugin-katex
 COPY packages/markdown-it-plugin-mermaid packages/markdown-it-plugin-mermaid
-RUN pnpm fetch -D
+RUN pnpm fetch
 
 COPY package.json ./
-RUN pnpm i --offline -D
-
+RUN pnpm i --prefer-offline
 
 COPY docs docs
 RUN pnpm docs:build

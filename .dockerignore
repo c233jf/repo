@@ -1,3 +1,4 @@
 # vitepress
 docs/.vitepress/cache/
 docs/.vitepress/dist/
+packages/*/node_modules

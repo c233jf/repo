@@ -17,7 +17,9 @@
   },
   "type": "module",
   "scripts": {
-    "build": "vite build"
+    "build": "vite build",
+    "prepare": "vite build",
+    "clean": "rimraf dist"
   },
   "repository": {
     "type": "git",
