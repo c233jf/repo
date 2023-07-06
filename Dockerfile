@@ -4,6 +4,8 @@ RUN wget -O- https://get.pnpm.io/v6.16.js | node - add --global pnpm
 
 COPY pnpm-lock.yaml ./
 COPY packages/tsconfig packages/tsconfig
+COPY packages/markdown-it-plugin-katex packages/markdown-it-plugin-katex
+COPY packages/markdown-it-plugin-mermaid packages/markdown-it-plugin-mermaid
 RUN pnpm fetch -D
 
 COPY package.json ./
