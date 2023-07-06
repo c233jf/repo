@@ -12,7 +12,7 @@ export default defineConfig({
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Collections', link: '/collections/' },
-      { text: 'Practices', link: '/practices/vue/renderer/' },
+      { text: 'Blog', link: '/blog/vue/renderer/' },
     ],
 
     sidebar: {
@@ -28,23 +28,23 @@ export default defineConfig({
           ],
         },
       ],
-      '/practices': [
+      '/blog': [
         {
-          text: 'Practices',
+          text: 'Blog',
           items: [
             {
               text: 'Framework',
               items: [
                 {
                   text: 'Vue',
-                  link: '/practices/vue/',
+                  link: '/blog/vue/',
                   items: [
-                    { text: 'Renderer', link: '/practices/vue/renderer/' },
-                    { text: 'Reactivity', link: '/practices/vue/reactivity/' },
-                    { text: 'Mini Vue', link: '/practices/vue/mini-vue/' },
+                    { text: 'Renderer', link: '/blog/vue/renderer/' },
+                    { text: 'Reactivity', link: '/blog/vue/reactivity/' },
+                    { text: 'Mini Vue', link: '/blog/vue/mini-vue/' },
                     {
                       text: 'Composition API',
-                      link: '/practices/vue/composition/',
+                      link: '/blog/vue/composition/',
                     },
                   ],
                 },
@@ -53,15 +53,15 @@ export default defineConfig({
             },
             {
               text: 'Data Structure',
-              link: '/practices/data-structure/',
+              link: '/blog/data-structure/',
               items: [
                 {
                   text: 'Linear List',
-                  link: '/practices/data-structure/linear-list/',
+                  link: '/blog/data-structure/linear-list/',
                   items: [
                     {
                       text: 'examples',
-                      link: '/practices/data-structure/linear-list/examples/',
+                      link: '/blog/data-structure/linear-list/examples/',
                     },
                   ],
                 },

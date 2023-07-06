@@ -10,6 +10,6 @@ hero:
       text: Collections
       link: /collections/
     - theme: alt
-      text: Practices
-      link: /practices/vue/renderer/
+      text: Blog
+      link: /blog/vue/renderer/
 ---
