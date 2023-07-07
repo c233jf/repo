@@ -1,11 +1,11 @@
 import {
   add,
   createPolynList,
-} from '../practices/data-structure/linear-list/examples/polynomial'
+} from '../../blog/data-structure/linear-list/examples/polynomial'
 import {
   union,
   unionOrdered,
-} from '../practices/data-structure/linear-list/examples/set'
+} from '../../blog/data-structure/linear-list/examples/set'
 import {
   List,
   createListFromHead,
@@ -14,7 +14,7 @@ import {
   insert,
   createListFromReverse,
   del,
-} from '../practices/data-structure/linear-list/list'
+} from '../../blog/data-structure/linear-list/list'
 
 test('单链表初始化', () => {
   const list = new List<number>()
