@@ -9,7 +9,7 @@ COPY packages/markdown-it-plugin-mermaid packages/markdown-it-plugin-mermaid
 RUN pnpm fetch
 
 COPY package.json ./
-RUN pnpm i --prefer-offline
+RUN pnpm i --offline --frozen-lockfile
 
 COPY docs docs
 RUN pnpm docs:build
