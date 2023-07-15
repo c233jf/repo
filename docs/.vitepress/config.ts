@@ -68,6 +68,10 @@ export default defineConfig({
               ],
               collapsed: true,
             },
+            {
+              text: 'Testing',
+              link: '/blog/testing/vitest/',
+            },
           ],
         },
       ],
