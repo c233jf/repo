@@ -40,6 +40,7 @@
 
 ## :wrench: 测试工具
 
+- [msw](https://mswjs.io/) —— 用于浏览器和 Node.js 的 REST/GraphQL API mocking
 - [Jest](https://jestjs.io/zh-Hans/) —— 优雅、简洁的 JavaScript 测试框架
 - [Sentry](https://sentry.io/welcome/) —— 错误跟踪服务
 - [Vitest](https://cn.vitest.dev/) —— 基于 [Vite](https://cn.vitejs.dev/) 的单元测试框架
