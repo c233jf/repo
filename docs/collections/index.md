@@ -40,6 +40,7 @@
 
 ## :wrench: 测试工具
 
+- [Faker](https://fakerjs.dev/guide/) —— 生成伪数据
 - [msw](https://mswjs.io/) —— 用于浏览器和 Node.js 的 REST/GraphQL API mocking
 - [Jest](https://jestjs.io/zh-Hans/) —— 优雅、简洁的 JavaScript 测试框架
 - [Sentry](https://sentry.io/welcome/) —— 错误跟踪服务
