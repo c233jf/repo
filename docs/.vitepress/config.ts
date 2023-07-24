@@ -65,6 +65,16 @@ export default defineConfig({
                     },
                   ],
                 },
+                {
+                  text: 'Stack and Queue',
+                  link: '/blog/data-structure/stack-and-queue/',
+                  items: [
+                    {
+                      text: 'examples',
+                      link: '/blog/data-structure/stack-and-queue/examples/',
+                    },
+                  ],
+                },
               ],
               collapsed: true,
             },
