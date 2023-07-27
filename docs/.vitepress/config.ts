@@ -75,6 +75,10 @@ export default defineConfig({
                     },
                   ],
                 },
+                {
+                  text: 'String, Array and General List',
+                  link: '/blog/data-structure/string-array-general-list/',
+                },
               ],
               collapsed: true,
             },
