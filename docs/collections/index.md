@@ -44,6 +44,7 @@
 - [msw](https://mswjs.io/) —— 用于浏览器和 Node.js 的 REST/GraphQL API mocking
 - [Jest](https://jestjs.io/zh-Hans/) —— 优雅、简洁的 JavaScript 测试框架
 - [Sentry](https://sentry.io/welcome/) —— 错误跟踪服务
+- [supertest](https://github.com/ladjs/supertest) —— 测试 nodejs HTTP 服务器
 - [Vitest](https://cn.vitest.dev/) —— 基于 [Vite](https://cn.vitejs.dev/) 的单元测试框架
 
 ::: tip
@@ -94,6 +95,8 @@
 
 - [chalk](https://github.com/chalk/chalk) —— 美化终端字符串
 - [prompts](https://github.com/terkelg/prompts) —— 终端交互式提示符
+- [ts-node](https://github.com/TypeStrong/ts-node) —— 用于 nodejs 的 TS 执行器和 REPL
+- [tsx](https://github.com/esbuild-kit/tsx) —— 使用 esbuild 增强 nodejs 以运行 TS 和 ESM
 
 ## :pushpin: 项目规范
 
