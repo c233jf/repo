@@ -79,6 +79,10 @@ export default defineConfig({
                   text: 'String, Array and General List',
                   link: '/blog/data-structure/string-array-general-list/',
                 },
+                {
+                  text: 'Tree',
+                  link: '/blog/data-structure/tree/',
+                },
               ],
               collapsed: true,
             },
@@ -116,10 +120,11 @@ export default defineConfig({
     ],
     [
       'script',
-      { type: 'module', defer: '' },
+      { type: 'module' },
       `import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
       mermaid.initialize({ startOnLoad: false });
-      mermaid.run();`,
+      mermaid.run();
+      `,
     ],
   ],
 })
