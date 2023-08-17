@@ -90,6 +90,18 @@ export default defineConfig({
               text: 'Testing',
               link: '/blog/testing/vitest/',
             },
+            {
+              text: 'DevOps',
+              items: [
+                {
+                  text: 'CI/CD',
+                  items: [
+                    { text: 'aliyun', link: '/blog/dev-ops/ci-cd/aliyun.md' },
+                  ],
+                },
+              ],
+              collapsed: true,
+            },
           ],
         },
       ],
