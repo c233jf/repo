@@ -1,13 +1,11 @@
-on:
-  push:
-    branches: [main]
-    paths:
-      - packages/**
+name: Publish Package to npmjs
 
-name: release-please
+on:
+  release:
+    types: [released]
 
 jobs:
-  release-please:
+  publish:
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -21,11 +19,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{matrix.node-version}}
-          cache: 'pnpm'
-      - name: Install dependencies
-        run: pnpm i
-      - name: Test
-        run: pnpm test packages
-      - uses: google-github-actions/release-please-action@v3
-        with:
-          command: manifest
+          registry-url: 'https://registry.npmjs.org'
+      - run: pnpm pub
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
