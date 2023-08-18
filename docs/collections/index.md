@@ -37,6 +37,8 @@
 ## :package: 包管理工具
 
 - [pnpm](https://pnpm.io/zh/) —— 快速的，节省磁盘空间的包管理工具
+- [ncu](https://github.com/raineorshine/npm-check-updates) —— 检查依赖的最新版本
+- [Renovate](https://docs.renovatebot.com/) —— 自动化更新依赖，支持多平台、多语言
 
 ## :wrench: 测试工具
 
