@@ -12,7 +12,7 @@ export default defineConfig({
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Collections', link: '/collections/' },
-      { text: 'Blog', link: '/blog/vue/renderer/' },
+      { text: 'Blog', link: '/blog/framework//vue/renderer/' },
     ],
 
     sidebar: {
@@ -37,16 +37,38 @@ export default defineConfig({
               items: [
                 {
                   text: 'Vue',
-                  link: '/blog/vue/',
+                  link: '/blog/framework/vue/',
                   items: [
-                    { text: 'Renderer', link: '/blog/vue/renderer/' },
-                    { text: 'Reactivity', link: '/blog/vue/reactivity/' },
-                    { text: 'Mini Vue', link: '/blog/vue/mini-vue/' },
+                    { text: 'Renderer', link: '/blog/framework/vue/renderer/' },
+                    {
+                      text: 'Reactivity',
+                      link: '/blog/framework/vue/reactivity/',
+                    },
+                    { text: 'Mini Vue', link: '/blog/framework/vue/mini-vue/' },
                     {
                       text: 'Composition API',
-                      link: '/blog/vue/composition/',
+                      link: '/blog/framework/vue/composition/',
                     },
                   ],
+                  collapsed: true,
+                },
+                {
+                  text: 'Nest',
+                  link: '/blog/framework/nestjs/',
+                  items: [
+                    {
+                      text: 'Troubleshooting',
+                      link: '/blog/framework/nestjs/troubleshooting/',
+                      items: [
+                        {
+                          text: 'swc',
+                          link: '/blog/framework/nestjs/troubleshooting/swc',
+                        },
+                      ],
+                      collapsed: true,
+                    },
+                  ],
+                  collapsed: true,
                 },
               ],
               collapsed: true,
