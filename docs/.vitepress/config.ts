@@ -74,6 +74,48 @@ export default defineConfig({
               collapsed: true,
             },
             {
+              text: 'Language',
+              items: [
+                {
+                  text: 'JavaScript',
+                  items: [
+                    {
+                      text: 'Memory Management',
+                      link: '/blog/language/javascript/memory-management',
+                    },
+                    {
+                      text: 'Global Objects',
+                      items: [
+                        {
+                          text: 'WeakMap',
+                          link: '/blog/language/javascript/global-objects/weakmap',
+                        },
+                      ],
+                      collapsed: true,
+                    },
+                  ],
+                  collapsed: true,
+                },
+              ],
+              collapsed: true,
+            },
+            {
+              text: 'Computer Network',
+              items: [
+                {
+                  text: 'Protocol',
+                  items: [
+                    {
+                      text: 'HTTPS',
+                      link: '/blog/computer-network/protocol/https',
+                    },
+                  ],
+                  collapsed: true,
+                },
+              ],
+              collapsed: true,
+            },
+            {
               text: 'Data Structure',
               link: '/blog/data-structure/',
               items: [
@@ -111,6 +153,22 @@ export default defineConfig({
             {
               text: 'Testing',
               link: '/blog/testing/vitest/',
+            },
+            {
+              text: 'Web',
+              items: [
+                {
+                  text: 'Security',
+                  items: [
+                    {
+                      text: 'Anti Stealing Link',
+                      link: '/blog/web/security/anti-stealing-link',
+                    },
+                  ],
+                  collapsed: true,
+                },
+              ],
+              collapsed: true,
             },
             {
               text: 'DevOps',
