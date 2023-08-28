@@ -1,6 +1,7 @@
 FROM node:18-alpine AS build
 WORKDIR /repo
 RUN wget -qO- https://get.pnpm.io/install.sh | ENV="$HOME/.shrc" SHELL="$(which sh)" sh -
+RUN source /root/.shrc
 
 COPY pnpm-lock.yaml pnpm-workspace.yaml ./
 COPY packages/tsconfig packages/tsconfig
