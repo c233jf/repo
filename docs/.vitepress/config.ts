@@ -33,6 +33,74 @@ export default defineConfig({
           text: 'Blog',
           items: [
             {
+              text: 'Computer Network',
+              items: [
+                {
+                  text: 'Protocol',
+                  items: [
+                    {
+                      text: 'HTTPS',
+                      link: '/blog/computer-network/protocol/https',
+                    },
+                  ],
+                  collapsed: true,
+                },
+              ],
+              collapsed: true,
+            },
+
+            {
+              text: 'Data Structure',
+              link: '/blog/data-structure/',
+              items: [
+                {
+                  text: 'Linear List',
+                  link: '/blog/data-structure/linear-list/',
+                  items: [
+                    {
+                      text: 'examples',
+                      link: '/blog/data-structure/linear-list/examples/',
+                    },
+                  ],
+                },
+                {
+                  text: 'Stack and Queue',
+                  link: '/blog/data-structure/stack-and-queue/',
+                  items: [
+                    {
+                      text: 'examples',
+                      link: '/blog/data-structure/stack-and-queue/examples/',
+                    },
+                  ],
+                },
+                {
+                  text: 'String, Array and General List',
+                  link: '/blog/data-structure/string-array-general-list/',
+                },
+                {
+                  text: 'Tree',
+                  link: '/blog/data-structure/tree/',
+                },
+                {
+                  text: 'Searching',
+                  link: '/blog/data-structure/searching/',
+                },
+              ],
+              collapsed: true,
+            },
+            {
+              text: 'DevOps',
+              items: [
+                {
+                  text: 'CI/CD',
+                  items: [
+                    { text: 'aliyun', link: '/blog/dev-ops/ci-cd/aliyun.md' },
+                  ],
+                },
+              ],
+              collapsed: true,
+            },
+            {
               text: 'Framework',
               items: [
                 {
@@ -100,52 +168,11 @@ export default defineConfig({
               collapsed: true,
             },
             {
-              text: 'Computer Network',
+              text: 'Programming Paradigm',
               items: [
                 {
-                  text: 'Protocol',
-                  items: [
-                    {
-                      text: 'HTTPS',
-                      link: '/blog/computer-network/protocol/https',
-                    },
-                  ],
-                  collapsed: true,
-                },
-              ],
-              collapsed: true,
-            },
-            {
-              text: 'Data Structure',
-              link: '/blog/data-structure/',
-              items: [
-                {
-                  text: 'Linear List',
-                  link: '/blog/data-structure/linear-list/',
-                  items: [
-                    {
-                      text: 'examples',
-                      link: '/blog/data-structure/linear-list/examples/',
-                    },
-                  ],
-                },
-                {
-                  text: 'Stack and Queue',
-                  link: '/blog/data-structure/stack-and-queue/',
-                  items: [
-                    {
-                      text: 'examples',
-                      link: '/blog/data-structure/stack-and-queue/examples/',
-                    },
-                  ],
-                },
-                {
-                  text: 'String, Array and General List',
-                  link: '/blog/data-structure/string-array-general-list/',
-                },
-                {
-                  text: 'Tree',
-                  link: '/blog/data-structure/tree/',
+                  text: 'Dependency Injection',
+                  link: '/blog/programming-paradigm/dependency-injection/',
                 },
               ],
               collapsed: true,
@@ -166,18 +193,6 @@ export default defineConfig({
                     },
                   ],
                   collapsed: true,
-                },
-              ],
-              collapsed: true,
-            },
-            {
-              text: 'DevOps',
-              items: [
-                {
-                  text: 'CI/CD',
-                  items: [
-                    { text: 'aliyun', link: '/blog/dev-ops/ci-cd/aliyun.md' },
-                  ],
                 },
               ],
               collapsed: true,
