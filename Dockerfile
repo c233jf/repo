@@ -1,6 +1,6 @@
 FROM node:18-alpine AS build
 WORKDIR /repo
-RUN wget -O- https://get.pnpm.io/v6.16.js | node - add --global pnpm
+RUN wget -qO- https://get.pnpm.io/install.sh | ENV="$HOME/.shrc" SHELL="$(which sh)" sh -
 
 COPY pnpm-lock.yaml pnpm-workspace.yaml ./
 COPY packages/tsconfig packages/tsconfig
