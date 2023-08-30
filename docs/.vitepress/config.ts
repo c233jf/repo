@@ -94,8 +94,10 @@ export default defineConfig({
                 {
                   text: 'CI/CD',
                   items: [
-                    { text: 'aliyun', link: '/blog/dev-ops/ci-cd/aliyun.md' },
+                    { text: 'Aliyun', link: '/blog/dev-ops/ci-cd/aliyun.md' },
+                    { text: 'Lint', link: '/blog/dev-ops/ci-cd/lint.md' },
                   ],
+                  collapsed: true,
                 },
               ],
               collapsed: true,
