@@ -42,6 +42,10 @@ pnpm create @eslint/config
 
 ![eslint prompt example](./eslint-prompt.jpg)
 
+::: warning
+注意：最后一步可能会询问你是否安装缺失依赖，此时选择安装的话默认会使用 `npm` 进行安装，如果你使用的是其它包管理器，你需要选择否并自行安装相关依赖，否则，可能会出现问题。
+:::
+
 根据你的选择，配置文件内容类似以下：
 
 ```js

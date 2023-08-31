@@ -11,5 +11,5 @@ hero:
       link: /collections/
     - theme: alt
       text: Blog
-      link: /blog/framework/vue/renderer/
+      link: /blog/markdown-examples
 ---

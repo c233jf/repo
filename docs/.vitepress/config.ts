@@ -12,7 +12,7 @@ export default defineConfig({
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Collections', link: '/collections/' },
-      { text: 'Blog', link: '/blog/framework//vue/renderer/' },
+      { text: 'Blog', link: '/blog/markdown-examples' },
     ],
 
     sidebar: {
