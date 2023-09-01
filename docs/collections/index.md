@@ -92,6 +92,8 @@
 - [VitePress](https://vitepress.dev/)
 - [Nest](https://docs.nestjs.cn/9/introduction) —— 服务器端框架
 - [Electron](https://www.electronjs.org/zh/) —— 使用 JS、HTML、CSS 构建跨平台桌面应用
+  - [Electron Forge](https://www.electronforge.io/) —— 打包和分发 Electron 应用
+  - [Electron Extension Installer](https://www.npmjs.com/package/electron-extension-installer) —— 简化在 Electron 中安装 DevTools 扩展
 
 ## :desktop_computer: CLI
 
