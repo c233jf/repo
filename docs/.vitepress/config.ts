@@ -33,6 +33,22 @@ export default defineConfig({
           text: 'Blog',
           items: [
             {
+              text: 'Builder',
+              items: [
+                {
+                  text: 'Vite',
+                  collapsed: true,
+                  items: [
+                    {
+                      text: 'Troubleshooting',
+                      link: '/blog/builder/vite/troubleshooting.md',
+                    },
+                  ],
+                },
+              ],
+              collapsed: true,
+            },
+            {
               text: 'Computer Network',
               items: [
                 {
@@ -124,11 +140,9 @@ export default defineConfig({
                 },
                 {
                   text: 'Nest',
-                  link: '/blog/framework/nestjs/',
                   items: [
                     {
                       text: 'Troubleshooting',
-                      link: '/blog/framework/nestjs/troubleshooting/',
                       items: [
                         {
                           text: 'swc',
@@ -136,6 +150,16 @@ export default defineConfig({
                         },
                       ],
                       collapsed: true,
+                    },
+                  ],
+                  collapsed: true,
+                },
+                {
+                  text: 'Electron',
+                  items: [
+                    {
+                      text: 'Troubleshooting',
+                      link: '/blog/framework/electron/troubleshooting',
                     },
                   ],
                   collapsed: true,

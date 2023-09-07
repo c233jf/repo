@@ -53,5 +53,8 @@
     "*.{js,ts,vue,tsx}": "eslint --cache --fix",
     "*.{js,css,md,ts,vue,tsx}": "prettier --write"
   },
-  "version": "1.2.5"
+  "version": "1.2.5",
+  "dependencies": {
+    "medium-zoom": "^1.0.8"
+  }
 }

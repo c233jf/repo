@@ -76,6 +76,7 @@
 - [Floating UI](https://floating-ui.com/) —— 浮动元素定位与交互
 - [Masonry](https://github.com/desandro/masonry) —— 瀑布流布局
 - [SortableJS](https://github.com/SortableJS/Sortable) —— 拖曳放置库
+- [medium-zoom](https://github.com/francoischalifour/medium-zoom) —— 图片预览
 
 ## :art: UI
 
