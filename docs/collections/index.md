@@ -99,6 +99,8 @@
 ## :desktop_computer: CLI
 
 - [chalk](https://github.com/chalk/chalk) —— 美化终端字符串
+- [execa](https://github.com/sindresorhus/execa) —— 人性化的进程执行
+- [minimist](https://github.com/minimistjs/minimist) —— 以人性化的方式解析传入的参数
 - [prompts](https://github.com/terkelg/prompts) —— 终端交互式提示符
 - [ts-node](https://github.com/TypeStrong/ts-node) —— 用于 nodejs 的 TS 执行器和 REPL
 - [tsx](https://github.com/esbuild-kit/tsx) —— 使用 esbuild 增强 nodejs 以运行 TS 和 ESM
