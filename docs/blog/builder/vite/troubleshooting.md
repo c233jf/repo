@@ -222,6 +222,18 @@ export default defineConfig({
 
 解决完这些问题之后，我们应该就能正常打包以及运行应用了。
 
+## TypeORM migrations
+
+使用 `dataSource.runMigrations()` 运行迁移时报错：`TypeORMError: JS migration name is wrong. Migration class name should have a JavaScript timestamp appended.`。
+
+::: tip 解决办法
+设置迁移类的 `name` 属性值后置时间戳。如果你是用 typeorm cli 生成的迁移类，那你只需把类名作为 `name` 的值。
+:::
+
+::: details 原因
+`typeorm` 需要迁移的名称后置时间戳，默认情况下，迁移类的 `name` 会使用类名。如果你是通过 typeorm cli 生成的迁移类，那类名已经后置了时间戳。但是 `vite` 在构建的时候默认会最小化混淆代码，从而导致类名改变。
+:::
+
 ## References
 
 - [resolve-conditions](https://cn.vitejs.dev/config/shared-options.html#resolve-conditions)
