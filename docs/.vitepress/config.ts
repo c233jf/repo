@@ -2,6 +2,11 @@ import { markdownItPluginKatex } from '@chenjf/markdown-it-plugin-katex'
 import { markdownItPluginMermaid } from '@chenjf/markdown-it-plugin-mermaid'
 import mf from 'markdown-it-footnote'
 import { defineConfig } from 'vitepress'
+import WindiCSS from 'vite-plugin-windicss'
+import AutoImport from 'unplugin-auto-import/vite'
+import Components from 'unplugin-vue-components/vite'
+import Icons from 'unplugin-icons/vite'
+import IconsResolver from 'unplugin-icons/resolver'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -64,7 +69,10 @@ export default defineConfig({
               ],
               collapsed: true,
             },
-
+            {
+              text: 'Convention',
+              link: '/blog/convention/',
+            },
             {
               text: 'Data Structure',
               link: '/blog/data-structure/',
@@ -239,6 +247,18 @@ export default defineConfig({
       md.use(markdownItPluginMermaid)
       md.use(mf)
     },
+  },
+  vite: {
+    plugins: [
+      WindiCSS(),
+      AutoImport({ dts: '../docs/auto-imports.d.ts', imports: ['vue'] }),
+      Components({
+        dirs: ['../docs/components'],
+        dts: '../docs/components.d.ts',
+        resolvers: [IconsResolver({ prefix: false })],
+      }),
+      Icons(),
+    ],
   },
   head: [
     [

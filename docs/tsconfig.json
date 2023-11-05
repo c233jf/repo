@@ -1,0 +1,7 @@
+{
+  "extends": "@chenjf/tsconfig/tsconfig.json",
+  "compilerOptions": {
+    "composite": true
+  },
+  "include": [".vitepress/**/*"]
+}

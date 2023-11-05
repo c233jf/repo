@@ -1,6 +1,11 @@
 {
   "extends": "@chenjf/tsconfig/tsconfig.json",
   "compilerOptions": {
-    "types": ["vitest/globals"]
-  }
+    "types": ["vitest/globals", "unplugin-icons/types/vue"]
+  },
+  "references": [
+    {
+      "path": "docs"
+    }
+  ]
 }

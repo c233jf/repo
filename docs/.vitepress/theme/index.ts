@@ -2,6 +2,7 @@ import { nextTick, watch } from 'vue'
 import { useRoute } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
 import mediumZoom from 'medium-zoom'
+import 'virtual:windi.css'
 
 import './index.css'
 
