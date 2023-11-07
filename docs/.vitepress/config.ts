@@ -130,18 +130,11 @@ export default defineConfig({
               text: 'Framework',
               items: [
                 {
-                  text: 'Vue',
-                  link: '/blog/framework/vue/',
+                  text: 'Electron',
                   items: [
-                    { text: 'Renderer', link: '/blog/framework/vue/renderer/' },
                     {
-                      text: 'Reactivity',
-                      link: '/blog/framework/vue/reactivity/',
-                    },
-                    { text: 'Mini Vue', link: '/blog/framework/vue/mini-vue/' },
-                    {
-                      text: 'Composition API',
-                      link: '/blog/framework/vue/composition/',
+                      text: 'Troubleshooting',
+                      link: '/blog/framework/electron/troubleshooting',
                     },
                   ],
                   collapsed: true,
@@ -163,11 +156,34 @@ export default defineConfig({
                   collapsed: true,
                 },
                 {
-                  text: 'Electron',
+                  text: 'VitePress',
                   items: [
                     {
                       text: 'Troubleshooting',
-                      link: '/blog/framework/electron/troubleshooting',
+                      items: [
+                        {
+                          text: 'unplugin-vue-components',
+                          link: '/blog/framework/vitepress/troubleshooting/unplugin-vue-components',
+                        },
+                      ],
+                      collapsed: true,
+                    },
+                  ],
+                  collapsed: true,
+                },
+                {
+                  text: 'Vue',
+                  link: '/blog/framework/vue/',
+                  items: [
+                    { text: 'Renderer', link: '/blog/framework/vue/renderer/' },
+                    {
+                      text: 'Reactivity',
+                      link: '/blog/framework/vue/reactivity/',
+                    },
+                    { text: 'Mini Vue', link: '/blog/framework/vue/mini-vue/' },
+                    {
+                      text: 'Composition API',
+                      link: '/blog/framework/vue/composition/',
                     },
                   ],
                   collapsed: true,
