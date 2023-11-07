@@ -251,14 +251,19 @@ export default defineConfig({
   vite: {
     plugins: [
       WindiCSS(),
-      AutoImport({ dts: '../docs/auto-imports.d.ts', imports: ['vue'] }),
+      AutoImport({ dts: 'auto-imports.d.ts', imports: ['vue'] }),
       Components({
-        dirs: ['../docs/components'],
-        dts: '../docs/components.d.ts',
+        dirs: ['components'],
+        dts: 'components.d.ts',
         resolvers: [IconsResolver({ prefix: false })],
       }),
       Icons(),
     ],
+    resolve: {
+      alias: {
+        'vue/server-renderer': require.resolve('vue/server-renderer'),
+      },
+    },
   },
   head: [
     [
