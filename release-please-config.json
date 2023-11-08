@@ -7,6 +7,9 @@
     },
     "packages/tsconfig": {
       "skip-github-release": true
+    },
+    "packages/eslint-config": {
+      "skip-github-release": true
     }
   },
   "bootstrap-sha": "bbe239423f46b9caaf443019635b7e09430ccf5f"
