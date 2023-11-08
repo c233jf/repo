@@ -3,6 +3,7 @@ on:
     branches: [main]
     paths:
       - packages/**
+  workflow_dispatch:
 
 name: release-please
 
