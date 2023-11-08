@@ -1,8 +1,8 @@
 {
-  "name": "@chenjf/eslint-config-vue",
+  "name": "@chenjf/eslint-config",
   "version": "1.0.0",
-  "description": "My eslint config for vue project",
-  "type": "commonjs",
+  "description": "Chenjf personal eslint config",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
