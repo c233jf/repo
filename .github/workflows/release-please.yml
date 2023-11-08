@@ -23,10 +23,17 @@ jobs:
         with:
           node-version: ${{matrix.node-version}}
           cache: 'pnpm'
+          registry-url: 'https://registry.npmjs.org'
       - name: Install dependencies
         run: pnpm i
       - name: Test
         run: pnpm test packages
       - uses: google-github-actions/release-please-action@v3
+        id: release
         with:
+          release-type: node
           command: manifest
+      - run: pnpm pub
+        if: ${{ steps.release.outputs.release_created }}
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
