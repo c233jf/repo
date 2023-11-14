@@ -1,0 +1,61 @@
+{
+  "name": "hello-world",
+  "productName": "hello-world",
+  "version": "1.0.0",
+  "private": true,
+  "description": "My Electron app",
+  "type": "commonjs",
+  "main": ".vite/build/main.js",
+  "scripts": {
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "publish": "electron-forge publish",
+    "lint": "eslint --ext .ts,.tsx .",
+    "prepare": "husky install"
+  },
+  "keywords": [],
+  "author": {
+    "name": "cjf",
+    "email": "1143141874@qq.com"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@chenjf/eslint-config": "^1.0.0",
+    "@chenjf/tsconfig": "^1.0.2",
+    "@commitlint/cli": "^17.7.1",
+    "@commitlint/config-conventional": "^17.7.0",
+    "@electron-forge/cli": "^6.4.1",
+    "@electron-forge/maker-deb": "^6.4.1",
+    "@electron-forge/maker-rpm": "^6.4.1",
+    "@electron-forge/maker-squirrel": "^6.4.1",
+    "@electron-forge/maker-zip": "^6.4.1",
+    "@electron-forge/plugin-auto-unpack-natives": "^6.4.1",
+    "@electron-forge/plugin-vite": "^6.4.1",
+    "@electron-forge/publisher-github": "^6.4.2",
+    "@iconify-json/ep": "^1.1.12",
+    "@vitejs/plugin-vue": "4.3.4",
+    "electron": "25.8.0",
+    "eslint": "^8.48.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^14.0.1",
+    "prettier": "^2.8.8",
+    "typescript": "5.2.2",
+    "unplugin-auto-import": "0.16.6",
+    "unplugin-icons": "0.16.6",
+    "unplugin-vue-components": "0.25.2",
+    "vite-plugin-windicss": "1.9.1",
+    "windicss": "3.5.6"
+  },
+  "dependencies": {
+    "electron-extension-installer": "1.2.0",
+    "electron-squirrel-startup": "^1.0.0",
+    "pinia": "^2.1.6",
+    "vue": "3.3.4",
+    "vue-router": "4.2.4"
+  },
+  "lint-staged": {
+    "*.{js,ts,vue,tsx}": "eslint --cache --fix",
+    "*.{js,css,md,ts,vue,tsx}": "prettier --write"
+  }
+}

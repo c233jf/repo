@@ -1,0 +1,3 @@
+{
+  "extends": ["@chenjf/eslint-config/vue"]
+}

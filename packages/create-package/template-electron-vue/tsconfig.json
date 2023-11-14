@@ -1,0 +1,18 @@
+{
+  "extends": "@chenjf/tsconfig/tsconfig.json",
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "NodeNext",
+    "allowJs": true,
+    "baseUrl": ".",
+    "outDir": "dist",
+    "paths": {
+      "views/*": ["src/views/*"]
+    },
+    "types": ["unplugin-icons/types/vue"],
+    "declaration": false,
+    "declarationMap": false
+  },
+  "include": ["src/**/*", "src/**/*.vue", "scripts/**/*"],
+  "references": [{ "path": "tsconfig.vitest.json" }]
+}
