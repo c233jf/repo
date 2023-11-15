@@ -60,7 +60,7 @@
     "*.{js,ts,vue,tsx}": "eslint --cache --fix",
     "*.{js,css,md,ts,vue,tsx}": "prettier --write"
   },
-  "version": "1.3.0",
+  "version": "1.4.0",
   "dependencies": {
     "medium-zoom": "^1.0.8"
   }

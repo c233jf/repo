@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.4.0](https://github.com/c233jf/repo/compare/repo-v1.3.0...repo-v1.4.0) (2023-11-15)
+
+### Features
+
+- **create-package:** add electron-vue template ([879b9e5](https://github.com/c233jf/repo/commit/879b9e50b39182527cefcf8e585fd70d5e509a73))
+
 ## [1.3.0](https://github.com/c233jf/repo/compare/repo-v1.2.5...repo-v1.3.0) (2023-11-08)
 
 ### Features
