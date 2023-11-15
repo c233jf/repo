@@ -1,5 +1,11 @@
 # @chenjf/create-package
 
+## [1.3.0](https://github.com/c233jf/repo/compare/create-package-v1.2.5...create-package-v1.3.0) (2023-11-15)
+
+### Features
+
+- **create-package:** add electron-vue template ([879b9e5](https://github.com/c233jf/repo/commit/879b9e50b39182527cefcf8e585fd70d5e509a73))
+
 ## [1.2.5](https://github.com/c233jf/tools/compare/create-package-v1.0.0...create-package-v1.2.5) (2022-11-14)
 
 ### Features
