@@ -2,6 +2,5 @@
   "group-pull-request-title-pattern": "chore: release ${version}",
   "packages": {
     ".": {}
-  },
-  "bootstrap-sha": "bbe239423f46b9caaf443019635b7e09430ccf5f"
+  }
 }
