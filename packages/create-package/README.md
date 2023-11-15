@@ -38,6 +38,7 @@ pnpm create @chenjf/package my-project --template vue-ts-git
 
 ## Supported template presets:
 
+- electron-vue
 - package
 - vue-ts-git
 - vue-admin-ts-git
