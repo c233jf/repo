@@ -38,7 +38,7 @@ export default defineConfig({
           text: 'Blog',
           items: [
             {
-              text: 'Builder',
+              text: '打包器',
               items: [
                 {
                   text: 'Vite',
@@ -54,10 +54,10 @@ export default defineConfig({
               collapsed: true,
             },
             {
-              text: 'Computer Network',
+              text: '计算机网络',
               items: [
                 {
-                  text: 'Protocol',
+                  text: '协议',
                   items: [
                     {
                       text: 'HTTPS',
@@ -70,43 +70,43 @@ export default defineConfig({
               collapsed: true,
             },
             {
-              text: 'Convention',
+              text: '个人规范',
               link: '/blog/convention/',
             },
             {
-              text: 'Data Structure',
+              text: '数据结构',
               link: '/blog/data-structure/',
               items: [
                 {
-                  text: 'Linear List',
+                  text: '线性表',
                   link: '/blog/data-structure/linear-list/',
                   items: [
                     {
-                      text: 'examples',
+                      text: '示例',
                       link: '/blog/data-structure/linear-list/examples/',
                     },
                   ],
                 },
                 {
-                  text: 'Stack and Queue',
+                  text: '栈和队列',
                   link: '/blog/data-structure/stack-and-queue/',
                   items: [
                     {
-                      text: 'examples',
+                      text: '示例',
                       link: '/blog/data-structure/stack-and-queue/examples/',
                     },
                   ],
                 },
                 {
-                  text: 'String, Array and General List',
+                  text: '串、数组和广义表',
                   link: '/blog/data-structure/string-array-general-list/',
                 },
                 {
-                  text: 'Tree',
+                  text: '树和二叉树',
                   link: '/blog/data-structure/tree/',
                 },
                 {
-                  text: 'Searching',
+                  text: '查找',
                   link: '/blog/data-structure/searching/',
                 },
               ],
@@ -127,7 +127,7 @@ export default defineConfig({
               collapsed: true,
             },
             {
-              text: 'Framework',
+              text: '框架',
               items: [
                 {
                   text: 'Electron',
@@ -192,17 +192,17 @@ export default defineConfig({
               collapsed: true,
             },
             {
-              text: 'Language',
+              text: '编程语言',
               items: [
                 {
                   text: 'JavaScript',
                   items: [
                     {
-                      text: 'Memory Management',
+                      text: '内存管理',
                       link: '/blog/language/javascript/memory-management',
                     },
                     {
-                      text: 'Global Objects',
+                      text: '全局对象',
                       items: [
                         {
                           text: 'WeakMap',
@@ -218,27 +218,27 @@ export default defineConfig({
               collapsed: true,
             },
             {
-              text: 'Programming Paradigm',
+              text: '编程范式',
               items: [
                 {
-                  text: 'Dependency Injection',
+                  text: '依赖注入',
                   link: '/blog/programming-paradigm/dependency-injection/',
                 },
               ],
               collapsed: true,
             },
             {
-              text: 'Testing',
+              text: '测试',
               link: '/blog/testing/vitest/',
             },
             {
               text: 'Web',
               items: [
                 {
-                  text: 'Security',
+                  text: '安全',
                   items: [
                     {
-                      text: 'Anti Stealing Link',
+                      text: '防盗链',
                       link: '/blog/web/security/anti-stealing-link',
                     },
                   ],
