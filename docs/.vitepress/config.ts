@@ -2,7 +2,7 @@ import { markdownItPluginKatex } from '@chenjf/markdown-it-plugin-katex'
 import { markdownItPluginMermaid } from '@chenjf/markdown-it-plugin-mermaid'
 import mf from 'markdown-it-footnote'
 import { defineConfig } from 'vitepress'
-import WindiCSS from 'vite-plugin-windicss'
+import UnoCSS from 'unocss/vite'
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
 import Icons from 'unplugin-icons/vite'
@@ -266,7 +266,7 @@ export default defineConfig({
   },
   vite: {
     plugins: [
-      WindiCSS(),
+      UnoCSS(),
       AutoImport({ dts: 'auto-imports.d.ts', imports: ['vue'] }),
       Components({
         dirs: ['components'],

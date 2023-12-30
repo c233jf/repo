@@ -1,7 +1,7 @@
 import { useRoute } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
 import mediumZoom from 'medium-zoom'
-import 'virtual:windi.css'
+import 'virtual:uno.css'
 
 import './index.css'
 
