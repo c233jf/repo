@@ -195,6 +195,26 @@ export default defineConfig({
               text: '编程语言',
               items: [
                 {
+                  text: 'C++',
+                  items: [
+                    {
+                      text: 'Hello World',
+                      link: '/blog/language/cpp/helloworld/',
+                    },
+                    {
+                      text: '基本类型',
+                      items: [
+                        {
+                          text: '字符和字符串',
+                          link: '/blog/language/cpp/fundamental-types/string/',
+                        },
+                      ],
+                      collapsed: true,
+                    },
+                  ],
+                  collapsed: true,
+                },
+                {
                   text: 'JavaScript',
                   items: [
                     {
