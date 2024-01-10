@@ -211,6 +211,10 @@ export default defineConfig({
                       ],
                       collapsed: true,
                     },
+                    {
+                      text: '运算符重载',
+                      link: '/blog/language/cpp/operator-overloading/',
+                    },
                   ],
                   collapsed: true,
                 },
