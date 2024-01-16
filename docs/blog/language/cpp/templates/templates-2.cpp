@@ -8,6 +8,9 @@ using std::cout;
 
 template <typename T>
 class Array {
+  template <typename T>
+  friend std::ostream& operator<<(std::ostream&, const Array<T>&);
+
  private:
   T* data_;
   // 元素个数
@@ -36,7 +39,7 @@ class Array {
 
   int capacity() const { return capacity_; }
 
-  int& Push(T value) {
+  T& Push(T value) {
     if (size_ < capacity_) {
       data_[size_++] = value;
       return data_[size_ - 1];
@@ -56,14 +59,14 @@ class Array {
 };
 
 template <typename T>
-std::ostream& operator<<(std::ostream& __out, Array<T>& arr) {
-  __out << '[';
+std::ostream& operator<<(std::ostream& os, const Array<T>& arr) {
+  os << '[';
   int last_idx = arr.size() - 1;
   for (int i = 0; i < last_idx; ++i) {
-    __out << arr[i] << ", ";
+    os << arr.data_[i] << ", ";
   }
-  __out << arr[last_idx] << ']';
-  return __out;
+  os << arr.data_[last_idx] << ']';
+  return os;
 }
 
 int main() {

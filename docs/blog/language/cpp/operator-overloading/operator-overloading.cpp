@@ -57,14 +57,14 @@ const Point operator+(const Point& p1, const Point& p2) {
   return Point(p1.x_ + p2.x_, p1.y_ + p2.y_);
 }
 
-std::ostream& operator<<(std::ostream& __out, const Point& p) {
-  __out << "x: " << p.x_ << ", y: " << p.y_;
-  return __out;
+std::ostream& operator<<(std::ostream& os, const Point& p) {
+  os << "x: " << p.x_ << ", y: " << p.y_;
+  return os;
 }
 
-std::istream& operator>>(std::istream& __in, Point& p) {
-  __in >> p.x_ >> p.y_;
-  return __in;
+std::istream& operator>>(std::istream& is, Point& p) {
+  is >> p.x_ >> p.y_;
+  return is;
 }
 
 int main() {

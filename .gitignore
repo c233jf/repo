@@ -26,3 +26,7 @@ docs/.vitepress/cache/
 
 # C++
 *.o
+*.pdb
+*.ilk
+*.exe
+*.obj
