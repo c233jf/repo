@@ -208,6 +208,24 @@ export default defineConfig({
                           text: '字符和字符串',
                           link: '/blog/language/cpp/fundamental-types/string/',
                         },
+                        {
+                          text: 'nullptr',
+                          link: '/blog/language/cpp/fundamental-types/nullptr/',
+                        },
+                      ],
+                      collapsed: true,
+                    },
+                    {
+                      text: '声明和定义',
+                      items: [
+                        {
+                          text: 'auto',
+                          link: '/blog/language/cpp/declarations-and-definitions/auto/',
+                        },
+                        {
+                          text: 'decltype',
+                          link: '/blog/language/cpp/declarations-and-definitions/decltype/',
+                        },
                       ],
                       collapsed: true,
                     },
