@@ -212,6 +212,16 @@ export default defineConfig({
                       collapsed: true,
                     },
                     {
+                      text: '表达式',
+                      items: [
+                        {
+                          text: '强制转换',
+                          link: '/blog/language/cpp/expressions/casting/',
+                        },
+                      ],
+                      collapsed: true,
+                    },
+                    {
                       text: '运算符重载',
                       link: '/blog/language/cpp/operator-overloading/',
                     },
@@ -286,6 +296,7 @@ export default defineConfig({
   },
   base: '/repo/',
   markdown: {
+    lineNumbers: true,
     config(md) {
       md.use(markdownItPluginKatex, { output: 'html' })
       md.use(markdownItPluginMermaid)
