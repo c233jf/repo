@@ -244,6 +244,10 @@ export default defineConfig({
                       link: '/blog/language/cpp/operator-overloading/',
                     },
                     {
+                      text: 'Lambda 表达式',
+                      link: '/blog/language/cpp/Lambda/',
+                    },
+                    {
                       text: '模板',
                       link: '/blog/language/cpp/templates/',
                     },
