@@ -156,6 +156,22 @@ export default defineConfig({
                   collapsed: true,
                 },
                 {
+                  text: 'Taro',
+                  items: [
+                    {
+                      text: 'Troubleshooting',
+                      items: [
+                        {
+                          text: '原生组件',
+                          link: '/blog/framework/taro/troubleshooting/native-component/',
+                        },
+                      ],
+                      collapsed: true,
+                    },
+                  ],
+                  collapsed: true,
+                },
+                {
                   text: 'VitePress',
                   items: [
                     {
