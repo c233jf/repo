@@ -264,6 +264,10 @@ export default defineConfig({
                       link: '/blog/language/cpp/Lambda/',
                     },
                     {
+                      text: '异常',
+                      link: '/blog/language/cpp/exception/',
+                    },
+                    {
                       text: '模板',
                       link: '/blog/language/cpp/templates/',
                     },
