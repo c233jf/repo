@@ -264,6 +264,16 @@ export default defineConfig({
                       link: '/blog/language/cpp/Lambda/',
                     },
                     {
+                      text: '指针',
+                      items: [
+                        {
+                          text: '智能指针',
+                          link: '/blog/language/cpp/pointers/smart-pointers/',
+                        },
+                      ],
+                      collapsed: true,
+                    },
+                    {
                       text: '异常',
                       link: '/blog/language/cpp/exception/',
                     },
