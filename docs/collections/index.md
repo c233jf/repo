@@ -57,6 +57,7 @@
 
 ## :gear: 构建工具
 
+- [CMake](https://cmake.org/)
 - [Vite](https://cn.vitejs.dev/)
   - [unplugin-auto-import](https://github.com/antfu/unplugin-auto-import) —— 自动按需导入 API
   - [unplugin-vue-components](https://github.com/antfu/unplugin-vue-components) —— 自动按需导入组件
