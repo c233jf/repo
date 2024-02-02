@@ -38,7 +38,7 @@ export default defineConfig({
           text: 'Blog',
           items: [
             {
-              text: '打包器',
+              text: '构建工具',
               items: [
                 {
                   text: 'Vite',
@@ -49,6 +49,10 @@ export default defineConfig({
                       link: '/blog/builder/vite/troubleshooting.md',
                     },
                   ],
+                },
+                {
+                  text: 'CMake',
+                  link: '/blog/builder/cmake/',
                 },
               ],
               collapsed: true,
