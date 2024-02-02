@@ -97,6 +97,7 @@
 - [Electron](https://www.electronjs.org/zh/) —— 使用 JS、HTML、CSS 构建跨平台桌面应用
   - [Electron Forge](https://www.electronforge.io/) —— 打包和分发 Electron 应用
   - [Electron Extension Installer](https://www.npmjs.com/package/electron-extension-installer) —— 简化在 Electron 中安装 DevTools 扩展
+- [Qt](https://doc.qt.io/qt-6/index.html) —— 进行桌面、嵌入式、移动平台的 UI 开发，包含框架、IDE 以及相关工具链
 
 ## :desktop_computer: CLI
 
