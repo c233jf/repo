@@ -62,6 +62,11 @@
   - [unplugin-auto-import](https://github.com/antfu/unplugin-auto-import) —— 自动按需导入 API
   - [unplugin-vue-components](https://github.com/antfu/unplugin-vue-components) —— 自动按需导入组件
 
+## :lady_beetle: 逆向工具
+
+- [x64dbg](https://github.com/x64dbg/x64dbg) —— 用于 Windows 上的开源的二进制调试器，主要目的是恶意软件分析和逆向工程没有源码的可执行文件
+- [CE](https://github.com/cheat-engine/cheat-engine) —— 最好使用自己编译的版本，官方安装器是第三方制作的，带有广告软件 [参考](https://github.com/cheat-engine/cheat-engine/issues/2315)
+
 ## :movie_camera: 动画
 
 - [BetterScroll](https://better-scroll.github.io/docs/zh-CN/) —— 滚动库
