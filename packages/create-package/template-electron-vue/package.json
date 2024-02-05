@@ -44,7 +44,7 @@
     "unplugin-auto-import": "0.16.6",
     "unplugin-icons": "0.16.6",
     "unplugin-vue-components": "0.25.2",
-    "vite-plugin-windicss": "1.9.1",
+    "vite-plugin-windicss": "1.9.3",
     "windicss": "3.5.6"
   },
   "dependencies": {
