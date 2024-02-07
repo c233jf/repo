@@ -1,6 +1,7 @@
 import { markdownItPluginKatex } from '@chenjf/markdown-it-plugin-katex'
 import { markdownItPluginMermaid } from '@chenjf/markdown-it-plugin-mermaid'
 import mf from 'markdown-it-footnote'
+import mt from 'markdown-it-task-lists'
 import { defineConfig } from 'vitepress'
 import UnoCSS from 'unocss/vite'
 import AutoImport from 'unplugin-auto-import/vite'
@@ -357,6 +358,7 @@ export default defineConfig({
       md.use(markdownItPluginKatex, { output: 'html' })
       md.use(markdownItPluginMermaid)
       md.use(mf)
+      md.use(mt)
     },
   },
   vite: {
