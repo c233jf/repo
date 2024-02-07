@@ -27,6 +27,17 @@
 - [ ] 搜狗输入法
 - [ ] Firefox
 
+### Edge 标签页
+
+![edge 标签页](./edge-tabs.jpg)
+
+### Firefox 标签页
+
+![firefox 标签页1](./firefox-tabs1.jpg)
+![firefox 标签页2](./firefox-tabs2.jpg)
+![firefox 标签页3](./firefox-tabs3.jpg)
+![firefox 标签页4](./firefox-tabs4.jpg)
+
 ## 转移到 C 盘
 
 所有 IT 相关的都转移到 C 盘。
