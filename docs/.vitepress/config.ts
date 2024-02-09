@@ -1,6 +1,7 @@
 import { markdownItPluginKatex } from '@chenjf/markdown-it-plugin-katex'
 import { markdownItPluginMermaid } from '@chenjf/markdown-it-plugin-mermaid'
 import mf from 'markdown-it-footnote'
+// @ts-ignore
 import mt from 'markdown-it-task-lists'
 import { defineConfig } from 'vitepress'
 import UnoCSS from 'unocss/vite'
@@ -318,6 +319,16 @@ export default defineConfig({
                 {
                   text: '依赖注入',
                   link: '/blog/programming-paradigm/dependency-injection/',
+                },
+              ],
+              collapsed: true,
+            },
+            {
+              text: '逆向工程',
+              items: [
+                {
+                  text: '快速入门',
+                  link: '/blog/reverse-engineering/getting-started/',
                 },
               ],
               collapsed: true,
