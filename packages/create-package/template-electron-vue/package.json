@@ -34,7 +34,7 @@
     "@electron-forge/plugin-vite": "^6.4.1",
     "@electron-forge/publisher-github": "^6.4.2",
     "@iconify-json/ep": "^1.1.12",
-    "@vitejs/plugin-vue": "4.3.4",
+    "@vitejs/plugin-vue": "4.6.2",
     "electron": "25.8.0",
     "eslint": "^8.48.0",
     "husky": "^8.0.3",
