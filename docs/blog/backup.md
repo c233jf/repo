@@ -34,7 +34,8 @@
 ### Firefox 标签页
 
 ![firefox 标签页1](./firefox-tabs1.jpg)
-![firefox 标签页1](./firefox-tabs5.jpg)
+![firefox 标签页5](./firefox-tabs5.jpg)
+![firefox 标签页6](./firefox-tabs6.jpg)
 ![firefox 标签页2](./firefox-tabs2.jpg)
 ![firefox 标签页3](./firefox-tabs3.jpg)
 ![firefox 标签页4](./firefox-tabs4.jpg)
