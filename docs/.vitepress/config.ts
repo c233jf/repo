@@ -1,6 +1,7 @@
 import { markdownItPluginKatex } from '@chenjf/markdown-it-plugin-katex'
 import { markdownItPluginMermaid } from '@chenjf/markdown-it-plugin-mermaid'
 import mf from 'markdown-it-footnote'
+// @ts-ignore
 import mt from 'markdown-it-task-lists'
 import { defineConfig } from 'vitepress'
 import UnoCSS from 'unocss/vite'
@@ -77,6 +78,29 @@ export default defineConfig({
             {
               text: '个人规范',
               link: '/blog/convention/',
+              items: [
+                {
+                  text: '语言规范',
+                  link: '/blog/convention/language/',
+                },
+                {
+                  text: '框架',
+                  link: '/blog/convention/framework/',
+                },
+                {
+                  text: '静态资源',
+                  link: '/blog/convention/assets/',
+                },
+                {
+                  text: '构建工具',
+                  link: '/blog/convention/builder/',
+                },
+                {
+                  text: '项目配置',
+                  link: '/blog/convention/config/',
+                },
+              ],
+              collapsed: true,
             },
             {
               text: '数据结构',
@@ -345,6 +369,10 @@ export default defineConfig({
           ],
         },
       ],
+    },
+
+    footer: {
+      copyright: 'Copyright © 2022-present HBee',
     },
 
     outline: 'deep',
