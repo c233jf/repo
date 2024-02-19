@@ -1,3 +1,7 @@
+---
+next: false
+---
+
 # 使用 Vite 遇到的坑
 
 ## TypeORM and sqlite3

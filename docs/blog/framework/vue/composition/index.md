@@ -1,3 +1,7 @@
+---
+next: false
+---
+
 # Composition API
 
 Composition API = Reactivity API + Lifecycle hooks。

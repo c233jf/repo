@@ -1,3 +1,8 @@
+---
+prev: false
+next: false
+---
+
 # HTTPS
 
 HTTPS（**超文本传输安全协议**）是 [HTTP](https://developer.mozilla.org/zh-CN/docs/Web/HTTP) 协议的加密版本。它使用 [SSL](https://developer.mozilla.org/zh-CN/docs/Glossary/SSL) 或 [TLS](https://developer.mozilla.org/zh-CN/docs/Glossary/TLS) 加密客户端和服务器所有通信。这使得客户端和服务器可以安全地交换敏感数据。

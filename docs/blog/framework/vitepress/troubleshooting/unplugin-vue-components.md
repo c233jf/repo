@@ -1,3 +1,8 @@
+---
+prev: false
+next: false
+---
+
 # 在 VitePress 中使用 unplugin-vue-components 遇到的坑
 
 vitepress version: 1.0.0-beta.2

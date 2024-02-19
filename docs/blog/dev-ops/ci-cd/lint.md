@@ -1,3 +1,7 @@
+---
+next: false
+---
+
 # 项目代码规范工具的使用
 
 ## 安装 ESLint 和 Prettier

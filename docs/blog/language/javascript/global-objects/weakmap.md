@@ -1,10 +1,14 @@
+---
+next: false
+---
+
 # WeakMap
 
 WeakMap 是一组键值对的集合，其中键是弱引用。键必须是对象，但值可以是任意的。
 
 ## Why WeakMap
 
-在 JavaScript 里，`map` API 可以通过使其四个 API 方法共用两个数组(一个存放键，一个存放值)来实现。给这种 `map` 设置值时会同时将键和值添加到这两个数组的末尾。从而使得键和值的索引在两个数组中相对应。当从该 `map` 取值的时候，需要遍历所有的键，然后使用索引从存储值的数组中检索出相应的值[^1]。
+> 在 JavaScript 里，`map` API 可以通过使其四个 API 方法共用两个数组(一个存放键，一个存放值)来实现。给这种 `map` 设置值时会同时将键和值添加到这两个数组的末尾。从而使得键和值的索引在两个数组中相对应。当从该 `map` 取值的时候，需要遍历所有的键，然后使用索引从存储值的数组中检索出相应的值。
 
 这样实现会有两个很大的缺点：
 
@@ -30,4 +34,4 @@ map.set(target，value)
 
 ## References
 
-[^1]: [WeakMap](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/WeakMap)
+- [WeakMap](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/WeakMap)

@@ -1,3 +1,7 @@
+---
+prev: false
+---
+
 # Mini Vue
 
 实现一个非常简单的 Vue 框架

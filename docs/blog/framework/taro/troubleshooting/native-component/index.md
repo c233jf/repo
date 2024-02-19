@@ -1,3 +1,8 @@
+---
+prev: false
+next: false
+---
+
 # 在 Taro 中使用原生组件遇到的坑
 
 ## callMethod error undefined is not object

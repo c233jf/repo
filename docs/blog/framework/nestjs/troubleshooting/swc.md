@@ -1,3 +1,8 @@
+---
+prev: false
+next: false
+---
+
 # 在 Nest 中使用 swc 遇到的坑
 
 ## 背景
