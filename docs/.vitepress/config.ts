@@ -88,6 +88,10 @@ export default defineConfig({
                   link: '/blog/convention/framework/',
                 },
                 {
+                  text: '网页规范',
+                  link: '/blog/convention/page/',
+                },
+                {
                   text: '静态资源',
                   link: '/blog/convention/assets/',
                 },
@@ -354,7 +358,12 @@ export default defineConfig({
               text: 'Web',
               items: [
                 {
+                  text: '优化',
+                  link: '/blog/web/optimization/',
+                },
+                {
                   text: '安全',
+                  link: '/blog/web/security/',
                   items: [
                     {
                       text: '防盗链',

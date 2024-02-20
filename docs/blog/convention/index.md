@@ -26,3 +26,6 @@ prev: false
 
 - [Laravel 项目开发规范](https://learnku.com/docs/laravel-specification/9.x/whats-the-use-of-standards/12720)
 - [凹凸实验室前端编码规范](https://github.com/o2team/guide)
+- [TGideas 前端重构规范](https://tgideas.qq.com/doc/frontend/)
+- [百度前端团队规范](https://github.com/ecomfe/spec)
+- [代码整洁之道](https://awesome-programming-books.github.io/clean-code/%E4%BB%A3%E7%A0%81%E6%95%B4%E6%B4%81%E4%B9%8B%E9%81%93.pdf)

@@ -7,6 +7,8 @@ import ElectronDirs from '../components/ElectronDirs.vue'
 
 # 框架
 
+所有项目的入口文件和入口函数**必须**以 `main` 命名。
+
 ## Vue3
 
 ### 推荐
