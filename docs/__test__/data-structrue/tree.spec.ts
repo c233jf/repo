@@ -11,12 +11,12 @@ import {
   inorderTraverseThread,
   postorderTraverse,
   preorderTraverse,
-} from '../../blog/data-structure/tree/tree'
+} from '../../blog/data-structure/tree/tree.ts'
 import {
   preorderTraverse as _preorderTraverse,
   inorderTraverse as _inorderTraverse,
   postorderTraverse as _postorderTraverse,
-} from '../../blog/data-structure/tree/tree-iterator'
+} from '../../blog/data-structure/tree/tree-iterator.ts'
 
 describe('树和二叉树', () => {
   const expressionTree = createBiTree([
@@ -175,13 +175,7 @@ describe('树和二叉树', () => {
 
   describe('二叉树中序线索化', () => {
     test('应该返回表达式 a + b * (c - d) - e / f 的中序线索二叉树', () => {
-      const headNode = new ThreadBiTNode<any>(
-        undefined,
-        undefined,
-        undefined,
-        0,
-        1
-      )
+      const headNode = new ThreadBiTNode<any>(null, undefined, undefined, 0, 1)
       const root = new ThreadBiTNode('-', undefined, undefined, 0, 0)
       const node1 = new ThreadBiTNode('+', undefined, undefined, 0, 0)
       const node2 = new ThreadBiTNode('a', undefined, undefined, 1, 1)

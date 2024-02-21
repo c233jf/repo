@@ -30,3 +30,9 @@ docs/.vitepress/cache/
 *.ilk
 *.exe
 *.obj
+
+# bundler
+stats.html
+
+# draw.io
+*.bkp

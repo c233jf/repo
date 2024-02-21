@@ -1,6 +1,6 @@
 export class BiTNode<T> {
   constructor(
-    public data?: T,
+    public data: T,
     public lchild?: BiTNode<T>,
     public rchild?: BiTNode<T>
   ) {}
@@ -118,7 +118,7 @@ export class ThreadBiTNode<T> extends BiTNode<T> {
    * @param rtag 0: 指示结点的右孩子 1: 指示结点的后继
    */
   constructor(
-    data?: T,
+    data: T,
     public lchild?: ThreadBiTNode<T>,
     public rchild?: ThreadBiTNode<T>,
     public ltag?: 0 | 1,
@@ -157,7 +157,7 @@ function _inorderThreading<T>(tree?: BiTNode<T>) {
 }
 
 export function inorderThreading<T>(tree?: BiTNode<T>) {
-  const headNode = new ThreadBiTNode()
+  const headNode = new ThreadBiTNode<T | null>(null)
   headNode.ltag = 0 // 头结点有左孩子，若树非空，则左孩子为树根结点
   headNode.rtag = 1 // 头结点右孩子为右线索
 

@@ -1,7 +1,7 @@
-import { dance } from '../../blog/data-structure/stack-and-queue/examples/dance'
-import { arithmetic } from '../../blog/data-structure/stack-and-queue/examples/expression'
-import { matching } from '../../blog/data-structure/stack-and-queue/examples/matching'
-import { conversion } from '../../blog/data-structure/stack-and-queue/examples/octal'
+import { dance } from '../../blog/data-structure/stack-and-queue/examples/dance.ts'
+import { arithmetic } from '../../blog/data-structure/stack-and-queue/examples/expression.ts'
+import { matching } from '../../blog/data-structure/stack-and-queue/examples/matching.ts'
+import { conversion } from '../../blog/data-structure/stack-and-queue/examples/octal.ts'
 
 describe('栈和队列', () => {
   describe('10 进制转 8 进制', () => {
