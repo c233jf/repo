@@ -1,6 +1,9 @@
 {
   "extends": "@chenjf/tsconfig/tsconfig.json",
   "compilerOptions": {
+    "allowImportingTsExtensions": true,
+    "noEmit": true,
+    "types": ["vitest/globals"],
     "composite": true
   },
   "include": [".vitepress/**/*", "**/*"]

@@ -6,6 +6,7 @@ import { defineConfig } from 'vitepress'
 import UnoCSS from 'unocss/vite'
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
+import { visualizer } from 'rollup-plugin-visualizer'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -141,7 +142,18 @@ export default defineConfig({
                 },
                 {
                   text: '查找',
-                  link: '/blog/data-structure/searching/',
+                  link: '/blog/data-structure/search/',
+                  items: [
+                    {
+                      text: '线性表',
+                      link: '/blog/data-structure/search/linear-list/',
+                    },
+                    {
+                      text: '树',
+                      link: '/blog/data-structure/search/tree/',
+                    },
+                  ],
+                  collapsed: true,
                 },
               ],
               collapsed: true,
@@ -453,6 +465,9 @@ export default defineConfig({
       Components({
         dirs: ['components'],
         dts: 'components.d.ts',
+      }),
+      visualizer({
+        gzipSize: true,
       }),
     ],
   },
