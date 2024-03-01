@@ -358,6 +358,16 @@ export default defineConfig({
               text: 'Web',
               items: [
                 {
+                  text: 'api',
+                  items: [
+                    {
+                      text: '定时器',
+                      link: '/blog/web/api/timer/',
+                    },
+                  ],
+                  collapsed: true,
+                },
+                {
                   text: '优化',
                   link: '/blog/web/optimization/',
                 },
