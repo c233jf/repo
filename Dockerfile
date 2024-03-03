@@ -4,7 +4,6 @@ RUN npm install -g pnpm
 
 COPY pnpm-lock.yaml pnpm-workspace.yaml ./
 COPY packages/tsconfig packages/tsconfig
-COPY packages/markdown-it-plugin-katex packages/markdown-it-plugin-katex
 COPY packages/markdown-it-plugin-mermaid packages/markdown-it-plugin-mermaid
 RUN pnpm fetch
 

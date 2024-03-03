@@ -1,4 +1,3 @@
-import { markdownItPluginKatex } from '@chenjf/markdown-it-plugin-katex'
 import { markdownItPluginMermaid } from '@chenjf/markdown-it-plugin-mermaid'
 import mf from 'markdown-it-footnote'
 // @ts-ignore
@@ -400,11 +399,11 @@ export default defineConfig({
   base: '/repo/',
   markdown: {
     lineNumbers: true,
+    math: true,
     image: {
       lazyLoading: true,
     },
     config(md) {
-      md.use(markdownItPluginKatex, { output: 'html' })
       md.use(markdownItPluginMermaid)
       md.use(mf)
       md.use(mt)
