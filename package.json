@@ -24,6 +24,7 @@
   "author": "chenjf",
   "license": "ISC",
   "private": true,
+  "type": "module",
   "devDependencies": {
     "@chenjf/markdown-it-plugin-katex": "workspace:^",
     "@chenjf/markdown-it-plugin-mermaid": "workspace:^",
