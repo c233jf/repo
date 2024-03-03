@@ -8,7 +8,7 @@ COPY packages/markdown-it-plugin-katex packages/markdown-it-plugin-katex
 COPY packages/markdown-it-plugin-mermaid packages/markdown-it-plugin-mermaid
 RUN pnpm fetch
 
-COPY package.json ./
+COPY package.json .npmrc ./
 RUN pnpm i --offline --frozen-lockfile
 
 COPY docs docs
