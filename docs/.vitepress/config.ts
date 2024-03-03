@@ -401,6 +401,9 @@ export default defineConfig({
   base: '/repo/',
   markdown: {
     lineNumbers: true,
+    image: {
+      lazyLoading: true,
+    },
     config(md) {
       md.use(markdownItPluginKatex, { output: 'html' })
       md.use(markdownItPluginMermaid)
