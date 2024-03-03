@@ -4,7 +4,7 @@
       class="flex items-center text-sm text-gray-300 cursor-pointer hover:bg-gray-700"
       @click="handleClick(item)"
     >
-      <component :is="getIcon(item)" :class="getItemCls(item)" />
+      <div :class="[...getItemCls(item), getIcon(item)]"></div>
       <span class="mr-2">{{ item.text }}</span>
       <span v-if="item.annotation" class="text-lime-600"
         >// {{ item.annotation }}</span
@@ -19,25 +19,21 @@
 <script setup lang="ts">
 import type { TreeItem } from './types'
 
-import MdiChevronRight from '~icons/mdi/chevron-right'
-import MdiStar from '~icons/mdi/star'
-import MdiImage from '~icons/mdi/image'
-import MdiLangTS from '~icons/mdi/language-typescript'
-import MdiVue from '~icons/mdi/vuejs'
-
 const props = defineProps<{
   data: TreeItem[]
 }>()
 
 const iconMap = {
-  ico: { value: MdiStar, color: 'text-yellow-400' },
-  png: { value: MdiImage, color: 'text-purple-400' },
-  jpg: { value: MdiImage, color: 'text-purple-400' },
-  jpeg: { value: MdiImage, color: 'text-purple-400' },
-  gif: { value: MdiImage, color: 'text-purple-400' },
-  svg: { value: MdiImage, color: 'text-purple-400' },
-  ts: { value: MdiLangTS, color: 'text-blue-400' },
-  vue: { value: MdiVue, color: 'text-green-400' },
+  ico: { value: 'i-vscode-icons:file-type-favicon' },
+  png: { value: 'i-vscode-icons:file-type-image' },
+  jpg: { value: 'i-vscode-icons:file-type-image' },
+  jpeg: { value: 'i-vscode-icons:file-type-image' },
+  gif: { value: 'i-vscode-icons:file-type-image' },
+  svg: { value: 'i-vscode-icons:file-type-image' },
+  ts: {
+    value: 'i-vscode-icons:file-type-typescript',
+  },
+  vue: { value: 'i-vscode-icons:file-type-vue' },
 }
 const _data = ref<TreeItem[]>(props.data)
 
@@ -58,7 +54,7 @@ const getExt = (item: TreeItem) => {
 const getIcon = (item: TreeItem) => {
   if (item.icon) return item.icon.value
 
-  if (hasChildren(item)) return MdiChevronRight
+  if (hasChildren(item)) return 'i-vscode-icons:default-folder'
 
   const ext = getExt(item)
   if (ext) return iconMap[ext as keyof typeof iconMap].value
@@ -67,15 +63,10 @@ const getIcon = (item: TreeItem) => {
 }
 
 const getItemCls = (item: TreeItem) => {
-  const cls = ['w-4', 'h-4', 'mr-1', 'transform-gpu']
+  const cls = ['mr-1', 'transform-gpu']
 
-  if (!item.collapsed && hasChildren(item)) cls.push('rotate-90')
   if (item.icon?.color) {
     cls.push(item.icon.color)
-  } else {
-    const ext = getExt(item)
-
-    if (ext) cls.push(iconMap[ext as keyof typeof iconMap].color)
   }
 
   return cls

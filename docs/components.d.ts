@@ -7,8 +7,6 @@ export {}
 
 declare module 'vue' {
   export interface GlobalComponents {
-    MdiChevronRight: typeof import('~icons/mdi/chevron-right')['default']
-    MdiCollapseAll: typeof import('~icons/mdi/collapse-all')['default']
     MdiCollapseAllOutline: typeof import('~icons/mdi/collapse-all-outline')['default']
     Tree: typeof import('./components/Tree/Tree.vue')['default']
     TreeWrap: typeof import('./components/Tree/TreeWrap.vue')['default']
