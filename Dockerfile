@@ -2,12 +2,12 @@ FROM node:18-alpine AS build
 WORKDIR /repo
 RUN npm install -g pnpm
 
-COPY pnpm-lock.yaml pnpm-workspace.yaml ./
+COPY pnpm-lock.yaml pnpm-workspace.yaml .npmrc ./
 COPY packages/tsconfig packages/tsconfig
 COPY packages/markdown-it-plugin-mermaid packages/markdown-it-plugin-mermaid
 RUN pnpm fetch
 
-COPY package.json .npmrc ./
+COPY package.json ./
 RUN pnpm i --offline --frozen-lockfile
 
 COPY docs docs
