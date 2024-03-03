@@ -9,7 +9,8 @@
     "pub:dry": "pnpm -r publish --dry-run",
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
-    "docs:preview": "vitepress preview docs"
+    "docs:preview": "vitepress preview docs",
+    "commit": "commit"
   },
   "repository": {
     "type": "git",
@@ -29,9 +30,9 @@
     "@chenjf/markdown-it-plugin-katex": "workspace:^",
     "@chenjf/markdown-it-plugin-mermaid": "workspace:^",
     "@chenjf/tsconfig": "workspace:^1.0.0",
-    "@commitlint/cli": "^16.2.3",
-    "@commitlint/config-conventional": "^16.2.1",
-    "@commitlint/prompt-cli": "^17.0.0",
+    "@commitlint/cli": "^19.0.3",
+    "@commitlint/config-conventional": "^19.0.3",
+    "@commitlint/prompt-cli": "^19.0.3",
     "@faker-js/faker": "^8.0.2",
     "@iconify-json/mdi": "^1.1.55",
     "@types/markdown-it-footnote": "^3.0.0",
