@@ -48,7 +48,9 @@ const handleClick = () => {
 </script>
 ```
 
-<SetTimeout />
+<ClientOnly>
+  <SetTimeout />
+</ClientOnly>
 
 ## setInterval
 
@@ -81,7 +83,9 @@ setInterval(() => {
 </script>
 ```
 
-<SetInterval />
+<ClientOnly>
+  <SetInterval />
+</ClientOnly>
 
 ## 注意事项
 
