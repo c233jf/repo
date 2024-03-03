@@ -1,8 +1,7 @@
 {
   "extends": "@chenjf/tsconfig/tsconfig.json",
   "compilerOptions": {
-    "composite": true,
-    "types": ["unplugin-icons/types/vue"]
+    "composite": true
   },
   "include": [".vitepress/**/*", "**/*"]
 }
