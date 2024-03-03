@@ -423,11 +423,6 @@ export default defineConfig({
       }),
       Icons(),
     ],
-    resolve: {
-      alias: {
-        'vue/server-renderer': require.resolve('vue/server-renderer'),
-      },
-    },
   },
   head: [
     [
