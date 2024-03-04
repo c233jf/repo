@@ -3,7 +3,6 @@ import mf from 'markdown-it-footnote'
 // @ts-ignore
 import mt from 'markdown-it-task-lists'
 import { defineConfig } from 'vitepress'
-import { presetIcons, presetUno } from 'unocss'
 import UnoCSS from 'unocss/vite'
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
@@ -411,22 +410,7 @@ export default defineConfig({
   },
   vite: {
     plugins: [
-      UnoCSS({
-        shortcuts: {
-          btn: 'p-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2',
-        },
-        presets: [
-          presetIcons({
-            collections: {
-              mdi: () =>
-                import('@iconify-json/vscode-icons/icons.json').then(
-                  (i) => i.default
-                ),
-            },
-          }),
-          presetUno(),
-        ],
-      }),
+      UnoCSS(),
       AutoImport({ dts: 'auto-imports.d.ts', imports: ['vue'] }),
       Components({
         dirs: ['components'],
