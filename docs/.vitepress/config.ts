@@ -11,6 +11,7 @@ import Components from 'unplugin-vue-components/vite'
 export default defineConfig({
   title: "HBee's Repo",
   description: '收集个人使用过的工具、库以及自己练习所编写的代码',
+  lastUpdated: true,
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
@@ -18,6 +19,9 @@ export default defineConfig({
       { text: 'Collections', link: '/collections/' },
       { text: 'Blog', link: '/blog/markdown-examples' },
     ],
+    search: {
+      provider: 'local',
+    },
 
     sidebar: {
       '/collections/': [
