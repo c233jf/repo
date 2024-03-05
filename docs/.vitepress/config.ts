@@ -17,7 +17,7 @@ export default defineConfig({
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Collections', link: '/collections/' },
-      { text: 'Blog', link: '/blog/markdown-examples' },
+      { text: 'Blog', link: '/blog/' },
     ],
     search: {
       provider: 'local',

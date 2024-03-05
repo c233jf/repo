@@ -11,5 +11,5 @@ hero:
       link: /collections/
     - theme: alt
       text: Blog
-      link: /blog/markdown-examples
+      link: /blog/
 ---
