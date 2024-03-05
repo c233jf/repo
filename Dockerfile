@@ -1,5 +1,6 @@
 FROM node:18-alpine AS build
 WORKDIR /repo
+RUN apk add git
 RUN npm install -g pnpm
 
 COPY pnpm-lock.yaml pnpm-workspace.yaml .npmrc ./
