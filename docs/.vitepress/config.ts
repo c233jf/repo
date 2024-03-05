@@ -322,6 +322,16 @@ export default defineConfig({
                       link: '/blog/language/javascript/memory-management',
                     },
                     {
+                      text: '函数',
+                      items: [
+                        {
+                          text: '闭包',
+                          link: '/blog/language/javascript/functions/closure',
+                        },
+                      ],
+                      collapsed: true,
+                    },
+                    {
                       text: '全局对象',
                       items: [
                         {
