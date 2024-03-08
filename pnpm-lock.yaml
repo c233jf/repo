@@ -145,6 +145,9 @@ importers:
       eslint-plugin-vue:
         specifier: ^7.20.0
         version: 7.20.0(eslint@8.15.0)
+      vue-eslint-parser:
+        specifier: ^9.4.2
+        version: 9.4.2(eslint@8.15.0)
 
   packages/markdown-it-plugin-katex:
     dependencies:
@@ -5069,7 +5072,6 @@ packages:
     hasBin: true
     dependencies:
       lru-cache: 6.0.0
-    dev: true
 
   /set-function-length@1.2.1:
     resolution: {integrity: sha512-j4t6ccc+VsKwYHso+kElc5neZpjtq9EnRICFZtWyBsLojhmeF/ZBd/elqm22WJh/BziDe/SBiOeAt0m2mfLD0g==, tarball: https://registry.npmjs.org/set-function-length/-/set-function-length-1.2.1.tgz}
@@ -5886,7 +5888,6 @@ packages:
       semver: 7.6.0
     transitivePeerDependencies:
       - supports-color
-    dev: true
 
   /vue@3.4.21(typescript@4.6.4):
     resolution: {integrity: sha512-5hjyV/jLEIKD/jYl4cavMcnzKwjMKohureP8ejn3hhEjwhWIhWeuzL2kJAjzl/WyVsgPY56Sy4Z40C3lVshxXA==}
