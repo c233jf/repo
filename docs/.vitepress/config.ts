@@ -400,6 +400,10 @@ export default defineConfig({
                       text: '客户端检测',
                       link: '/blog/web/technique/client-detection/',
                     },
+                    {
+                      text: 'DOM 操作',
+                      link: '/blog/web/technique/dom/',
+                    },
                   ],
                   collapsed: true,
                 },

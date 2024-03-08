@@ -6,4 +6,10 @@ declare global {
       version: () => string
     }
   }
+
+  interface HTMLStyleElement {
+    styleSheet?: {
+      cssText: string
+    }
+  }
 }
