@@ -393,6 +393,16 @@ export default defineConfig({
                   ],
                   collapsed: true,
                 },
+                {
+                  text: '技巧',
+                  items: [
+                    {
+                      text: '客户端检测',
+                      link: '/blog/web/technique/client-detection/',
+                    },
+                  ],
+                  collapsed: true,
+                },
               ],
               collapsed: true,
             },
