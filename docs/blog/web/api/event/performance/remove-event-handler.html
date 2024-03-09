@@ -1,0 +1,14 @@
+<div id="my-div">
+  <input id="my-btn" type="button" value="Click" />
+</div>
+
+<script>
+  const btn = document.getElementById('my-btn')
+
+  function ShowBtnClicked() {
+    btn.removeEventListener('click', ShowBtnClicked)
+    document.getElementById('my-div').innerHTML = 'Button clicked'
+  }
+
+  btn.addEventListener('click', ShowBtnClicked)
+</script>

@@ -1,0 +1,15 @@
+<div id="my-div">
+  <input id="my-btn" type="button" value="Click" />
+</div>
+
+<script>
+  const btn = document.getElementById('my-btn')
+  btn.addEventListener('click', function () {
+    /**
+     * 事件处理程序仍然与按钮保持引用关系。有的浏览器（尤其是 IE）
+     * 有可能将按钮和事件处理程序的引用保存在内存中，
+     * 导致按钮和事件处理程序无法被垃圾回收。
+     */
+    document.getElementById('my-div').innerHTML = 'Button clicked'
+  })
+</script>

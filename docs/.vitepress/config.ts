@@ -372,6 +372,16 @@ export default defineConfig({
                   text: 'api',
                   items: [
                     {
+                      text: '事件',
+                      items: [
+                        {
+                          text: '性能',
+                          link: '/blog/web/api/event/performance/',
+                        },
+                      ],
+                      collapsed: true,
+                    },
+                    {
                       text: '定时器',
                       link: '/blog/web/api/timer/',
                     },
