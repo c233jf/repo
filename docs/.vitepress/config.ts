@@ -30,6 +30,106 @@ export default defineConfig({
           link: '/collections/',
         },
         {
+          text: '学习资料',
+          items: [
+            {
+              text: '自然学科',
+              items: [
+                {
+                  text: '数学',
+                  items: [
+                    {
+                      text: '离散数学',
+                      link: '/collections/knowledge/sciences/math/discrete-mathematics/',
+                    },
+                  ],
+                  collapsed: true,
+                },
+              ],
+              collapsed: true,
+            },
+            {
+              text: '应用技术',
+              items: [
+                {
+                  text: '信息技术',
+                  items: [
+                    {
+                      text: '计算机科学',
+                      link: '/collections/knowledge/applied-technology/information-technology/computer-science/',
+                      items: [
+                        {
+                          text: 'IT 技术',
+                          link: '/collections/knowledge/applied-technology/information-technology/computer-science/technology/',
+                          items: [
+                            {
+                              text: 'HTML 与 CSS',
+                              link: '/collections/knowledge/applied-technology/information-technology/computer-science/technology/markup',
+                            },
+                            {
+                              text: '编程语言',
+                              link: '/collections/knowledge/applied-technology/information-technology/computer-science/technology/programming-languages',
+                            },
+                            {
+                              text: '逆向工程',
+                              link: '/collections/knowledge/applied-technology/information-technology/computer-science/technology/reverse-engineering',
+                            },
+                          ],
+                          collapsed: true,
+                        },
+                        {
+                          text: '计算机科学基础',
+                          link: '/collections/knowledge/applied-technology/information-technology/computer-science/foundation',
+                        },
+                        {
+                          text: '计算机网络',
+                          link: '/collections/knowledge/applied-technology/information-technology/computer-science/network',
+                        },
+                        {
+                          text: '数据结构',
+                          link: '/collections/knowledge/applied-technology/information-technology/computer-science/data-structure',
+                        },
+                        {
+                          text: '编译原理',
+                          link: '/collections/knowledge/applied-technology/information-technology/computer-science/compilation',
+                        },
+                        {
+                          text: '操作系统原理',
+                          link: '/collections/knowledge/applied-technology/information-technology/computer-science/os',
+                        },
+                        {
+                          text: '数据库系统概论',
+                          link: '/collections/knowledge/applied-technology/information-technology/computer-science/database',
+                        },
+                      ],
+                      collapsed: true,
+                    },
+                  ],
+                  collapsed: true,
+                },
+                {
+                  text: '工程学',
+                  items: [
+                    {
+                      text: '电气工程',
+                      items: [
+                        {
+                          text: '电工电子学',
+                          link: '/collections/knowledge/applied-technology/engineering-science/electrical-engineering/electrical-engineering-and-electronics/',
+                        },
+                      ],
+                      collapsed: true,
+                    },
+                  ],
+                  collapsed: true,
+                },
+              ],
+              collapsed: true,
+            },
+          ],
+          collapsed: true,
+        },
+        {
           text: 'Personal',
           items: [
             { text: 'Create Package', link: '/collections/create-package' },
