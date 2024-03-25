@@ -155,6 +155,33 @@ export default defineConfig({
                   ],
                   collapsed: true,
                 },
+                {
+                  text: '排序',
+                  link: '/blog/data-structure/sort/',
+                  items: [
+                    {
+                      text: '插入排序',
+                      link: '/blog/data-structure/sort/insertion/',
+                    },
+                    {
+                      text: '交换排序',
+                      link: '/blog/data-structure/sort/exchange/',
+                    },
+                    {
+                      text: '选择排序',
+                      link: '/blog/data-structure/sort/selection/',
+                    },
+                    {
+                      text: '归并排序',
+                      link: '/blog/data-structure/sort/merge/',
+                    },
+                    {
+                      text: '基数排序',
+                      link: '/blog/data-structure/sort/radix/',
+                    },
+                  ],
+                  collapsed: true,
+                },
               ],
               collapsed: true,
             },
