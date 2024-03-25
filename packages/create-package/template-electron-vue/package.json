@@ -43,7 +43,7 @@
     "typescript": "5.2.2",
     "unplugin-auto-import": "0.17.5",
     "unplugin-icons": "0.16.6",
-    "unplugin-vue-components": "0.25.2",
+    "unplugin-vue-components": "0.26.0",
     "vite-plugin-windicss": "1.9.1",
     "windicss": "3.5.6"
   },
