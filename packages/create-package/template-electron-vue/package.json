@@ -35,7 +35,7 @@
     "@electron-forge/publisher-github": "^6.4.2",
     "@iconify-json/ep": "^1.1.12",
     "@vitejs/plugin-vue": "4.6.2",
-    "electron": "25.8.0",
+    "electron": "25.9.8",
     "eslint": "^8.48.0",
     "husky": "^8.0.3",
     "lint-staged": "^14.0.1",
