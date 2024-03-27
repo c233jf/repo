@@ -3,6 +3,7 @@ import { binaryInsertionSort } from '../../blog/data-structure/sort/insertion/bi
 import { shellSort } from '../../blog/data-structure/sort/insertion/shell-sort.ts'
 import { straightInsertionSort } from '../../blog/data-structure/sort/insertion/straight-insertion-sort.ts'
 import { Item } from '../../blog/data-structure/sort/item.ts'
+import { mergeSort } from '../../blog/data-structure/sort/merge/merge-sort.ts'
 import { heapSort } from '../../blog/data-structure/sort/selection/heap-sort.ts'
 import { selectSort } from '../../blog/data-structure/sort/selection/select-sort.ts'
 
@@ -55,6 +56,13 @@ describe('简单选择排序', () => {
 describe('堆排序', () => {
   test('返回以关键字 [1,2,4,5] 排列的对象列表', () => {
     heapSort(unorderedList)
+    expect(unorderedList).toEqual(orderedList)
+  })
+})
+
+describe('2-路归并排序', () => {
+  test('返回以关键字 [1,2,4,5] 排列的对象列表', () => {
+    mergeSort(unorderedList)
     expect(unorderedList).toEqual(orderedList)
   })
 })
