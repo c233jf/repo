@@ -182,6 +182,10 @@ export default defineConfig({
                   ],
                   collapsed: true,
                 },
+                {
+                  text: 'leetcode',
+                  link: '/blog/data-structure/leetcode/',
+                },
               ],
               collapsed: true,
             },
