@@ -21,6 +21,7 @@ prev: false
 - KISS —— “Keep it Simple，Stupid”，提倡简单易读的代码，不写高深、晦涩难懂的代码
 - 最少配置 —— 对所有构建工具、项目等配置应尽可能使用默认选项，尽可能复用重复配置
 - 最少权限 —— 只分配完成工作所需的权限
+- 进行面向对象编程时，应遵循 [SOLID](<https://zh.wikipedia.org/wiki/SOLID_(%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E8%AE%BE%E8%AE%A1)>) 原则
 
 ## References
 
