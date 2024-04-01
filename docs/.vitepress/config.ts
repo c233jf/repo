@@ -391,6 +391,16 @@ export default defineConfig({
                   ],
                   collapsed: true,
                 },
+                {
+                  text: 'HTML',
+                  items: [
+                    {
+                      text: 'HTML5',
+                      link: '/blog/language/html/html5/',
+                    },
+                  ],
+                  collapsed: true,
+                },
               ],
               collapsed: true,
             },
