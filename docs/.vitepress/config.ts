@@ -68,8 +68,19 @@ export default defineConfig({
                   text: '协议',
                   items: [
                     {
-                      text: 'HTTPS',
-                      link: '/blog/computer-network/protocol/https',
+                      text: 'HTTP',
+                      link: '/blog/computer-network/protocol/http/',
+                      items: [
+                        {
+                          text: '响应状态码',
+                          link: '/blog/computer-network/protocol/http/status',
+                        },
+                        {
+                          text: 'HTTPS',
+                          link: '/blog/computer-network/protocol/http/https',
+                        },
+                      ],
+                      collapsed: true,
                     },
                   ],
                   collapsed: true,
