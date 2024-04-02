@@ -42,6 +42,23 @@ export default defineConfig({
           text: 'Blog',
           items: [
             {
+              text: '浏览器扩展',
+              items: [
+                {
+                  text: 'Chrome',
+                  link: '/blog/browser-extension/chrome/',
+                  items: [
+                    {
+                      text: 'Troubleshooting',
+                      link: '/blog/browser-extension/chrome/troubleshooting/',
+                    },
+                  ],
+                  collapsed: true,
+                },
+              ],
+              collapsed: true,
+            },
+            {
               text: '构建工具',
               items: [
                 {
