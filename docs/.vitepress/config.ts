@@ -409,6 +409,10 @@ export default defineConfig({
                       text: 'HTML5',
                       link: '/blog/language/html/html5/',
                     },
+                    {
+                      text: '语义化',
+                      link: '/blog/language/html/semantic/',
+                    },
                   ],
                   collapsed: true,
                 },
