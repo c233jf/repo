@@ -53,3 +53,11 @@
 
 - [官方题解](https://leetcode.cn/problems/ransom-note/solutions/1135839/shu-jin-xin-by-leetcode-solution-ji8a/)
 - [视频题解](https://leetcode.cn/leetbook/read/xin-shou-cun/nmfh6g/)
+
+## 最大子数组
+
+[题目](https://zh.javascript.info/array#zui-da-zi-shu-zu)
+
+<<< ./get-max-sub-sum.ts
+
+- [官方题解](https://zh.wikipedia.org/wiki/%E6%9C%80%E5%A4%A7%E5%AD%90%E6%95%B0%E5%88%97%E9%97%AE%E9%A2%98)

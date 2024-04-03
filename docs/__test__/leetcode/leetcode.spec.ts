@@ -1,5 +1,6 @@
 import { canConstruct } from '../../blog/data-structure/leetcode/can-construct.ts'
 import { fizzBuzz } from '../../blog/data-structure/leetcode/fizz-buzz.ts'
+import { getMaxSubSum } from '../../blog/data-structure/leetcode/get-max-sub-sum.ts'
 import { maximumWealth } from '../../blog/data-structure/leetcode/maximum-wealth.ts'
 import {
   ListNode,
@@ -136,5 +137,31 @@ describe('赎金信', () => {
 
   test('返回 false', () => {
     expect(canConstruct('aa', 'ab')).toBe(false)
+  })
+})
+
+describe('最大子序和', () => {
+  test('返回 5', () => {
+    expect(getMaxSubSum([-1, 2, 3, -9])).toBe(5)
+  })
+
+  test('返回 6', () => {
+    expect(getMaxSubSum([2, -1, 2, 3, -9])).toBe(6)
+  })
+
+  test('返回 11', () => {
+    expect(getMaxSubSum([-1, 2, 3, -9, 11])).toBe(11)
+  })
+
+  test('返回 3', () => {
+    expect(getMaxSubSum([-2, -1, 1, 2])).toBe(3)
+  })
+
+  test('返回 1000', () => {
+    expect(getMaxSubSum([1000, -1])).toBe(1000)
+  })
+
+  test('返回 0', () => {
+    expect(getMaxSubSum([-1, -2, -3])).toBe(0)
   })
 })
