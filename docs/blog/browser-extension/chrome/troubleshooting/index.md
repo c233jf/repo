@@ -1,3 +1,7 @@
+---
+next: false
+---
+
 # Troubleshooting
 
 ## Uncaught Error: Extension context invalidated
