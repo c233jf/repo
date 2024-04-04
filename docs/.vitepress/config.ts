@@ -438,6 +438,7 @@ export default defineConfig({
             },
             {
               text: '编程范式',
+              link: '/blog/programming-paradigm/',
               items: [
                 {
                   text: '依赖注入',
