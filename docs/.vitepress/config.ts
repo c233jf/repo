@@ -149,6 +149,7 @@ export default defineConfig({
                       link: '/blog/data-structure/linear-list/examples/',
                     },
                   ],
+                  collapsed: true,
                 },
                 {
                   text: '栈和队列',
@@ -159,6 +160,7 @@ export default defineConfig({
                       link: '/blog/data-structure/stack-and-queue/examples/',
                     },
                   ],
+                  collapsed: true,
                 },
                 {
                   text: '串、数组和广义表',
@@ -209,6 +211,10 @@ export default defineConfig({
                     },
                   ],
                   collapsed: true,
+                },
+                {
+                  text: '动态规划',
+                  link: '/blog/data-structure/dynamic-programming/',
                 },
                 {
                   text: 'leetcode',
