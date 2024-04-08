@@ -217,6 +217,16 @@ export default defineConfig({
                   link: '/blog/data-structure/dynamic-programming/',
                 },
                 {
+                  text: '其它算法',
+                  items: [
+                    {
+                      text: '贪心算法',
+                      link: '/blog/data-structure/other/greedy/',
+                    },
+                  ],
+                  collapsed: true,
+                },
+                {
                   text: 'leetcode',
                   link: '/blog/data-structure/leetcode/',
                 },
