@@ -23,6 +23,8 @@ next: false
 
 ::: info
 Firefox 会自动卸载 content scripts。所以不需要担心这个问题。
+
+如果你在 Chrome 浏览器的开发者工具中查看内容脚本的话，只能看到当前注入的内容脚本，之前已经注入的是看不见的。
 :::
 
 **解决方案**
@@ -74,8 +76,8 @@ function destructor() {
 
 var destructionEvent = 'destructmyextension_' + chrome.runtime.id
 // Unload previous content script if needed
-document.addEventListener(destructionEvent, destructor)
 document.dispatchEvent(new CustomEvent(destructionEvent))
+document.addEventListener(destructionEvent, destructor)
 main()
 ```
 
