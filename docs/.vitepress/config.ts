@@ -457,6 +457,10 @@ export default defineConfig({
               link: '/blog/programming-paradigm/',
               items: [
                 {
+                  text: '命令式编程',
+                  link: '/blog/programming-paradigm/imperative-programming/',
+                },
+                {
                   text: '依赖注入',
                   link: '/blog/programming-paradigm/dependency-injection/',
                 },
