@@ -413,6 +413,16 @@ export default defineConfig({
                       link: '/blog/language/javascript/memory-management',
                     },
                     {
+                      text: '语句和声明',
+                      items: [
+                        {
+                          text: 'Async / Await',
+                          link: '/blog/language/javascript/statements/async-await/',
+                        },
+                      ],
+                      collapsed: true,
+                    },
+                    {
                       text: '函数',
                       items: [
                         {
