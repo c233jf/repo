@@ -329,7 +329,7 @@ export default defineConfig({
               collapsed: true,
             },
             {
-              text: '编程语言',
+              text: '语言',
               items: [
                 {
                   text: 'C++',
@@ -455,6 +455,16 @@ export default defineConfig({
                     {
                       text: '语义化',
                       link: '/blog/language/html/semantic/',
+                    },
+                  ],
+                  collapsed: true,
+                },
+                {
+                  text: 'CSS',
+                  items: [
+                    {
+                      text: 'CSS3',
+                      link: '/blog/language/css/css3/',
                     },
                   ],
                   collapsed: true,
