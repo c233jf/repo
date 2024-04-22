@@ -28,6 +28,8 @@
 - [CodeMirror](https://codemirror.net/) —— 代码编辑器
 - [TinyMCE](https://www.tiny.cloud/docs/tinymce/6/)
 - [Milkdown](https://milkdown.dev/) —— 所见即所得 markdown 编辑器
+- [markedjs](https://github.com/markedjs/marked?tab=readme-ov-file) —— markdown 解析器
+  - [DOMPurify](https://github.com/cure53/DOMPurify) —— 仅适用于 DOM 的 XSS 净化器
 
 ## :chart: 图表
 
