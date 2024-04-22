@@ -52,7 +52,7 @@
     "electron-squirrel-startup": "^1.0.0",
     "pinia": "^2.1.6",
     "vue": "3.3.4",
-    "vue-router": "4.3.0"
+    "vue-router": "4.3.2"
   },
   "lint-staged": {
     "*.{js,ts,vue,tsx}": "eslint --cache --fix",
