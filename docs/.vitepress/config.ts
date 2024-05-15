@@ -322,6 +322,22 @@ export default defineConfig({
                       text: 'Composition API',
                       link: '/blog/framework/vue/composition/',
                     },
+                    {
+                      text: '源码解析',
+                      items: [
+                        {
+                          text: '指令',
+                          items: [
+                            {
+                              text: 'v-model',
+                              link: '/blog/framework/vue/principle/directives/v-model/',
+                            },
+                          ],
+                          collapsed: true,
+                        },
+                      ],
+                      collapsed: true,
+                    },
                   ],
                   collapsed: true,
                 },
