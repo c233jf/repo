@@ -1,4 +1,3 @@
-import { markdownItPluginMermaid } from '@chenjf/markdown-it-plugin-mermaid'
 import mf from 'markdown-it-footnote'
 // @ts-ignore
 import mt from 'markdown-it-task-lists'
@@ -7,9 +6,10 @@ import UnoCSS from 'unocss/vite'
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
 import { visualizer } from 'rollup-plugin-visualizer'
+import { withMermaid } from 'vitepress-plugin-mermaid'
 
 // https://vitepress.dev/reference/site-config
-export default defineConfig({
+const config = defineConfig({
   title: "HBee's Repo",
   description: '收集个人使用过的工具、库以及自己练习所编写的代码',
   lastUpdated: true,
@@ -583,7 +583,6 @@ export default defineConfig({
       lazyLoading: true,
     },
     config(md) {
-      md.use(markdownItPluginMermaid)
       md.use(mf)
       md.use(mt)
     },
@@ -600,25 +599,12 @@ export default defineConfig({
         gzipSize: true,
       }),
     ],
+    // https://github.com/mermaid-js/mermaid/issues/4320
+    // https://github.com/nuxt/vite/issues/56
+    optimizeDeps: {
+      include: ['mermaid'],
+    },
   },
-  head: [
-    [
-      'link',
-      {
-        rel: 'stylesheet',
-        href: 'https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css',
-        integrity:
-          'sha384-GvrOXuhMATgEsSwCs4smul74iXGOixntILdUW9XmUC6+HX0sLNAK3q71HotJqlAn',
-        crossorigin: 'anonymous',
-      },
-    ],
-    [
-      'script',
-      { type: 'module' },
-      `import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
-      mermaid.initialize({ startOnLoad: false });
-      mermaid.run();
-      `,
-    ],
-  ],
 })
+
+export default withMermaid(config)
