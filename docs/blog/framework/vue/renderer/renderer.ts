@@ -134,7 +134,7 @@ export function patch(oldNode: VNode, newNode: VNode) {
             el.replaceChild(document.createTextNode(newValue), el.childNodes[i])
           } else {
             if (typeof oldValue === 'string') {
-              el.replaceChild(newValue.el!, el.childNodes[i])
+              // replace
             } else {
               patch(oldValue, newValue)
             }

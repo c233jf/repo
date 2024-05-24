@@ -1,5 +1,6 @@
 export function mount(vnode, container) {
-  const el = (vnode.el = document.createElement(vnode.tag))
+  // const el = document.createElement(vnode.tag) // [!code --]
+  const el = (vnode.el = document.createElement(vnode.tag)) // [!code ++]
   // props
   if (vnode.props) {
     for (const key in vnode.props) {
