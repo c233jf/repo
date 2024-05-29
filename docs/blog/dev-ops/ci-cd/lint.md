@@ -2,97 +2,154 @@
 next: false
 ---
 
-# 项目代码规范工具的使用
+# 项目规范工具的使用
 
-## 安装 ESLint 和 Prettier
+## JavaScript 项目
 
-::: code-group
+在 JavaScript 项目中，我将使用以下工具进行项目的规范化：
 
-```sh [npm]
-npm i -D eslint prettier
-```
+- [ESLint](https://eslint.org/) —— 检查代码质量；
+- [Prettier](https://prettier.io/) —— 检查代码风格；
+- [Husky](https://typicode.github.io/husky/) —— 配置 git hooks；
+- [lint-staged](https://github.com/lint-staged/lint-staged#readme) —— 在 staged 文件上运行 linters；
+- [commitlint](https://commitlint.js.org/) —— 规范化 commit message。
 
-```sh [yarn]
-yarn add -D eslint prettier
-```
+### 配置 ESLint
 
-```sh [pnpm]
-pnpm add -D eslint prettier
-```
+首先，我们按照 ESLint [文档](https://eslint.org/docs/latest/use/getting-started)中所描述的那样安装并配置 ESLint。
 
-:::
+在执行初始化命令之后，会出现如下提示，你只需要根据自身选择即可：
 
-接下来让我们配置一下这两个工具。
+![eslint init prompt](./eslint-init-prompt.jpg)
 
-首先，运行以下命令创建 `eslint` 的配置文件：
+命令执行完毕之后会创建如下配置文件：
 
 ::: code-group
 
-```sh [npm]
-npm init @eslint/config
-```
+```js [eslint.config.mjs]
+import globals from 'globals'
+import pluginJs from '@eslint/js'
+import tseslint from 'typescript-eslint'
+import pluginVue from 'eslint-plugin-vue'
 
-```sh [yarn]
-yarn create @eslint/config
-```
-
-```sh [pnpm]
-pnpm create @eslint/config
+export default [
+  { languageOptions: { globals: { ...globals.browser, ...globals.node } } },
+  pluginJs.configs.recommended,
+  ...tseslint.configs.recommended,
+  ...pluginVue.configs['flat/recommended'],
+]
 ```
 
 :::
 
-该命令会弹出一些提示来引导你创建配置文件。
+#### 配置智能提示
 
-![eslint prompt example](./eslint-prompt.jpg)
+我们可以安装 [@types/eslint](https://www.npmjs.com/package/@types/eslint)，并且通过 IDE 和 jsdoc 的配合来实现智能提示：
 
-::: warning
-注意：最后一步可能会询问你是否安装缺失依赖，此时选择安装的话默认会使用 `npm` 进行安装，如果你使用的是其它包管理器，你需要选择否并自行安装相关依赖，否则，可能会出现问题。
+::: code-group
+
+```js [eslint.config.mjs]{6}
+import globals from 'globals'
+import pluginJs from '@eslint/js'
+import tseslint from 'typescript-eslint'
+import pluginVue from 'eslint-plugin-vue'
+
+/** @type {import('@types/eslint').Linter.FlatConfig} */
+export default [
+  { languageOptions: { globals: { ...globals.browser, ...globals.node } } },
+  pluginJs.configs.recommended,
+  ...tseslint.configs.recommended,
+  ...pluginVue.configs['flat/recommended'],
+]
+```
+
 :::
 
-根据你的选择，配置文件内容类似以下：
+#### 配置 rules
 
-```js
-module.exports = {
-  env: {
-    browser: true,
-    es2021: true,
-    node: true,
-  },
-  extends: 'standard-with-typescript',
-  overrides: [
-    {
-      env: {
-        node: true,
-      },
-      files: ['.eslintrc.{js,cjs}'],
-      parserOptions: {
-        sourceType: 'script',
-      },
+::: code-group
+
+```js [eslint.config.mjs]{12-19}
+import globals from 'globals'
+import pluginJs from '@eslint/js'
+import tseslint from 'typescript-eslint'
+import pluginVue from 'eslint-plugin-vue'
+
+/** @type {import('@types/eslint').Linter.FlatConfig} */
+export default [
+  { languageOptions: { globals: { ...globals.browser, ...globals.node } } },
+  pluginJs.configs.recommended,
+  ...tseslint.configs.recommended,
+  ...pluginVue.configs['flat/recommended'],
+  {
+    rules: {
+      '@typescript-eslint/no-non-null-assertion': 'off',
+      '@typescript-eslint/no-explicit-any': 'off',
+      'no-undef': 'off',
+      'vue/multi-word-component-names': 'off',
     },
-  ],
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
   },
-  rules: {},
-}
+]
 ```
 
-当然，你也可以根据自己的需要更改配置文件。
+:::
 
-接下来，让我们创建 `prettier` 的配置文件。文件名为 `.prettierrc.json`，内容如下：
+#### 集成
 
-```json
+请参考[文档](https://eslint.org/docs/latest/use/integrations)。
+
+### 配置 Prettier
+
+该节参考 prettier [install](https://prettier.io/docs/en/install) 文档。
+
+1. 运行以下命令安装 prettier：
+
+::: code-group
+
+```sh [npm]
+npm i -D prettier
+```
+
+```sh [yarn]
+yarn add -D prettier
+```
+
+```sh [pnpm]
+pnpm add -D prettier
+```
+
+:::
+
+2. 创建配置文件：
+
+::: code-group
+
+```json [.prettierrc.json]
 {
   "singleQuote": true,
   "semi": false
 }
 ```
 
-我们还要安装 `eslint-config-prettier`，这个依赖是用来关闭 `eslint` 中所有与 `prettier` 冲突的规则的。
+```[.prettierignore]
+# Ignore artifacts:
+dist/
+node_modules/
+```
 
-运行以下命令安装 `eslint-config-prettier`：
+:::
+
+如果没有 `.prettierignore` 文件但是相同目录下存在 `.gitignore` 文件，prettier 会遵循 `.gitignore` 定义的规则。
+
+#### 集成
+
+与编辑器集成请参考该[文档](https://prettier.io/docs/en/editors)。
+
+::: warning
+需要注意，如果你是使用 VSCode，并且在使用 prettier 扩展时出现问题的话，请尝试重新加载 VSCode 窗口，这可能会解决你遇到的问题。
+:::
+
+如果你是搭配 eslint 一起使用的话，需要安装 [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier#installation)，这个包是用来关闭与 prettier 冲突的 eslint 规则的。
 
 ::: code-group
 
@@ -110,94 +167,44 @@ pnpm add -D eslint-config-prettier
 
 :::
 
-然后修改 `eslint` 配置文件如下：
+然后修改 eslint 配置文件，prettier 配置对象需要放置在数组中合适的位置以覆盖其它规则：
 
-```js
-module.exports = {
-  env: {
-    browser: true,
-    es2021: true,
-    node: true,
-  },
-  extends: ['standard-with-typescript', 'prettier'],
-  overrides: [
-    {
-      env: {
-        node: true,
-      },
-      files: ['.eslintrc.{js,cjs}'],
-      parserOptions: {
-        sourceType: 'script',
-      },
+::: code-group
+
+```js [eslint.config.mjs]{5,13}
+import globals from 'globals'
+import pluginJs from '@eslint/js'
+import tseslint from 'typescript-eslint'
+import pluginVue from 'eslint-plugin-vue'
+import eslintConfigPrettier from 'eslint-config-prettier'
+
+/** @type {import('@types/eslint').Linter.FlatConfig} */
+export default [
+  { languageOptions: { globals: { ...globals.browser, ...globals.node } } },
+  pluginJs.configs.recommended,
+  ...tseslint.configs.recommended,
+  ...pluginVue.configs['flat/recommended'],
+  eslintConfigPrettier,
+  {
+    rules: {
+      '@typescript-eslint/no-non-null-assertion': 'off',
+      '@typescript-eslint/no-explicit-any': 'off',
+      'no-undef': 'off',
+      'vue/multi-word-component-names': 'off',
     },
-  ],
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
   },
-  rules: {},
-}
-```
-
-::: warning
-要注意 `prettier` 要放在 `extends` 数组的最后一个，这样它才有机会覆盖其它配置。
-:::
-
-## 安装 husky
-
-运行以下命令安装 husky：
-
-::: code-group
-
-```sh [npm]
-npm i -D husky
-```
-
-```sh [yarn]
-yarn add -D husky
-```
-
-```sh [pnpm]
-pnpm add -D husky
+]
 ```
 
 :::
 
-启用 Git hooks：
+### 配置 Husky
 
-::: code-group
+请参考该[文档](https://typicode.github.io/husky/get-started.html)进行安装和初始化。
 
-```sh [npm]
-npx husky install
-```
+### 配置 lint-staged
 
-```sh [yarn]
-yarn dlx husky install
-```
-
-```sh [pnpm]
-pnpm husky install
-```
-
-:::
-
-如果想安装完后自动启用 Git hooks，可以运行以下命令编辑 `package.json`：
-
-```sh
-npm pkg set scripts.prepare="husky install"
-```
-
-运行完之后，你的 `package.json` 类似以下：
-
-```json
-{
-  "scripts": {
-    "prepare": "husky install"
-  }
-}
-```
-
-## 安装 lint-staged
+1. 安装 lint-staged
 
 ::: code-group
 
@@ -215,25 +222,25 @@ pnpm add -D lint-staged
 
 :::
 
-设置 `pre-commit` git hook 以运行 `lint-staged`。
+2. 设置 `pre-commit` git hook 以运行 `lint-staged`
 
 ::: code-group
 
 ```sh [npm]
-npx husky add .husky/pre-commit "npx lint-staged"
+echo "npx lint-staged" > .husky/pre-commit
 ```
 
 ```sh [yarn]
-yarn dlx husky add .husky/pre-commit "yarn dlx lint-staged"
+echo "yarn dlx lint-staged" > .husky/pre-commit
 ```
 
 ```sh [pnpm]
-pnpm husky add .husky/pre-commit "pnpm lint-staged"
+echo "pnpm lint-staged" > .husky/pre-commit
 ```
 
 :::
 
-在 `package.json` 中配置 `lint-staged` 如下：
+3. 在 `package.json` 中配置 `lint-staged` 如下
 
 ```json
 {
@@ -244,7 +251,11 @@ pnpm husky add .husky/pre-commit "pnpm lint-staged"
 }
 ```
 
-## 安装 commitlint
+### 配置 commitlint
+
+该节参考[文档](https://commitlint.js.org/guides/getting-started.html)。
+
+1. 安装 commitlint
 
 ::: code-group
 
@@ -262,36 +273,44 @@ pnpm add -D @commitlint/cli @commitlint/config-conventional
 
 :::
 
-创建配置文件 `commitlint.config.js`，内容如下：
+2. 创建配置文件 `commitlint.config.ts`，内容如下
 
-```js
-module.exports = {
+```ts
+import { type UserConfig } from '@commitlint/types'
+
+export default {
   extends: ['@commitlint/config-conventional'],
-}
+} as UserConfig
 ```
 
-设置 `commit-msg` git hook 以运行 `commitlint`。
+需要注意，如果你使用 pnpm 安装依赖，你需要把 `@commitlint/types` 进行提升。
 
 ::: code-group
 
-```sh [npm]
-npx husky add .husky/commit-msg 'npx --no -- commitlint --edit "$1"'
-```
-
-```sh [yarn]
-yarn dlx husky add .husky/commit-msg 'yarn dlx commitlint --edit "$1"'
-```
-
-```sh [pnpm]
-pnpm husky add .husky/commit-msg 'pnpm commitlint --edit "$1"'
+```[.npmrc]
+public-hoist-pattern[]=@commitlint/types
 ```
 
 :::
 
-## References
+3. 设置 `commit-msg` git hook 以运行 `commitlint`
 
-- [ESLint](https://eslint.org/docs/latest/use/getting-started)
-- [Prettier](https://prettier.io/docs/en/configuration)
-- [husky](https://typicode.github.io/husky/getting-started.html)
-- [lint-staged](https://github.com/okonet/lint-staged)
-- [commitlint](https://commitlint.js.org/#/)
+::: code-group
+
+```sh [npm]
+echo 'npx --no -- commitlint --edit $1' > .husky/commit-msg
+```
+
+```sh [yarn]
+echo 'yarn dlx commitlint --edit $1' > .husky/commit-msg
+```
+
+```sh [pnpm]
+echo 'pnpm commitlint --edit $1' > .husky/commit-msg
+```
+
+:::
+
+额外的，你可以使用 [prompt](https://commitlint.js.org/guides/use-prompt.html) 来快速编写符合 commit 规范的 commit message。
+
+## C++ 项目
