@@ -1,0 +1,3 @@
+{
+  "extends": "@chenjf/tsconfig/tsconfig.json"
+}

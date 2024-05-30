@@ -16,5 +16,9 @@
     "typescript"
   ],
   "author": "chenjf <1143141874@qq.com>",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@chenjf/tsconfig": "^1.0.2",
+    "typescript": "^5.4.5"
+  }
 }
