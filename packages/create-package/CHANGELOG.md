@@ -1,5 +1,12 @@
 # @chenjf/create-package
 
+## [1.3.1](https://github.com/c233jf/repo/compare/create-package-v1.3.0...create-package-v1.3.1) (2024-05-31)
+
+
+### Bug Fixes
+
+* **create-package:** add typescript and @chenjf/tsconfig deps ([575a759](https://github.com/c233jf/repo/commit/575a759fa66eef873b23d3381c86e9f4860dc6e3))
+
 ## [1.3.0](https://github.com/c233jf/repo/compare/create-package-v1.2.5...create-package-v1.3.0) (2023-11-15)
 
 ### Features
