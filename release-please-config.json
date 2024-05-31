@@ -3,5 +3,6 @@
     "packages/create-package": {},
     "packages/tsconfig": {},
     "packages/eslint-config": {}
-  }
+  },
+  "bootstrap-sha": "2cde2e266e43bb87b88e38ab160ef21cf7fffe0a"
 }
