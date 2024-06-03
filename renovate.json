@@ -1,4 +1,12 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["github>c233jf/renovate-config:js"]
+  "extends": ["github>c233jf/renovate-config:js"],
+  "ignorePaths": [
+    "**/create-package/template-electron-vue/**",
+    "**/create-package/template-package/**",
+    "**/create-package/template-vue-admin-ts-git/**",
+    "**/create-package/template-vue-ts-git/**",
+    "**/packages/markdown-it-plugin-katex/**",
+    "**/packages/markdown-it-plugin-mermaid/**"
+  ]
 }
