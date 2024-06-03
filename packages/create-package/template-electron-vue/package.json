@@ -41,7 +41,7 @@
     "lint-staged": "^14.0.1",
     "prettier": "^2.8.8",
     "typescript": "5.2.2",
-    "unplugin-auto-import": "0.17.5",
+    "unplugin-auto-import": "0.17.6",
     "unplugin-icons": "0.16.6",
     "unplugin-vue-components": "0.26.0",
     "vite-plugin-windicss": "1.9.1",
