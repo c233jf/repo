@@ -41,7 +41,7 @@
     "eslint-plugin-vue": "^9.18.1",
     "husky": "^7.0.4",
     "lint-staged": "^12.3.5",
-    "markdown-it-footnote": "^3.0.3",
+    "markdown-it-footnote": "^4.0.0",
     "markdown-it-mathjax3": "^4.3.2",
     "markdown-it-task-lists": "^2.1.1",
     "mermaid": "^10.9.1",
