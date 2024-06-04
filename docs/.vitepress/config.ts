@@ -506,6 +506,13 @@ const config = defineConfig({
             {
               text: '测试',
               link: '/blog/testing/vitest/',
+              items: [
+                {
+                  text: 'Troubleshooting',
+                  link: '/blog/testing/vitest/troubleshooting',
+                },
+              ],
+              collapsed: true,
             },
             {
               text: 'Web',
