@@ -1,7 +1,6 @@
 import { ensureDirSync, remove, writeFileSync } from 'fs-extra'
-import { join } from 'path'
-import { execaCommandSync } from 'execa'
-import type { SyncOptions } from 'execa'
+import { execaCommandSync, type SyncOptions } from 'execa'
+import { join } from 'node:path'
 
 const CLI_PATH = join(__dirname, '..', 'index.mjs')
 const projectName = 'test-package'
@@ -23,7 +22,7 @@ function rmTestProject() {
 }
 
 beforeAll(rmTestProject)
-afterAll(rmTestProject)
+afterEach(rmTestProject)
 
 test('prompts for the target directory if none supplied', () => {
   const { stdout } = run([])
