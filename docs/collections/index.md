@@ -115,6 +115,7 @@
 - [ts-node](https://github.com/TypeStrong/ts-node) —— 用于 nodejs 的 TS 执行器和 REPL
 - [tsx](https://github.com/esbuild-kit/tsx) —— 使用 esbuild 增强 nodejs 以运行 TS 和 ESM
 - [swc](https://github.com/swc-project/swc) —— 使用 Rust 编码的 TS/JS 高性能编译器
+- [consola](https://github.com/unjs/consola#readme) —— 优雅的 console 封装器
 
 ## :pushpin: 项目规范
 
