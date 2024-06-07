@@ -5,8 +5,6 @@
     "**/create-package/template-electron-vue/**",
     "**/create-package/template-package/**",
     "**/create-package/template-vue-admin-ts-git/**",
-    "**/create-package/template-vue-ts-git/**",
-    "**/packages/markdown-it-plugin-katex/**",
-    "**/packages/markdown-it-plugin-mermaid/**"
+    "**/create-package/template-vue-ts-git/**"
   ]
 }
