@@ -1,5 +1,5 @@
 import mf from 'markdown-it-footnote'
-// @ts-ignore
+// @ts-expect-error markdown-it-task-lists is not typed
 import mt from 'markdown-it-task-lists'
 import { defineConfig } from 'vitepress'
 import UnoCSS from 'unocss/vite'
@@ -321,6 +321,10 @@ const config = defineConfig({
                     {
                       text: 'Composition API',
                       link: '/blog/framework/vue/composition/',
+                    },
+                    {
+                      text: '区别',
+                      link: '/blog/framework/vue/difference',
                     },
                     {
                       text: '源码解析',

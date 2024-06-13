@@ -29,6 +29,8 @@
 
 ### Vue3 与 Vue2 有什么区别
 
+[博客](framework/vue/difference.md)
+
 ### 描述一下父子组件通信的方式
 
 - props / emit；
