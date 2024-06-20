@@ -18,6 +18,8 @@
 
 ### vue 的 diff 算法
 
+[Diff 算法](framework/vue/diff.md)
+
 ### 响应式更新原理
 
 - [Reactivity](framework/vue/reactivity/)
@@ -53,3 +55,8 @@
 ### 如何优化文件传输
 
 - 文件分块
+
+## 参考
+
+- [七天八股速记](https://leetcode.cn/leetbook/read/7-day-interview-qian-duan/dmm5fs/)
+- [语音打卡社群](https://github.com/febobo/web-interview)
