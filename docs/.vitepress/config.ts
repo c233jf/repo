@@ -327,6 +327,10 @@ const config = defineConfig({
                       link: '/blog/framework/vue/difference',
                     },
                     {
+                      text: 'diff 算法',
+                      link: '/blog/framework/vue/diff',
+                    },
+                    {
                       text: '源码解析',
                       items: [
                         {
