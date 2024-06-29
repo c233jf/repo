@@ -1,12 +1,15 @@
 {
-  "name": "@chenjf/linter-setup",
+  "name": "@c233jf/linter-setup",
   "version": "1.0.0",
-  "private": true,
   "description": "Setup for linting TypeScript projects",
   "types": "index.ts",
   "type": "module",
+  "bin": {
+    "linter-setup": "dist/linter-setup.js"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "vite build"
   },
   "repository": {
     "type": "git",
@@ -27,5 +30,8 @@
     "execa": "^9.0.0",
     "fs-extra": "^11.0.0",
     "semver": "^7.6.2"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
   }
 }
