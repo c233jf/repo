@@ -30,8 +30,5 @@
     "execa": "^9.0.0",
     "fs-extra": "^11.0.0",
     "semver": "^7.6.2"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
   }
 }
