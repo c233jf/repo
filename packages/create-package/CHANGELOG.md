@@ -1,5 +1,12 @@
 # @chenjf/create-package
 
+## [1.3.2](https://github.com/c233jf/repo/compare/create-package-v1.3.1...create-package-v1.3.2) (2024-06-30)
+
+
+### Bug Fixes
+
+* **deps:** update dependency fs-extra to v11 ([ffdf12e](https://github.com/c233jf/repo/commit/ffdf12e04cbb39e6a316cb709c17614b723679fc))
+
 ## [1.3.1](https://github.com/c233jf/repo/compare/create-package-v1.3.0...create-package-v1.3.1) (2024-05-31)
 
 
