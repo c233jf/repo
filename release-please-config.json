@@ -2,7 +2,8 @@
   "packages": {
     "packages/create-package": {},
     "packages/tsconfig": {},
-    "packages/eslint-config": {}
+    "packages/eslint-config": {},
+    "packages/linter-setup": {}
   },
   "bootstrap-sha": "5694c54b6c923115ff036481faee0f0f4c6ec73a"
 }
