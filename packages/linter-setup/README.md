@@ -15,11 +15,11 @@ This package will install the following dependencies and create config files:
 pnpm:
 
 ```sh [pnpm]
-pnpm dlx @chenjf/linter-setup
+pnpm dlx @c233jf/linter-setup
 ```
 
 npm:
 
 ```sh [npm]
-npm exec -- @chenjf/linter-setup
+npm exec -- @c233jf/linter-setup
 ```
