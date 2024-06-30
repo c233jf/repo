@@ -2,8 +2,8 @@ import { consola } from 'consola'
 import { lt } from 'semver'
 import { writeFile } from 'node:fs/promises'
 
-import { i, pkgManager, up } from './command.ts'
-import { getPkgVer } from './package.ts'
+import { i, up } from './command.ts'
+import { getPkgManager, getPkgVer } from './package.ts'
 
 const deps = [
   '@commitlint/cli',
@@ -25,7 +25,7 @@ async function createConfigFiles() {
 async function configHook() {
   await writeFile(
     '.husky/commit-msg',
-    `${pkgManager === 'npm' ? 'npx --no --' : 'pnpm'} commitlint --edit $1`,
+    `${(await getPkgManager()) === 'npm' ? 'npx --no --' : 'pnpm'} commitlint --edit $1`,
   )
 }
 

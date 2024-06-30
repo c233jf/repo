@@ -3,10 +3,11 @@ import { execa } from 'execa'
 import { lt } from 'semver'
 import { rm, writeFile } from 'node:fs/promises'
 
-import { i, pkgManager, un, up } from './command.ts'
-import { getPkgVer } from './package.ts'
+import { i, un, up } from './command.ts'
+import { getPkgManager, getPkgVer } from './package.ts'
 
 async function install() {
+  const pkgManager = await getPkgManager()
   await execa(
     pkgManager,
     [pkgManager === 'npm' ? 'init' : 'create', '@eslint/config'],

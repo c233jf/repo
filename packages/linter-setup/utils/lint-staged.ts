@@ -3,15 +3,15 @@ import { readJson, writeJson } from 'fs-extra/esm'
 import { lt } from 'semver'
 import { writeFile } from 'node:fs/promises'
 
-import { i, pkgManager, up } from './command.ts'
-import { getPkgVer } from './package.ts'
+import { i, up } from './command.ts'
+import { getPkgManager, getPkgVer } from './package.ts'
 
 const deps = ['lint-staged']
 
 async function config() {
   await writeFile(
     '.husky/pre-commit',
-    `${pkgManager === 'npm' ? 'npx' : 'pnpm'} lint-staged`,
+    `${(await getPkgManager()) === 'npm' ? 'npx' : 'pnpm'} lint-staged`,
   )
   const packageJson = await readJson('package.json')
   packageJson['lint-staged'] = {

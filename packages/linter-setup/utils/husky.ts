@@ -2,8 +2,8 @@ import { consola } from 'consola'
 import { execa } from 'execa'
 import { lt } from 'semver'
 
-import { i, pkgManager, up } from './command.ts'
-import { getPkgVer } from './package.ts'
+import { i, up } from './command.ts'
+import { getPkgManager, getPkgVer } from './package.ts'
 
 const deps = ['husky']
 
@@ -23,8 +23,12 @@ export async function setup() {
   } catch {
     await install()
   } finally {
-    await execa(pkgManager === 'npm' ? 'npx' : 'pnpm', ['husky', 'init'], {
-      stdio: 'inherit',
-    })
+    await execa(
+      (await getPkgManager()) === 'npm' ? 'npx' : 'pnpm',
+      ['husky', 'init'],
+      {
+        stdio: 'inherit',
+      },
+    )
   }
 }
