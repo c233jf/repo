@@ -5,5 +5,5 @@
     "packages/eslint-config": {},
     "packages/linter-setup": {}
   },
-  "bootstrap-sha": "9c6cecf047c49ff8712a9371a9e283d48103e5cc"
+  "bootstrap-sha": "9bcf622e08efd9eb51334cef5d09cfaf85682350"
 }
