@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.2](https://github.com/c233jf/repo/compare/linter-setup-v1.0.1...linter-setup-v1.0.2) (2024-07-01)
+
+
+### Bug Fixes
+
+* **linter-setup:** fix updating to latest version fail with npm ([c4b3694](https://github.com/c233jf/repo/commit/c4b369405dfa3625d9aaabf47e002954c0c8f7d3))
+
 ## [1.0.1](https://github.com/c233jf/repo/compare/linter-setup-v1.0.0...linter-setup-v1.0.1) (2024-07-01)
 
 
