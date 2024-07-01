@@ -10,15 +10,27 @@ interface PKG {
 }
 
 const PKG_DIR = join(cwd(), 'node_modules/')
-let pkgManager: PKG_MANAGER
+let pkgManager: PKG_MANAGER = 'npm'
+let hasLockFile: boolean = false
 
 export let getPkgManager = async () => {
   // 设置 ESLint 时会要求选择包管理器，所以这里可以简单地通过
   // 锁文件来判断包管理器。
-  if (await pathExists(join(cwd(), 'yarn.lock'))) pkgManager = 'yarn'
-  else if (await pathExists(join(cwd(), 'pnpm-lock.yaml'))) pkgManager = 'pnpm'
-  else pkgManager = 'npm'
-  getPkgManager = async () => pkgManager
+  if (await pathExists(join(cwd(), 'yarn.lock'))) {
+    pkgManager = 'yarn'
+    hasLockFile = true
+  } else if (await pathExists(join(cwd(), 'pnpm-lock.yaml'))) {
+    pkgManager = 'pnpm'
+    hasLockFile = true
+  } else if (await pathExists(join(cwd(), 'package-lock.json'))) {
+    pkgManager = 'npm'
+    hasLockFile = true
+  }
+
+  if (hasLockFile) {
+    getPkgManager = async () => pkgManager
+  }
+
   return pkgManager
 }
 

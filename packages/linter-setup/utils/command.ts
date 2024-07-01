@@ -16,11 +16,10 @@ export async function i(pkgs: string[]) {
 
 export async function up(pkgs: string[]) {
   const pkgManager = await getPkgManager()
-  return exe(pkgManager, [
-    'up',
-    pkgManager === 'npm' ? '--save' : '--latest',
-    ...pkgs,
-  ])
+  if (pkgManager === 'npm') {
+    return i(pkgs.map((pkg) => `${pkg}@latest`))
+  }
+  return exe(pkgManager, ['up', '--latest', ...pkgs])
 }
 
 export async function un(pkgs: string[]) {
