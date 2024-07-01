@@ -58,11 +58,7 @@ async function removeConfigFiles() {
 
 async function updateDeps() {
   // Remove old packages.
-  await un([
-    '@typescript-eslint/eslint-plugin',
-    '@typescript-eslint/parser',
-    'vue-eslint-parser',
-  ])
+  await un(['@typescript-eslint/eslint-plugin', '@typescript-eslint/parser'])
   // Install new packages.
   await i(['@eslint/js', '@types/eslint', 'typescript-eslint', 'globals'])
   // Update ESLint.
