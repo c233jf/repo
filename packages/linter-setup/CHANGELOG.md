@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/c233jf/repo/compare/linter-setup-v1.0.0...linter-setup-v1.0.1) (2024-07-01)
+
+
+### Bug Fixes
+
+* **linter-setup:** fix microsoft jscript compilation error ([feddb4a](https://github.com/c233jf/repo/commit/feddb4af36741d8833ea553208f6d359152b752e))
+
 ## 1.0.0 (2024-06-30)
 
 
