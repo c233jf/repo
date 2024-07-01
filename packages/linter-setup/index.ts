@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import { setup as setupESLint } from './utils/eslint.ts'
 import { setup as setupPrettier } from './utils/prettier.ts'
 import { setup as setupHusky } from './utils/husky.ts'
