@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.3](https://github.com/c233jf/repo/compare/linter-setup-v1.0.2...linter-setup-v1.0.3) (2024-07-01)
+
+
+### Bug Fixes
+
+* **linter-setup:** fix removing vue-eslint-parser error ([4ce0e4e](https://github.com/c233jf/repo/commit/4ce0e4ec1aaa53b2b474ddbf911583622e36e4dc))
+
 ## [1.0.2](https://github.com/c233jf/repo/compare/linter-setup-v1.0.1...linter-setup-v1.0.2) (2024-07-01)
 
 
