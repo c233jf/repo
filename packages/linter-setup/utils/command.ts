@@ -11,8 +11,10 @@ function toLatest(pkg: string) {
 export async function i(pkgs: string[]) {
   const pkgManager = await getPkgManager()
   const cmd = pkgManager === 'npm' ? 'i' : 'add'
-  const flag = ['-D']
+  const flag = ['-D', '--ignore-scripts']
 
+  // 修复依赖冲突
+  if (pkgManager === 'npm') flag.push('--legacy-peer-deps')
   if (await isPnpmWorkspace()) flag.push('-w')
 
   return exe(pkgManager, [cmd, ...flag, ...pkgs])
