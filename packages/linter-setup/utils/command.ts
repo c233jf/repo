@@ -4,6 +4,10 @@ import { getPkgManager, isPnpmWorkspace } from './package.ts'
 
 const exe = execa({ stdio: 'inherit' })
 
+function toLatest(pkg: string) {
+  return `${pkg}@latest`
+}
+
 export async function i(pkgs: string[]) {
   const pkgManager = await getPkgManager()
   const cmd = pkgManager === 'npm' ? 'i' : 'add'
@@ -17,9 +21,9 @@ export async function i(pkgs: string[]) {
 export async function up(pkgs: string[]) {
   const pkgManager = await getPkgManager()
   if (pkgManager === 'npm') {
-    return i(pkgs.map((pkg) => `${pkg}@latest`))
+    return i(pkgs.map(toLatest))
   }
-  return exe(pkgManager, ['up', '--latest', ...pkgs])
+  return exe(pkgManager, ['up', ...pkgs.map(toLatest)])
 }
 
 export async function un(pkgs: string[]) {
