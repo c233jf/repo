@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.4](https://github.com/c233jf/repo/compare/linter-setup-v1.0.3...linter-setup-v1.0.4) (2024-07-02)
+
+
+### Bug Fixes
+
+* **linter-setup:** fix update error in pnpm ([19b362d](https://github.com/c233jf/repo/commit/19b362d1dcf906ab961e164909f815ecfc638e9e))
+
 ## [1.0.3](https://github.com/c233jf/repo/compare/linter-setup-v1.0.2...linter-setup-v1.0.3) (2024-07-01)
 
 

@@ -1,6 +1,6 @@
 {
   "name": "@c233jf/linter-setup",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Setup for linting TypeScript projects",
   "types": "index.ts",
   "type": "module",
