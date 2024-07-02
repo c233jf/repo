@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.5](https://github.com/c233jf/repo/compare/linter-setup-v1.0.4...linter-setup-v1.0.5) (2024-07-02)
+
+
+### Bug Fixes
+
+* **linter-setup:** fix deps conflict error in npm install ([b243ea2](https://github.com/c233jf/repo/commit/b243ea260e3fbf59133a17f628f147262c751f6a))
+
 ## [1.0.4](https://github.com/c233jf/repo/compare/linter-setup-v1.0.3...linter-setup-v1.0.4) (2024-07-02)
 
 
