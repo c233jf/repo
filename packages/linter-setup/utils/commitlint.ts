@@ -1,6 +1,6 @@
 import { consola } from 'consola'
 import { lt } from 'semver'
-import { writeFile } from 'node:fs/promises'
+import { rm, writeFile } from 'node:fs/promises'
 
 import { i, up } from './command.ts'
 import { getPkgManager, getPkgVer } from './package.ts'
@@ -22,6 +22,10 @@ async function createConfigFiles() {
   await writeFile('commitlint.config.ts', importContent + '\n' + exportContent)
 }
 
+async function removeConfigFiles() {
+  return rm('commitlint.config.js', { force: true })
+}
+
 async function configHook() {
   await writeFile(
     '.husky/commit-msg',
@@ -30,13 +34,15 @@ async function configHook() {
 }
 
 async function install() {
-  await writeFile('.npmrc', 'public-hoist-pattern[]=@commitlint/types')
+  if ((await getPkgManager()) === 'pnpm') {
+    await writeFile('.npmrc', 'public-hoist-pattern[]=@commitlint/types')
+  }
   await i(deps)
-  await createConfigFiles()
 }
 
 async function update() {
   await up(deps)
+  await removeConfigFiles()
 }
 
 export async function setup() {
@@ -47,6 +53,7 @@ export async function setup() {
   } catch {
     await install()
   } finally {
+    await createConfigFiles()
     await configHook()
   }
 }

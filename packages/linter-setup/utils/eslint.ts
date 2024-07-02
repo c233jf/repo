@@ -52,6 +52,7 @@ async function removeConfigFiles() {
       '.eslintrc.js',
       '.eslintrc.cjs',
       '.eslintrc.mjs',
+      '.eslintrc.json',
     ].map((e) => rm(e, { force: true })),
   )
 }
@@ -66,8 +67,8 @@ async function updateDeps() {
 }
 
 async function update() {
-  await removeConfigFiles()
   await updateDeps()
+  await removeConfigFiles()
   await createConfigFiles()
 }
 
