@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.6](https://github.com/c233jf/repo/compare/linter-setup-v1.0.5...linter-setup-v1.0.6) (2024-07-02)
+
+
+### Bug Fixes
+
+* **linter-setup:** remove commitlint config ([dc6b259](https://github.com/c233jf/repo/commit/dc6b25931578aa9a54abdf8d7b2513de8846fb6a))
+
 ## [1.0.5](https://github.com/c233jf/repo/compare/linter-setup-v1.0.4...linter-setup-v1.0.5) (2024-07-02)
 
 
