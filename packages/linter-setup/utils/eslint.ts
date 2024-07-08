@@ -23,8 +23,7 @@ import pluginVue from 'eslint-plugin-vue'
 import eslintConfigPrettier from 'eslint-config-prettier'
 `
 
-  const exportContent = `/** @type {import('@types/eslint').Linter.FlatConfig} */
-export default [
+  const exportContent = `export default tseslint.config(
   { languageOptions: { globals: { ...globals.browser, ...globals.node } } },
   pluginJs.configs.recommended,
   ...tseslint.configs.recommended,
@@ -46,7 +45,7 @@ export default [
       },
     },
   },
-]
+)
 `
 
   await writeFile('eslint.config.mjs', importContent + '\n' + exportContent)
@@ -69,7 +68,7 @@ async function updateDeps() {
   // Remove old packages.
   await un(['@typescript-eslint/eslint-plugin', '@typescript-eslint/parser'])
   // Install new packages.
-  await i(['@eslint/js', '@types/eslint', 'typescript-eslint', 'globals'])
+  await i(['@eslint/js', 'typescript-eslint', 'globals'])
   // Update ESLint.
   await up(['eslint', 'eslint-config-prettier', 'eslint-plugin-vue'])
 }
