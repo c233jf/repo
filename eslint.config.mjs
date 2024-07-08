@@ -3,7 +3,7 @@ import pluginJs from '@eslint/js'
 import tseslint from 'typescript-eslint'
 import pluginVue from 'eslint-plugin-vue'
 import eslintConfigPrettier from 'eslint-config-prettier'
-  
+
 /** @type {import('@types/eslint').Linter.FlatConfig} */
 export default [
   { languageOptions: { globals: { ...globals.browser, ...globals.node } } },
@@ -19,5 +19,12 @@ export default [
       'vue/multi-word-component-names': 'off',
     },
   },
+  {
+    files: ['**/*.vue'],
+    languageOptions: {
+      parserOptions: {
+        parser: '@typescript-eslint/parser',
+      },
+    },
+  },
 ]
-  
