@@ -7,9 +7,9 @@ export default defineConfig({
   presets: [
     presetIcons({
       collections: {
-        mdi: () =>
+        'vscode-icons': () =>
           import('@iconify-json/vscode-icons/icons.json').then(
-            (i) => i.default
+            (i) => i.default,
           ),
       },
     }),
