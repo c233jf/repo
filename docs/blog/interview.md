@@ -52,9 +52,11 @@
 
 ### 有没有接触过 SSR，简单描述一下
 
+- [服务端渲染](https://cn.vuejs.org/guide/scaling-up/ssr.html)
+
 ### 如何优化大数据列表渲染
 
-虚拟化列表
+[虚拟化列表](web/technique/virtual-list/)
 
 ### 如何优化文件传输
 

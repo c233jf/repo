@@ -66,6 +66,7 @@
   },
   "version": "1.4.0",
   "dependencies": {
+    "@vueuse/core": "^10.11.0",
     "medium-zoom": "^1.0.8"
   }
 }

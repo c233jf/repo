@@ -583,6 +583,10 @@ const config = defineConfig({
                       text: 'DOM 操作',
                       link: '/blog/web/technique/dom/',
                     },
+                    {
+                      text: '虚拟化列表',
+                      link: '/blog/web/technique/virtual-list/',
+                    },
                   ],
                   collapsed: true,
                 },
@@ -617,7 +621,10 @@ const config = defineConfig({
   vite: {
     plugins: [
       UnoCSS(),
-      AutoImport({ dts: 'auto-imports.d.ts', imports: ['vue'] }),
+      AutoImport({
+        dts: 'auto-imports.d.ts',
+        imports: ['vue', '@vueuse/core'],
+      }),
       Components({
         dirs: ['components'],
         dts: 'components.d.ts',
