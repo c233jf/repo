@@ -587,6 +587,10 @@ const config = defineConfig({
                       text: '虚拟化列表',
                       link: '/blog/web/technique/virtual-list/',
                     },
+                    {
+                      text: '文件上传',
+                      link: '/blog/web/technique/file-upload/',
+                    },
                   ],
                   collapsed: true,
                 },

@@ -60,7 +60,7 @@
 
 ### 如何优化文件传输
 
-- 文件分块
+[文件分块](web/technique/file-upload/)
 
 ## 参考
 
