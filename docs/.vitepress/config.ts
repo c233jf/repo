@@ -587,6 +587,10 @@ const config = defineConfig({
                       text: '虚拟化列表',
                       link: '/blog/web/technique/virtual-list/',
                     },
+                    {
+                      text: 'Web 截图',
+                      link: '/blog/web/technique/screenshot/',
+                    },
                   ],
                   collapsed: true,
                 },
