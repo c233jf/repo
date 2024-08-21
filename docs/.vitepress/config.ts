@@ -569,6 +569,10 @@ const config = defineConfig({
                       text: '防盗链',
                       link: '/blog/web/security/anti-stealing-link',
                     },
+                    {
+                      text: '加密算法',
+                      link: '/blog/web/security/encryption/',
+                    },
                   ],
                   collapsed: true,
                 },
