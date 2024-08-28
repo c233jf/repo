@@ -452,6 +452,10 @@ const config = defineConfig({
                       text: '语句和声明',
                       items: [
                         {
+                          text: '变量声明',
+                          link: '/blog/language/javascript/statements/var/',
+                        },
+                        {
                           text: 'Async / Await',
                           link: '/blog/language/javascript/statements/async-await/',
                         },
