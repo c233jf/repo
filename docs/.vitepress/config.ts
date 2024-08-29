@@ -506,6 +506,10 @@ const config = defineConfig({
                       text: 'CSS3',
                       link: '/blog/language/css/css3/',
                     },
+                    {
+                      text: '盒模型',
+                      link: '/blog/language/css/box-model/',
+                    },
                   ],
                   collapsed: true,
                 },
