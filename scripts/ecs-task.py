@@ -20,6 +20,7 @@ access_key = sys.argv[1] # 设置您的AccessKey ID
 access_key_secret = sys.argv[2] # 设置您的AccessKey Secret
 region_id = sys.argv[3] # 实例所属地域ID
 ins_id = sys.argv[4] # 实例ID
+vpc_registry = sys.argv[5] # 镜像专用网络地址
 
 
 
@@ -99,7 +100,7 @@ def remove_images():
     # 设置云助手命令的命令内容
     cmdcontent = """
     #!/bin/bash
-    sudo docker rmi -f registry-vpc.cn-hongkong.aliyuncs.com/c2333kfeng/repo-docs
+    sudo docker rmi -f {vpc_registry}/c2333kfeng/repo-docs
     """
     # 执行命令
     invoke_id = run_command(cmdtype, cmdcontent)
@@ -113,7 +114,7 @@ def pull_images():
     # 设置云助手命令的命令内容
     cmdcontent = """
     #!/bin/bash
-    sudo docker pull registry-vpc.cn-hongkong.aliyuncs.com/c2333kfeng/repo-docs
+    sudo docker pull {vpc_registry}/c2333kfeng/repo-docs
     """
     # 执行命令
     invoke_id = run_command(cmdtype, cmdcontent)
@@ -127,7 +128,7 @@ def run_containers():
     # 设置云助手命令的命令内容
     cmdcontent = """
     #!/bin/bash
-    sudo docker run --name repo-docs -dp 127.0.0.1:5173:80 registry-vpc.cn-hongkong.aliyuncs.com/c2333kfeng/repo-docs
+    sudo docker run --name repo-docs -dp 127.0.0.1:5173:80 {vpc_registry}/c2333kfeng/repo-docs
     """
     # 执行命令
     invoke_id = run_command(cmdtype, cmdcontent)
