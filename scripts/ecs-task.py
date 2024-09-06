@@ -98,7 +98,7 @@ def remove_images():
     # 设置云助手命令的命令类型
     cmdtype = "RunShellScript"
     # 设置云助手命令的命令内容
-    cmdcontent = """
+    cmdcontent = f"""
     #!/bin/bash
     sudo docker rmi -f {vpc_registry}/c2333kfeng/repo-docs
     """
@@ -112,7 +112,7 @@ def pull_images():
     # 设置云助手命令的命令类型
     cmdtype = "RunShellScript"
     # 设置云助手命令的命令内容
-    cmdcontent = """
+    cmdcontent = f"""
     #!/bin/bash
     sudo docker pull {vpc_registry}/c2333kfeng/repo-docs
     """
@@ -126,7 +126,7 @@ def run_containers():
     # 设置云助手命令的命令类型
     cmdtype = "RunShellScript"
     # 设置云助手命令的命令内容
-    cmdcontent = """
+    cmdcontent = f"""
     #!/bin/bash
     sudo docker run --name repo-docs -dp 127.0.0.1:5173:80 {vpc_registry}/c2333kfeng/repo-docs
     """
