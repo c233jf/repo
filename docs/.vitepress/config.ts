@@ -618,7 +618,6 @@ const config = defineConfig({
 
     socialLinks: [{ icon: 'github', link: 'https://github.com/c233jf' }],
   },
-  base: '/repo/',
   markdown: {
     lineNumbers: true,
     math: true,
