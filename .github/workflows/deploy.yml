@@ -9,9 +9,9 @@ on:
   workflow_dispatch:
 
 env:
-  REGION_ID: cn-guangzhou
-  REGISTRY: registry.cn-guangzhou.aliyuncs.com
-  VPC_REGISTRY: registry-vpc.cn-guangzhou.aliyuncs.com
+  REGION_ID: cn-hongkong
+  REGISTRY: registry.cn-hongkong.aliyuncs.com
+  VPC_REGISTRY: registry-vpc.cn-hongkong.aliyuncs.com
   NAMESPACE: ${{ secrets.NAMESPACE }}
   ACCESS_KEY_ID: ${{ secrets.ACCESS_KEY_ID }}
   ACCESS_KEY_SECRET: ${{ secrets.ACCESS_KEY_SECRET }}
