@@ -2,10 +2,10 @@
   "extends": "@chenjf/tsconfig/tsconfig.json",
   "compilerOptions": {
     "allowImportingTsExtensions": true,
-    "noEmit": true,
     "types": ["vitest/globals"],
     "composite": true,
-    "disableSolutionSearching": true
+    "disableSolutionSearching": true,
+    "emitDeclarationOnly": true
   },
   "include": [".vitepress/**/*", "**/*"]
 }
