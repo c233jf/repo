@@ -4,8 +4,7 @@ import tseslint from 'typescript-eslint'
 import pluginVue from 'eslint-plugin-vue'
 import eslintConfigPrettier from 'eslint-config-prettier'
 
-/** @type {import('@types/eslint').Linter.FlatConfig} */
-export default [
+export default tseslint.config(
   { languageOptions: { globals: { ...globals.browser, ...globals.node } } },
   pluginJs.configs.recommended,
   ...tseslint.configs.recommended,
@@ -27,4 +26,4 @@ export default [
       },
     },
   },
-]
+)
