@@ -27,6 +27,6 @@ for (const i = arr.length - 1; i >= 0; i--) {
 - **状态变化**：通过变量和赋值语句，程序的状态在执行过程中不断变化
 - **控制结构**：包括循环、条件语句等控制程序的执行流程
 
-## References
+## 参考
 
 - [指令式编程](https://zh.wikipedia.org/wiki/%E6%8C%87%E4%BB%A4%E5%BC%8F%E7%B7%A8%E7%A8%8B)

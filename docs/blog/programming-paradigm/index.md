@@ -6,7 +6,7 @@
 
 范式之间不是冲突、相互排斥的，这意味着你可以在一次编程中同时使用多种范式。
 
-## References
+## 参考
 
 - [编程范型](https://zh.wikipedia.org/wiki/%E7%BC%96%E7%A8%8B%E8%8C%83%E5%9E%8B)
 - [编程范式简介](https://www.freecodecamp.org/chinese/news/an-introduction-to-programming-paradigms/)
