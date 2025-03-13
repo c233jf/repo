@@ -106,6 +106,6 @@ next: false
 <<<./cyclic-dependencies/without-di/b.ts
 :::
 
-## References
+## 参考
 
 - [依赖注入](https://github.com/ascoders/weekly/blob/master/%E5%89%8D%E6%B2%BF%E6%8A%80%E6%9C%AF/256.%E7%B2%BE%E8%AF%BB%E3%80%8A%E4%BE%9D%E8%B5%96%E6%B3%A8%E5%85%A5%E7%AE%80%E4%BB%8B%E3%80%8B.md)
