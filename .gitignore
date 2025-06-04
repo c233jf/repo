@@ -36,3 +36,6 @@ stats.html
 
 # draw.io
 *.bkp
+
+# Vagrant
+.vagrant/
