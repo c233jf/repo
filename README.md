@@ -1,8 +1,20 @@
 # Repo
 
-Personal packages collection and blog.
+个人博客以及收集个人的通用包集合。
 
-## Packages
+## 安装项目依赖
+
+```sh
+pnpm i
+```
+
+## 运行
+
+```sh
+pnpm docs:dev
+```
+
+## 包
 
 - [create-package](./packages/create-package/README.md)
 - [eslint-config](./packages/eslint-config/README.md)
