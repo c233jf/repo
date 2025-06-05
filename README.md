@@ -138,3 +138,17 @@ vagrant provision 默认通过 `sudo` 提权到 `root` 用户执行脚本。
 在 [pnpm-workspace.yaml](./pnpm-workspace.yaml) 中设置项目运行时的 Node.js 版本。
 
 参考：[useNodeVersion](https://pnpm.io/zh/settings#usenodeversion)
+
+### `git push` 失败，报 `Bad configuration option: usekeychain`
+
+#### 原因
+
+在 SSH 配置文件中使用了 `UseKeychain` 选项，但这个选项只在 macOS 系统上有效，在 Linux 系统上不被支持。
+
+`UseKeychain` 是 macOS 特有的 SSH 配置选项，用于将 SSH 密钥存储在 macOS 的钥匙串（Keychain）中。
+
+从 macOS 系统复制 SSH 配置到 Vagrant VM 时，没有注意该选项兼容性。
+
+#### 解决
+
+删除或注释该行。
