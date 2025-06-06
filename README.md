@@ -152,3 +152,13 @@ vagrant provision 默认通过 `sudo` 提权到 `root` 用户执行脚本。
 #### 解决
 
 删除或注释该行。
+
+### cursor debug js 文件时，不会打印 `consola` 的输出
+
+#### 原因
+
+参考 [Consola logs do not appear in VSCode Debugger](https://github.com/unjs/consola/issues/311)
+
+#### 解决
+
+参考上面链接
