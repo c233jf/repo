@@ -1,7 +1,7 @@
-FROM node:18-alpine AS build
+FROM node:lts-bookworm-slim AS build
 WORKDIR /repo
-RUN apk add git
-RUN npm install -g pnpm
+RUN apt-get update && apt-get install -y git
+RUN npm install -g pnpm@latest-10
 
 COPY pnpm-lock.yaml pnpm-workspace.yaml .npmrc ./
 COPY packages/tsconfig packages/tsconfig
