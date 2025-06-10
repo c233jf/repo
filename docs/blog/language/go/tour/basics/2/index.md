@@ -11,6 +11,8 @@ import "math"
 
 不过使用分组导入语句要更好。
 
+<<< ./main.go
+
 ## 参考
 
 - [Go 语言之旅](https://tour.go-zh.org/basics/2)
