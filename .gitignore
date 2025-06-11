@@ -39,3 +39,11 @@ stats.html
 
 # Vagrant
 .vagrant/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pyw
+*.pyz
