@@ -13,3 +13,5 @@ x int, y int
 ```go
 x, y int
 ```
+
+<<< ./main.go
