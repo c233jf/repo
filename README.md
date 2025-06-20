@@ -42,7 +42,7 @@ pnpm i
 pnpm docs:dev
 ```
 
-#### 开发
+#### 使用 VSCode 进行远程开发
 
 ##### 获取 Vagrant VM SSH config 信息
 
@@ -87,7 +87,7 @@ Host vagrant-vm
 - 按 `Ctrl+Shift+P`（Windows/Linux）或 `Cmd+Shift+P`（Mac）打开命令面板
 - 搜索并选择 `Remote-SSH: Connect to Host` -> 选择配置的主机
 
-连接成功后便可以使用 Cursor 在 VM 上进行开发。
+连接成功后便可以使用 VSCode 在 VM 上进行开发（Cursor 同理）。
 
 ## 包
 
