@@ -1,6 +1,6 @@
 # Collections
 
-此页面列出我目前所使用的工具、库
+导航页。
 
 ## :hammer_and_pick: 通用库
 

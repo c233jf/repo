@@ -17,8 +17,9 @@ const config = defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Collections', link: '/collections/' },
       { text: 'Blog', link: '/blog/' },
+      { text: 'Collections', link: '/collections/' },
+      { text: 'Packages', link: '/packages/' },
     ],
     search: {
       provider: 'local',
@@ -30,11 +31,12 @@ const config = defineConfig({
           text: 'Collections',
           link: '/collections/',
         },
+      ],
+      '/packages/': [
         {
-          text: 'Personal',
-          items: [
-            { text: 'Create Package', link: '/collections/create-package' },
-          ],
+          text: 'Packages',
+          link: '/packages/',
+          items: [{ text: 'Create Package', link: '/packages/create-package' }],
         },
       ],
       '/blog': [

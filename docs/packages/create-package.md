@@ -16,7 +16,7 @@ With pnpm:
 
 Or directly specify the project name and the template:
 
-```
+```sh
 # npm 6.x
 npm init @chenjf/package my-project --template vue-ts-git
 

@@ -4,12 +4,15 @@ layout: home
 
 hero:
   name: "HBee's Repo"
-  text: '收集个人使用过的工具、库以及自己练习所编写的代码'
+  text: '个人仓库（包含个人博客、代码片段以及收集的各种网站）'
   actions:
     - theme: brand
+      text: Blog
+      link: /blog/
+    - theme: alt
       text: Collections
       link: /collections/
     - theme: alt
-      text: Blog
-      link: /blog/
+      text: Packages
+      link: /packages/
 ---
