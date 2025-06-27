@@ -5,7 +5,10 @@
     "types": ["vitest/globals"],
     "composite": true,
     "disableSolutionSearching": true,
-    "emitDeclarationOnly": true
+    "emitDeclarationOnly": true,
+    "paths": {
+      "@/*": ["./*"]
+    }
   },
   "include": [".vitepress/**/*", "**/*"]
 }

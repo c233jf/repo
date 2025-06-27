@@ -7,6 +7,9 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
+    Card: typeof import('./components/Card/Card.vue')['default']
+    Link: typeof import('./components/Link/Link.vue')['default']
+    NavContainer: typeof import('./components/NavContainer/NavContainer.vue')['default']
     Tree: typeof import('./components/Tree/Tree.vue')['default']
     TreeWrap: typeof import('./components/Tree/TreeWrap.vue')['default']
   }

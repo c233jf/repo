@@ -11,6 +11,8 @@ export default defineConfig({
           import('@iconify-json/vscode-icons/icons.json').then(
             (i) => i.default,
           ),
+        mdi: () =>
+          import('@iconify-json/mdi/icons.json').then((i) => i.default),
       },
     }),
     presetUno(),

@@ -7,6 +7,7 @@ import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
 import { visualizer } from 'rollup-plugin-visualizer'
 import { withMermaid } from 'vitepress-plugin-mermaid'
+import { resolve } from 'node:path'
 
 // https://vitepress.dev/reference/site-config
 const config = defineConfig({
@@ -30,6 +31,60 @@ const config = defineConfig({
         {
           text: 'Collections',
           link: '/collections/',
+          items: [
+            {
+              text: 'IT',
+              collapsed: true,
+              items: [
+                {
+                  text: 'AI',
+                  link: '/collections/it/ai/',
+                },
+                {
+                  text: '运维',
+                  link: '/collections/it/dev-ops/',
+                },
+                {
+                  text: '开发工具',
+                  link: '/collections/it/dev-tools/',
+                },
+                {
+                  text: '逆向工具',
+                  link: '/collections/it/reverse-engineering/',
+                },
+                {
+                  text: '编程语言',
+                  items: [
+                    {
+                      text: 'C++',
+                      link: '/collections/it/language/c++/',
+                    },
+                    {
+                      text: 'Go',
+                      link: '/collections/it/language/go/',
+                    },
+                    {
+                      text: 'JavaScript',
+                      link: '/collections/it/language/javascript/',
+                    },
+                    {
+                      text: 'Python',
+                      link: '/collections/it/language/python/',
+                    },
+                  ],
+                  collapsed: true,
+                },
+                {
+                  text: '数据库',
+                  link: '/collections/it/database/',
+                },
+              ],
+            },
+            {
+              text: '资源站',
+              link: '/collections/resource/',
+            },
+          ],
         },
       ],
       '/packages/': [
@@ -622,7 +677,13 @@ const config = defineConfig({
 
     outline: 'deep',
 
-    socialLinks: [{ icon: 'github', link: 'https://github.com/c233jf' }],
+    socialLinks: [
+      {
+        icon: 'github',
+        link: 'https://github.com/c233jf',
+        ariaLabel: 'GitHub link',
+      },
+    ],
   },
   markdown: {
     lineNumbers: true,
@@ -650,6 +711,11 @@ const config = defineConfig({
         gzipSize: true,
       }),
     ],
+    resolve: {
+      alias: {
+        '@': resolve(__dirname, '../'),
+      },
+    },
     // https://github.com/mermaid-js/mermaid/issues/4320
     // https://github.com/nuxt/vite/issues/56
     optimizeDeps: {
