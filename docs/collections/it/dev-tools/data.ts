@@ -14,3 +14,11 @@ export const editors: Item[] = [
     url: 'https://www.cursor.com/cn',
   },
 ]
+
+export const debuggers: Item[] = [
+  {
+    title: 'vConsole',
+    description: '一个轻量、可拓展、针对手机网页的前端开发者调试面板。',
+    url: 'https://github.com/Tencent/vConsole',
+  },
+]

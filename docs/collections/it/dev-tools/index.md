@@ -1,5 +1,5 @@
 <script setup>
-import { editors } from './data.ts'
+import { editors, debuggers } from './data.ts'
 
 import NavContainer from '@/components/NavContainer/NavContainer.vue'
 </script>
@@ -9,3 +9,7 @@ import NavContainer from '@/components/NavContainer/NavContainer.vue'
 ## 编辑器
 
 <NavContainer :items="editors" />
+
+## 调试
+
+<NavContainer :items="debuggers" />
