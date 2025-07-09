@@ -18,6 +18,14 @@ echo "source /home/vagrant/.bashrc" >> /home/vagrant/.bash_profile
 # Install uv (https://github.com/astral-sh/uv)
 curl -LsSf https://astral.sh/uv/install.sh | sh
 
+# Install cpplint (https://github.com/cpplint/cpplint)
+sudo apt-get install -y pipx
+pipx ensurepath
+pipx install cpplint
+
+# Install clang-format (https://clang.llvm.org/docs/ClangFormat.html)
+sudo apt-get install -y clang-format
+
 # Clone the repository if it doesn't exist
 if [ ! -d "/home/vagrant/repo/.git" ]; then
   cd /home/vagrant
