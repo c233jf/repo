@@ -1,7 +1,7 @@
 class SchoolMember:
     """代表学校里的成员。"""
 
-    def __init__(self, name, age):
+    def __init__(self, name: str, age: int):
         self.name = name
         self.age = age
         print("Initialized SchoolMember: {}".format(self.name))
@@ -14,7 +14,7 @@ class SchoolMember:
 class Teacher(SchoolMember):
     """代表一位老师。"""
 
-    def __init__(self, name, age, salary):
+    def __init__(self, name: str, age: int, salary: int):
         SchoolMember.__init__(self, name, age)
         self.salary = salary
         print("Initialized Teacher: {}".format(self.name))
@@ -27,7 +27,7 @@ class Teacher(SchoolMember):
 class Student(SchoolMember):
     """代表一位学生。"""
 
-    def __init__(self, name, age, marks):
+    def __init__(self, name: str, age: int, marks: int):
         SchoolMember.__init__(self, name, age)
         self.marks = marks
         print("Initialized Student: {}".format(self.name))
@@ -42,6 +42,6 @@ s = Student("Swaroop", 25, 75)
 
 print()
 
-members = [t, s]
+members: list[SchoolMember] = [t, s]
 for member in members:
     member.tell()
