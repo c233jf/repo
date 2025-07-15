@@ -1,7 +1,11 @@
-FROM node:lts-bookworm-slim AS build
-WORKDIR /repo
+FROM node:lts-bookworm-slim AS base
 RUN apt-get update && apt-get install -y git
-RUN npm install -g pnpm@latest-10
+# 构建在某个时间开始突然失败，初步怀疑是 pnpm 版本问题，所以锁定版本
+# https://github.com/pnpm/pnpm/issues/9744
+RUN npm install -g pnpm@10.11.1
+
+FROM base AS build
+WORKDIR /repo
 
 COPY pnpm-lock.yaml pnpm-workspace.yaml .npmrc ./
 COPY packages/tsconfig packages/tsconfig
