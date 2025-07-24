@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Form</title>
+    <style>
+      * {
+        font: 1.1em sans-serif;
+      }
+
+      .wrapper {
+        display: flex;
+        border: 1px solid rgb(96 139 168);
+      }
+      .wrapper > * {
+        padding: 10px;
+        border: none;
+        color: #fff;
+      }
+      .wrapper > input[type='text'] {
+        background-color: rgb(96 139 168 / 0.5);
+        border-right: 1px solid rgb(96 139 168);
+        flex: 1 1 auto;
+      }
+      .wrapper input[type='submit'] {
+        background-color: rgb(96 139 168);
+        color: #fff;
+      }
+      .wrapper label {
+        background-color: #666;
+      }
+    </style>
+  </head>
+  <body>
+    <form class="example">
+      <div class="wrapper">
+        <label for="text">Label</label>
+        <input id="text" type="text" />
+        <input type="submit" value="Send" />
+      </div>
+    </form>
+  </body>
+</html>
