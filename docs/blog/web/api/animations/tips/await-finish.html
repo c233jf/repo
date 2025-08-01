@@ -1,0 +1,49 @@
+<!-- refs: https://developer.mozilla.org/zh-CN/docs/Web/API/Web_Animations_API/Tips#%E7%AD%89%E5%BE%85%E5%8A%A8%E7%94%BB%E7%9A%84%E5%AE%8C%E6%88%90 -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>等待动画的完成</title>
+    <style>
+      .box {
+        width: 100px;
+        height: 100px;
+        border: 1px solid black;
+        margin-bottom: 1rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="box"></div>
+    <button class="runButton">播放动画</button>
+    <script async>
+      const box = document.querySelector('.box')
+      const button = document.querySelector('.runButton')
+      button.addEventListener('click', playAnimation)
+
+      /*
+        等价于以下 CSS @keyframes
+
+        @keyframes colorChange {
+          0% {
+            background-color: grey;
+          }
+          100% {
+            background-color: lime;
+          }
+        }
+      */
+      const colorChangeFrames = { backgroundColor: ['grey', 'lime'] }
+
+      function playAnimation() {
+        button.setAttribute('disabled', true)
+        const animation = box.animate(colorChangeFrames, 4000)
+        animation.onfinish = () => {
+          button.removeAttribute('disabled')
+        }
+      }
+    </script>
+  </body>
+</html>

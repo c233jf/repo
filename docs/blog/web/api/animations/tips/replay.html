@@ -1,0 +1,45 @@
+<!-- refs: https://developer.mozilla.org/zh-CN/docs/Web/API/Web_Animations_API/Tips#%E9%87%8D%E6%96%B0%E6%92%AD%E6%94%BE%E5%8A%A8%E7%94%BB -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>重新播放动画</title>
+    <style>
+      .box {
+        width: 100px;
+        height: 100px;
+        border: 1px solid black;
+        margin-bottom: 1rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="box"></div>
+    <button class="runButton">播放动画</button>
+    <script async>
+      const box = document.querySelector('.box')
+      const button = document.querySelector('.runButton')
+      button.addEventListener('click', playAnimation)
+
+      /*
+        等价于以下 CSS @keyframes
+
+        @keyframes colorChange {
+          0% {
+            background-color: grey;
+          }
+          100% {
+            background-color: lime;
+          }
+        }
+      */
+      const colorChangeFrames = { backgroundColor: ['grey', 'lime'] }
+
+      function playAnimation() {
+        box.animate(colorChangeFrames, 4000)
+      }
+    </script>
+  </body>
+</html>
