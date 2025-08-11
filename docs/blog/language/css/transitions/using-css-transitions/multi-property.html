@@ -1,0 +1,38 @@
+<!-- https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_transitions/Using_CSS_transitions#%E7%AE%80%E5%8D%95%E7%A4%BA%E4%BE%8B -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Multi-property transition</title>
+    <style>
+      .box {
+        border-style: solid;
+        border-width: 1px;
+        display: block;
+        width: 100px;
+        height: 100px;
+        background-color: #0000ff;
+        transition:
+          width 2s,
+          height 2s,
+          background-color 2s,
+          rotate 2s;
+      }
+
+      .box:hover {
+        background-color: #ffcccc;
+        width: 200px;
+        height: 200px;
+        rotate: 180deg;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      下面的盒子包含 width、height、background-color 和 rotate
+      的过渡效果。鼠标停留在盒子上以观察这些属性是如何变化的。
+    </p>
+    <div class="box">示例</div>
+  </body>
+</html>

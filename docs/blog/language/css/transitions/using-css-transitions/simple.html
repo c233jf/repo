@@ -1,0 +1,25 @@
+<!-- https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_transitions/Using_CSS_transitions#%E7%AE%80%E5%8D%95%E7%A4%BA%E4%BE%8B -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Simple transition</title>
+    <style>
+      #delay {
+        font-size: 14px;
+        transition-property: font-size;
+        transition-duration: 4s;
+        transition-delay: 2s;
+      }
+
+      #delay:hover {
+        font-size: 36px;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Hover over the div element below, to see the transition effect.</p>
+    <div id="delay">This is a div element.</div>
+  </body>
+</html>

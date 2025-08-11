@@ -1,0 +1,40 @@
+<!-- https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_transitions/Using_CSS_transitions#%E7%AE%80%E5%8D%95%E7%A4%BA%E4%BE%8B -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Navigation</title>
+    <style>
+      nav {
+        display: flex;
+        gap: 0.5rem;
+      }
+
+      a {
+        flex: 1;
+        background-color: #333;
+        color: #fff;
+        border: 1px solid;
+        padding: 0.5rem;
+        text-align: center;
+        text-decoration: none;
+        transition: all 0.5s ease-out;
+      }
+
+      a:hover,
+      a:focus {
+        background-color: #fff;
+        color: #333;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="#">主页</a>
+      <a href="#">关于</a>
+      <a href="#">联系我们</a>
+      <a href="#">链接</a>
+    </nav>
+  </body>
+</html>
