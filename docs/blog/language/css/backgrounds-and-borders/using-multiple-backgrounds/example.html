@@ -1,0 +1,31 @@
+<!-- https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_backgrounds_and_borders/Using_multiple_backgrounds -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Multiple backgrounds</title>
+    <style>
+      .multi-bg-example {
+        width: 100%;
+        height: 400px;
+        background-image:
+          url('https://0e8e3e23-ed57-4229-bebe-8f605ea9f152.mdnplay.dev/zh-CN/docs/Web/CSS/CSS_backgrounds_and_borders/Using_multiple_backgrounds/firefox.png'),
+          url('https://0e8e3e23-ed57-4229-bebe-8f605ea9f152.mdnplay.dev/zh-CN/docs/Web/CSS/CSS_backgrounds_and_borders/Using_multiple_backgrounds/bubbles.png'),
+          linear-gradient(
+            to right,
+            rgba(30, 75, 115, 1),
+            rgba(255, 255, 255, 0)
+          );
+        background-repeat: no-repeat, no-repeat, no-repeat;
+        background-position:
+          bottom right,
+          left,
+          right;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="multi-bg-example"></div>
+  </body>
+</html>
