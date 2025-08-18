@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Fixed Gap</title>
+    <style>
+      .box {
+        width: 450px;
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 10px;
+        column-gap: 2em;
+        border: 2px dotted rgb(96 139 168);
+      }
+
+      .box > * {
+        flex: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div>一</div>
+      <div>二</div>
+      <div>三</div>
+      <div>四</div>
+      <div>五</div>
+      <div>六</div>
+    </div>
+  </body>
+</html>
