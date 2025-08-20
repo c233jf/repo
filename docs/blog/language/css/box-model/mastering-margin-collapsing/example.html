@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Margin Collapsing</title>
+    <style>
+      div {
+        margin: 2rem 0;
+        background: lavender;
+      }
+
+      p {
+        margin: 0.4rem 0 1.2rem 0;
+        background: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <p>这一段落的下边距与…</p>
+    <p>
+      … 这一段落的上边距被折叠了，在两者之间产生了一个
+      <code>1.2rem</code> 的边距。
+    </p>
+
+    <div>
+      这个父元素包含两个段落！
+      <p>该段落与上面的文本之间有一个 <code>.4rem</code> 的边距。</p>
+      <p>我的下边距与我的父元素折叠，产生了一个 <code>2rem</code> 的边距。</p>
+    </div>
+
+    <p>我在上面元素的下方 <code>2rem</code> 处。</p>
+  </body>
+</html>
