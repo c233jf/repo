@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Container Query Example 5</title>
+    <style>
+      /* .post {
+        container-type: inline-size;
+      } */
+
+      /* 默认的卡片标题样式 */
+      .card h2 {
+        font-size: 1em;
+      }
+
+      .card {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+      }
+
+      /* 如果容器宽度大于 700px */
+      /* @container (min-width: 700px) {
+        .card h2 {
+          font-size: max(1.5em, 1.23em + 2cqi);
+        }
+      } */
+      @media (max-width: 700px) {
+        .card {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="post">
+      <div class="card">
+        <h2>卡片标题</h2>
+        <p>卡片内容</p>
+      </div>
+    </div>
+  </body>
+</html>
