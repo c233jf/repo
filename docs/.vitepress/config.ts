@@ -570,6 +570,22 @@ const config = defineConfig({
                   ],
                   collapsed: true,
                 },
+                {
+                  text: 'Python',
+                  items: [
+                    {
+                      text: '最佳实践',
+                      items: [
+                        {
+                          text: '高效的字符串连接',
+                          link: '/blog/language/python/best_practices/string/join.md',
+                        },
+                      ],
+                      collapsed: true,
+                    },
+                  ],
+                  collapsed: true,
+                },
               ],
               collapsed: true,
             },
