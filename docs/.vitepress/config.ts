@@ -682,6 +682,22 @@ const config = defineConfig({
               ],
               collapsed: true,
             },
+            {
+              text: '游戏',
+              items: [
+                {
+                  text: '梦想世界3',
+                  items: [
+                    {
+                      text: '宠物篇',
+                      link: '/blog/game/meng-xiang-shi-jie/pet.md',
+                    },
+                  ],
+                  collapsed: true,
+                },
+              ],
+              collapsed: true,
+            },
           ],
         },
       ],
