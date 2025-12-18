@@ -699,6 +699,10 @@ const config = defineConfig({
                           text: '阴阳',
                           link: '/blog/game/meng-xiang-shi-jie/school/yin-and-yang.md',
                         },
+                        {
+                          text: '巫法',
+                          link: '/blog/game/meng-xiang-shi-jie/school/witchcraft.md',
+                        },
                       ],
                       collapsed: true,
                     },
