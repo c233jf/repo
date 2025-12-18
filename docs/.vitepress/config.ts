@@ -689,8 +689,32 @@ const config = defineConfig({
                   text: '梦想世界3',
                   items: [
                     {
+                      text: '流派',
+                      items: [
+                        {
+                          text: '剑战',
+                          link: '/blog/game/meng-xiang-shi-jie/school/sword.md',
+                        },
+                        {
+                          text: '阴阳',
+                          link: '/blog/game/meng-xiang-shi-jie/school/yin-and-yang.md',
+                        },
+                      ],
+                      collapsed: true,
+                    },
+                    {
                       text: '宠物篇',
-                      link: '/blog/game/meng-xiang-shi-jie/pet.md',
+                      items: [
+                        {
+                          text: '培养',
+                          link: '/blog/game/meng-xiang-shi-jie/pet/pet.md',
+                        },
+                        {
+                          text: '技能',
+                          link: '/blog/game/meng-xiang-shi-jie/pet/skill.md',
+                        },
+                      ],
+                      collapsed: true,
                     },
                   ],
                   collapsed: true,
