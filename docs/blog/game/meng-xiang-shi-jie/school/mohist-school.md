@@ -90,4 +90,4 @@
 
 ## 参考
 
-- [【梦想世界3】 流派轻攻略 墨家养成篇](https://www.bilibili.com/video/BV11jJCzFEGu)
+- [【梦想世界3】 流派轻攻略 墨家养成篇](https://www.bilibili.com/video/BV12Fpyz6ELb)

@@ -707,6 +707,10 @@ const config = defineConfig({
                           text: '墨家',
                           link: '/blog/game/meng-xiang-shi-jie/school/mohist-school',
                         },
+                        {
+                          text: '儒法',
+                          link: '/blog/game/meng-xiang-shi-jie/school/confucian-mage',
+                        },
                       ],
                       collapsed: true,
                     },

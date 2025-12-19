@@ -95,4 +95,4 @@
 
 ## 参考
 
-- [【梦想世界3】 流派轻攻略 巫法养成篇](https://www.bilibili.com/video/BV11jJCzFEGu)
+- [【梦想世界3】 流派轻攻略 巫法养成篇](https://www.bilibili.com/video/BV1gEn2zJErm)
