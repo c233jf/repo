@@ -693,15 +693,19 @@ const config = defineConfig({
                       items: [
                         {
                           text: '剑战',
-                          link: '/blog/game/meng-xiang-shi-jie/school/sword.md',
+                          link: '/blog/game/meng-xiang-shi-jie/school/sword',
                         },
                         {
                           text: '阴阳',
-                          link: '/blog/game/meng-xiang-shi-jie/school/yin-and-yang.md',
+                          link: '/blog/game/meng-xiang-shi-jie/school/yin-and-yang',
                         },
                         {
                           text: '巫法',
-                          link: '/blog/game/meng-xiang-shi-jie/school/witchcraft.md',
+                          link: '/blog/game/meng-xiang-shi-jie/school/witchcraft',
+                        },
+                        {
+                          text: '墨家',
+                          link: '/blog/game/meng-xiang-shi-jie/school/mohist-school',
                         },
                       ],
                       collapsed: true,
@@ -711,11 +715,11 @@ const config = defineConfig({
                       items: [
                         {
                           text: '培养',
-                          link: '/blog/game/meng-xiang-shi-jie/pet/pet.md',
+                          link: '/blog/game/meng-xiang-shi-jie/pet/pet',
                         },
                         {
                           text: '技能',
-                          link: '/blog/game/meng-xiang-shi-jie/pet/skill.md',
+                          link: '/blog/game/meng-xiang-shi-jie/pet/skill',
                         },
                       ],
                       collapsed: true,
