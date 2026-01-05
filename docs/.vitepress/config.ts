@@ -711,6 +711,10 @@ const config = defineConfig({
                           text: '儒法',
                           link: '/blog/game/meng-xiang-shi-jie/school/confucian-mage',
                         },
+                        {
+                          text: '道法',
+                          link: '/blog/game/meng-xiang-shi-jie/school/taoist',
+                        },
                       ],
                       collapsed: true,
                     },
