@@ -18,4 +18,5 @@ COPY docs docs
 RUN pnpm docs:build
 
 FROM nginx:alpine
+COPY nginx.conf /etc/nginx/nginx.conf
 COPY --from=build /repo/docs/.vitepress/dist /usr/share/nginx/html
