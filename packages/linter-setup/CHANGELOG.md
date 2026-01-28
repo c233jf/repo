@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.0.7](https://github.com/c233jf/repo/compare/linter-setup-v1.0.6...linter-setup-v1.0.7) (2026-01-28)
+
+
+### Bug Fixes
+
+* **linter-setup:** fix .vue files parsing error ([290d648](https://github.com/c233jf/repo/commit/290d6483d9600d916fe827cc0944f4592aa3ef64))
+
+
+### Performance Improvements
+
+* **linter-setup:** remove useless dep ([0c62928](https://github.com/c233jf/repo/commit/0c62928446091239923f5b0a80830483ca45281b))
+
 ## [1.0.6](https://github.com/c233jf/repo/compare/linter-setup-v1.0.5...linter-setup-v1.0.6) (2024-07-02)
 
 
