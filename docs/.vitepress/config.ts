@@ -682,6 +682,16 @@ const config = defineConfig({
               ],
               collapsed: true,
             },
+            {
+              text: '故事',
+              items: [
+                {
+                  text: '身份',
+                  link: '/blog/story/identity/',
+                },
+              ],
+              collapsed: true,
+            },
           ],
         },
       ],
