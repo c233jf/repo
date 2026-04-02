@@ -324,6 +324,8 @@
 
 [梦想世界 3 光环与脚印](https://mx.duoyi.com/game/game_5400.shtm)
 
+参考 DNF 中的光环
+
 ## 陈
 
 - 形象：服装为现代改良的仿古服装，额头有两个小犄角，龙女形象，银发，银白色龙尾
@@ -358,6 +360,8 @@
 - [神武4：幻唐志](https://htz.duoyi.com/)
 - [风云 2](<https://zh.wikipedia.org/wiki/%E9%A2%A8%E9%9B%B2II_(%E9%9B%BB%E5%BD%B1)>)
 - [DNF](https://dnf.qq.com/)
+- [DNF 全职业技能进化系统展示](https://bbs.colg.cn/page_collect/330.html)
+- [Colg 外观图鉴](https://bbs.colg.cn/colg_creator-platform.html?uid=2672812)
 - 凡人修仙传
 - 诡秘之主
 - 宿命之环
