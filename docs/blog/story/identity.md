@@ -48,9 +48,13 @@
 ##### 技能
 
 - 拔刀斩
+  ![拔刀奥义](./dnf/draw-sword-desc.jpg)![拔刀斩 VP 1](./dnf/draw-sword.gif)
 - 破空拔刀斩
-- 极神剑术-破空斩
-- 极神剑术-瞬斩
+  ![剑意逐浪](./dnf/lightning-draw-sword-desc.jpg)![破空拔刀斩 VP 2](./dnf/lightning-draw-sword.gif)
+- 极 · 神剑术（破空斩）
+  ![极·神剑术（破空斩）](./dnf/omnislay-minds-sword.gif)
+- 极 · 神剑术 (瞬斩)
+  ![流光断界斩](./dnf/ultimate-blade-dance-lightning-desc.jpg)![极 · 神剑术 (瞬斩) VP 1](./dnf/ultimate-blade-dance-lightning.gif)
 
 所有技能的施放必须以拔刀 - 收刀为一整套动作，完成这套动作才能施放下一个技能
 
@@ -107,8 +111,10 @@
 
 ##### 技能
 
-- 螺旋波动枪
+- 行云 : 风
+  ![行云 : 风](./dnf/swirling-spear.png)
 - 夺命雷霆枪
+  ![夺命雷斩](./dnf/vital-strike-desc.jpg)![夺命雷霆枪 VP 1](./dnf/vital-strike.gif)
 
 #### 潜龙-枪
 
