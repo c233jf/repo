@@ -14,7 +14,7 @@
 
 - 形象：古代、修仙小说人物，由于涉及到西方元素，所以需要融合一下西方元素，参考 DNF 中的角色装扮，黑色短发
 
-![剑魂三觉立绘](https://olimg.3dmgame.com/uploads/images/xiaz/2020/0228/1582866542133.jpg)
+![剑魂三觉立绘](./dnf/neo-blade-master.jpg)
 
 ### 装备
 
@@ -58,7 +58,7 @@
 
 剑身为宇宙星辰，深邃、神秘，自带星辰之力，剑身附着星阵
 
-![金秋魔幻星座武器装扮](https://game.gtimg.cn/images/dnf/cp/a20230921pack/p3_swip_img1.png)
+![金秋魔幻星座武器装扮](./dnf/p3-swip-img1.png)
 
 ##### 特性
 
@@ -190,9 +190,9 @@
 
 参考 DNF 中的天御套
 
-![天御套上衣、下装、腰带、头肩装备描述](https://i0.hdslb.com/bfs/article/3db878ca3d559371f846b665998533b061aa5533.jpg@1256w_686h_!web-article-pic.avif)
-![天御套鞋子描述](https://i0.hdslb.com/bfs/article/d0f57c19bc968813ae77c51039b3256266cec5a2.jpg@!web-article-pic.avif)
-![天御套套装描述](https://i0.hdslb.com/bfs/article/3d6f0e707203a91266d503f415d58add94a7d40f.jpg@!web-article-pic.avif)
+![天御套上衣、下装、腰带、头肩装备描述](./dnf/tian-yu-body.webp)
+![天御套鞋子描述](./dnf/tian-yu-sheet.webp)
+![天御套套装描述](./dnf/tian-yu-desc.webp)
 
 #### 生物机甲
 
@@ -203,7 +203,7 @@
 参考 DNF 中的狄瑞吉光剑武器
 
 ![光剑](./dnf/light-sword.png)
-![狄瑞吉噩梦——武器装扮-光剑](https://att.colg.cn/forum/202603/08/2672812_17729054047080000.png/ori_jpg)
+![狄瑞吉噩梦——武器装扮-光剑](./dnf/dark-light-sword.jpg)
 
 ##### 技能
 
@@ -367,6 +367,7 @@
 - [DNF](https://dnf.qq.com/)
 - [DNF 全职业技能进化系统展示](https://bbs.colg.cn/page_collect/330.html)
 - [Colg 外观图鉴](https://bbs.colg.cn/colg_creator-platform.html?uid=2672812)
+- [DNF 相关内容集合贴](https://seicing.com/html/index-dnf.html)
 - 凡人修仙传
 - 诡秘之主
 - 宿命之环
