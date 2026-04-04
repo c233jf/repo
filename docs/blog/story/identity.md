@@ -47,13 +47,13 @@
 
 ##### 技能
 
-- 拔刀斩
+- 拔刀斩![拔刀斩](./dnf/draw-sword.png)
   ![拔刀奥义](./dnf/draw-sword-desc.jpg)![拔刀斩 VP 1](./dnf/draw-sword.gif)
-- 破空拔刀斩
+- 破空拔刀斩![破空拔刀斩](./dnf/lightning-draw-sword.png)
   ![剑意逐浪](./dnf/lightning-draw-sword-desc.jpg)![破空拔刀斩 VP 2](./dnf/lightning-draw-sword.gif)
-- 极 · 神剑术（破空斩）
+- 极 · 神剑术（破空斩）![极 · 神剑术（破空斩）](./dnf/omnislay-minds-sword.png)
   ![极·神剑术（破空斩）](./dnf/omnislay-minds-sword.gif)
-- 极 · 神剑术 (瞬斩)
+- 极 · 神剑术 (瞬斩)![极 · 神剑术 (瞬斩)](./dnf/ultimate-blade-dance-lightning.png)
   ![流光断界斩](./dnf/ultimate-blade-dance-lightning-desc.jpg)![极 · 神剑术 (瞬斩) VP 1](./dnf/ultimate-blade-dance-lightning.gif)
 
 所有技能的施放必须以拔刀 - 收刀为一整套动作，完成这套动作才能施放下一个技能
@@ -111,9 +111,8 @@
 
 ##### 技能
 
-- 行云 : 风
-  ![行云 : 风](./dnf/swirling-spear.png)
-- 夺命雷霆枪
+- 行云 : 风![行云 : 风](./dnf/swirling-spear.png)
+- 夺命雷霆枪![夺命雷霆枪](./dnf/vital-strike.png)
   ![夺命雷斩](./dnf/vital-strike-desc.jpg)![夺命雷霆枪 VP 1](./dnf/vital-strike.gif)
 
 #### 潜龙-枪
@@ -168,8 +167,9 @@
 
 ##### 技能
 
-- 里-鬼剑术
-- DNF 中狂战的双刀
+- 里 · 鬼剑术![里 · 鬼剑术](./dnf/secret-sword-art.png)
+- DNF 中狂战的双刀![狂暴之力](./dnf/frenzy.png)
+  ![狂暴之力](./dnf/frenzy.gif)
 
 #### 火枪
 
@@ -182,15 +182,18 @@
 
 ##### 技能
 
-- 乱射
-- 溃灭射击
-- 双鹰回旋
-- 压制射击
-- 疾风骤雨
-- 抹杀
-- 爆炎弹
-- 银弹
-- 冰冻弹
+- 聚合弹![聚合弹](./dnf/buster-shot.png)
+  ![伪装射击](./dnf/buster-shot-desc.png)![聚合弹 VP 2](./dnf/buster-shot.gif)
+- 爆炎弹![爆炎弹](./dnf/flame-bullet.png)
+- 银弹![银弹](./dnf/silver-bullet.png)
+- 冰冻弹![冰冻弹](./dnf/freeze-bullet.png)
+- 凝固汽油弹![凝固汽油弹](./dnf/napalm.png)
+  ![凝固汽油弹](./dnf/napalm.gif)
+- 溃灭射击![溃灭射击](./dnf/headshot.png)
+- 疾风骤雨![疾风骤雨](./dnf/fast-draw.png)
+  ![双域轮爆](./dnf/fast-draw-desc.png)![疾风骤雨 VP 2](./dnf/fast-draw.gif)
+- 抹杀![抹杀](./dnf/wipeout.png)
+  ![完美控制](./dnf/wipeout-desc.png)![抹杀 VP 2](./dnf/wipeout.gif)
 
 #### 天御之灾
 
@@ -214,11 +217,14 @@
 ##### 技能
 
 - 寒光掠影：剑意三千境，一招足以制胜。表现为以自身为圆心小范围的剑意风暴
-- 幻影剑舞
-- 猛龙断空斩
-- 破军斩龙击
-- 万剑归宗
-- 极神剑术-无形斩
+- 幻影剑舞![幻影剑舞](./dnf/illusion-sword-dance.png)
+  ![无形剑舞](./dnf/illusion-sword-dance-desc.png)![幻影剑舞 VP 1](./dnf/illusion-sword-dance.gif)
+- 猛龙断空斩![猛龙断空斩](./dnf/raging-dragon-slash.png)
+  ![猛龙过江](./dnf/raging-dragon-slash-desc.png)![猛龙断空斩 VP 1](./dnf/raging-dragon-slash.gif)
+- 破军斩龙击![破军斩龙击](./dnf/charge-burst.png)
+  ![心念合一](./dnf/charge-burst-desc.png)![破军斩龙击 VP 1](./dnf/charge-burst.gif)
+- 万剑归宗![万剑归宗](./dnf/telekinetic-swords.png)
+- 极 · 神剑术 (无形斩)![极 · 神剑术 (无形斩)](./dnf/ultimate-blade-dance-ethereal-slash.png)
 
 ### 法术、招式
 
@@ -265,6 +271,7 @@
 #### 道法
 
 - 一气化三清：这 3 个分身在思想上是整体统一的，无独立性。这 3 分身共享所有的宝物、法宝、符咒
+- 三花聚顶： 参考梦想世界 3 道法百级招
 
 |      | 身份一                       | 身份二                                           | 身份三                         |
 | ---- | ---------------------------- | ------------------------------------------------ | ------------------------------ |
@@ -273,23 +280,72 @@
 | 血脉 |                              |                                                  |                                |
 | 体质 | 雷电之体                     |                                                  |                                |
 | 装备 | 刀、雷劫、星剑、筋斗云、翅膀 | 耀世、天威、潜龙、焚天、天御之灾、风火轮、混天绫 | 闪烁之刃、火枪、生物机甲、光剑 |
-| 功法 | 雷法、符道、道法、阿修罗     | 剑修、枪修、三头六臂                             | 枪斗术                         |
+| 功法 | 雷法、符道、道法、阿修罗     | 剑修、枪修、三头六臂、魔修                       | 枪斗术                         |
 
 #### 三头六臂
 
 炼体功法
 
+#### 魔修
+
+- 杀意波动![杀意波动](./dnf/murderous-wave.png)
+
 #### 枪斗术
 
 参考 DNF 中男、女漫游的技能
 
+- 乱射![乱射](./dnf/wild-shot.png)
+  ![超速左轮](./dnf/wild-shot-desc.png)![乱射 VP 1](./dnf/wild-shot.gif)
+- 双鹰回旋![双鹰回旋](./dnf/death-hawk.png)
+  ![双重利刃](./dnf/death-hawk-desc.png)![双鹰回旋 VP 1](./dnf/death-hawk.gif)
+- 压制射击![压制射击](./dnf/suppressive-barrage.png)
+  ![精确压制](./dnf/suppressive-barrage-desc.png)![压制射击 VP 2](./dnf/suppressive-barrage.gif)
+
 #### 符道
 
-参考 DNF 中的驱魔师职业技能
+参考 DNF 中的驱魔师职业技能：
+
+[【DNF】地下城与勇士《光启·驱魔师》技能展示（41）](https://www.bilibili.com/video/BV1PYy9BiEMw)
+[【DNF】地下城与勇士《光启·驱魔师》技能展示（45）](https://www.bilibili.com/video/BV1wMkmBrEQk)
+
+- 式神 : 热炎朱雀![式神 : 热炎朱雀](./dnf/shikigami-of-fire-red-phoenix.png)
+- 式神 : 地之玄武![式神 : 地之玄武](./dnf/shikigami-of-earth-black-tortoise.png)
+- 式神 : 空之白虎![式神 : 空之白虎](./dnf/shikigami-of-air-white-tiger.png)
+  ![白虎 - 合](./dnf/shikigami-of-air-white-tiger-desc.png)![式神 : 空之白虎 VP 1](./dnf/shikigami-of-air-white-tiger.gif)
+- 式神 : 幻海青龙![式神 : 幻海青龙](./dnf/shikigami-of-water-blue-dragon.png)
+  ![青龙 - 惊涛](./dnf/shikigami-of-water-blue-dragon-desc.png)![式神 : 幻海青龙 VP 1](./dnf/shikigami-of-water-blue-dragon.gif)
+- 升龙·开阵![升龙·开阵](./dnf/pentacle-of-the-ascending-golden-dragon.png)
+  ![升龙阵 - 镇](./dnf/pentacle-of-the-ascending-golden-dragon-desc.png)![升龙·开阵](./dnf/pentacle-of-the-ascending-golden-dragon.gif)
+- 四座千泰门![四座千泰门](./dnf/heavenly-gate-of-the-shikigami.png)
+- 因果业火符![因果业火符](./dnf/slow-burn-amulet.png)
+  ![焚业七劫](./dnf/slow-burn-amulet-desc.png)![因果业火符 VP 2](./dnf/slow-burn-amulet.gif)
+- 退魔阴阳符![退魔阴阳符](./dnf/amulet-pentagram.png)
+  ![魔魂爆炎阵](./dnf/amulet-pentagram-desc.png)![退魔阴阳符 VP 2](./dnf/amulet-pentagram.gif)
+- 唤雷符 - 乾坤之境![唤雷符](./dnf/thunder-amulet.png)
 
 #### 阿修罗
 
 参考 DNF 中的阿修罗职业技能
+
+[【怀旧DNF】地下城与勇士《天帝》技能展示](https://www.bilibili.com/video/BV1LvZrBXExG)
+[【DNF】地下城与勇士《极诣·阿修罗》技能展示（4）](https://www.bilibili.com/video/BV1PvhczTEP2)
+
+- 冰刃·波动剑![冰刃·波动剑](./dnf/ice-wave-sword.png)
+- 爆炎·波动剑![爆炎·波动剑](./dnf/fire-wave-sword.png)
+  ![爆炎·波动剑](./dnf/fire-wave-sword.gif)
+- 极冰·裂波剑![极冰·裂波剑](./dnf/glacial-wave-sword.png)
+  ![冰花绽放](./dnf/glacial-wave-sword-desc.png)![极冰·裂波剑 VP 2](./dnf/glacial-wave-sword.gif)
+- 旧极炎·裂波剑![旧极炎·裂波剑](./dnf/magma-wave-sword-old.png)
+- 新极炎·裂波剑![新极炎·裂波剑](./dnf/magma-wave-sword.png)
+  ![爆炎修罗道](./dnf/magma-wave-sword-desc.png)![新极炎·裂波剑 VP 2](./dnf/magma-wave-sword.gif)
+- 邪光波动阵![邪光波动阵](./dnf/ground-quaker.png)
+  ![追魂落雷阵](./dnf/ground-quaker-desc.png)![邪光波动阵 VP 2](./dnf/ground-quaker.gif)
+- 天雷·波动剑![天雷·波动剑](./dnf/wave-sword-indra-net.png)
+  ![天罗雷网](./dnf/wave-sword-indra-net-desc.png)![天雷·波动剑 VP 2](./dnf/wave-sword-indra-net.gif)
+- 天雷·降魔杵![天雷·降魔杵](./dnf/heavenly-vajra.png)：综合 VP 1 和 VP 2 技能效果，雷云无限时间，降魔杵白色、红色随机
+  ![雷云天恸](./dnf/heavenly-vajra-desc-1.png)![天雷·降魔杵 VP 1](./dnf/heavenly-vajra-1.gif)
+  ![炽雷天罚](./dnf/heavenly-vajra-desc-2.png)![天雷·降魔杵 VP 2](./dnf/heavenly-vajra-2.gif)
+- 雷神之息![雷神之息](./dnf/thunder-god-energy.png)：习得后，所有阿修罗技能都会得到增强（形态优化，电、光属性附加等）
 
 ### 境界
 
