@@ -296,10 +296,14 @@
 
 - 乱射![乱射](./dnf/wild-shot.png)
   ![超速左轮](./dnf/wild-shot-desc.png)![乱射 VP 1](./dnf/wild-shot.gif)
+- 枪舞![枪舞](./dnf/gun-dance.png)
+  ![旋涡枪舞](./dnf/gun-dance-desc.png)![枪舞 VP 1](./dnf/gun-dance.gif)
 - 双鹰回旋![双鹰回旋](./dnf/death-hawk.png)
   ![双重利刃](./dnf/death-hawk-desc.png)![双鹰回旋 VP 1](./dnf/death-hawk.gif)
 - 压制射击![压制射击](./dnf/suppressive-barrage.png)
   ![精确压制](./dnf/suppressive-barrage-desc.png)![压制射击 VP 2](./dnf/suppressive-barrage.gif)
+- 压制射击![压制射击](./dnf/suppressive-barrage.png)
+  ![枪刃风暴](./dnf/suppressive-barrage-female-desc.png)![压制射击 VP 1](./dnf/suppressive-barrage-female.gif)
 
 #### 符道
 
