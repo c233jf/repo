@@ -278,7 +278,7 @@
 | 名称 | 元                           |                                                  |                                |
 | 别名 |                              |                                                  |                                |
 | 血脉 |                              |                                                  |                                |
-| 体质 | 雷电之体                     |                                                  |                                |
+| 体质 | 雷电之体                     | 魔体（魔气入体）、龙体（借用了一点陈的龙人基因） |                                |
 | 装备 | 刀、雷劫、星剑、筋斗云、翅膀 | 耀世、天威、潜龙、焚天、天御之灾、风火轮、混天绫 | 闪烁之刃、火枪、生物机甲、光剑 |
 | 功法 | 雷法、符道、道法、阿修罗     | 剑修、枪修、三头六臂、魔修                       | 枪斗术                         |
 
@@ -288,7 +288,31 @@
 
 #### 魔修
 
-- 杀意波动![杀意波动](./dnf/murderous-wave.png)
+参考风云 2 聂风入魔表现
+
+[【怀旧DNF】地下城与勇士《帝血弑天》技能展示](https://www.bilibili.com/video/BV1sKXPBJEDW)
+[【DNF】地下城与勇士《极诣·狂战士》技能展示（3）](https://www.bilibili.com/video/BV1RGu9zjEVL)
+
+- 杀意波动![杀意波动](./dnf/murderous-wave.png) + 嗜血![嗜血](./dnf/thirst.png)：结合这两个技能，领域、范围性技能，兼探测、攻击、防御一体
+- 嗜血 - 嗜魂之手![嗜魂之手](./dnf/bloodlust.png)：结合吸星大法的功能，能够吸取对手的生命力、法力、修为等
+- 怒气爆发![怒气爆发](./dnf/raging-fury.png)
+- 暴怒狂斩![暴怒狂斩](./dnf/rage.png)
+  ![暴怒狂斩](./dnf/rage.gif)
+- 嗜魂封魔斩![嗜魂封魔斩](./dnf/bloody-twister.png)
+  ![嗜魂封魔斩](./dnf/bloody-twister.gif)
+- 血气之刃![血气之刃](./dnf/blood-sword.png)
+  ![饥渴战歌](./dnf/blood-sword-desc.png)![血气之刃 VP 1](./dnf/blood-sword.gif)
+- 崩山裂地斩![崩山裂地斩](./dnf/outrage-break.png)
+  ![崩山裂地斩](./dnf/outrage-break.gif)
+- 魔狱血刹![魔狱血刹](./dnf/extreme-overkill.png)
+- 强悍碾压![强悍碾压](./dnf/brutal-crusher.png)
+  ![狂热碾压](./dnf/brutal-crusher-desc.png)![强悍碾压 VP 1](./dnf/brutal-crusher.gif)
+- 浴血之怒![浴血之怒](./dnf/blood-boom.png)
+  ![鲜血之欲](./dnf/blood-boom-desc.png)![浴血之怒 VP 1](./dnf/blood-boom.gif)
+- 血气爆发![血气爆发](./dnf/burst-fury.png)
+- 致命血陨![致命血陨](./dnf/fatal-blood.png)
+  ![残忍终幕](./dnf/fatal-blood-desc.png)![致命血陨 VP 2](./dnf/fatal-blood.gif)
+- 魔煞血陨![魔煞血陨](./dnf/bloody-rose.png)
 
 #### 枪斗术
 
