@@ -1,10 +1,10 @@
 # Install dependencies for the project
 
 # Update package list
-sudo apt-get update
+sudo apt-get update -y && sudo apt-get upgrade -y
 
 # Install required packages
-sudo apt-get install -y curl git
+sudo apt-get install -y curl git unzip xz-utils zip libglu1-mesa
 
 # Install pnpm
 curl -fsSL https://get.pnpm.io/install.sh | sh -
