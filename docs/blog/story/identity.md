@@ -192,8 +192,6 @@
 - 溃灭射击![溃灭射击](./dnf/headshot.png)
 - 疾风骤雨![疾风骤雨](./dnf/fast-draw.png)
   ![双域轮爆](./dnf/fast-draw-desc.png)![疾风骤雨 VP 2](./dnf/fast-draw.gif)
-- 抹杀![抹杀](./dnf/wipeout.png)
-  ![完美控制](./dnf/wipeout-desc.png)![抹杀 VP 2](./dnf/wipeout.gif)
 
 #### 天御之灾
 
@@ -330,6 +328,8 @@
   ![精确压制](./dnf/suppressive-barrage-desc.png)![压制射击 VP 2](./dnf/suppressive-barrage.gif)
 - 压制射击![压制射击](./dnf/suppressive-barrage.png)
   ![枪刃风暴](./dnf/suppressive-barrage-female-desc.png)![压制射击 VP 1](./dnf/suppressive-barrage-female.gif)
+- 抹杀![抹杀](./dnf/wipeout.png)
+  ![完美控制](./dnf/wipeout-desc.png)![抹杀 VP 2](./dnf/wipeout.gif)
 
 #### 符道
 
