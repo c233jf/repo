@@ -38,33 +38,6 @@ const config = defineConfig({
           text: 'Blog',
           items: [
             {
-              text: '计算机网络',
-              items: [
-                {
-                  text: '协议',
-                  items: [
-                    {
-                      text: 'HTTP',
-                      link: '/blog/computer-network/protocol/http/',
-                      items: [
-                        {
-                          text: '响应状态码',
-                          link: '/blog/computer-network/protocol/http/status',
-                        },
-                        {
-                          text: 'HTTPS',
-                          link: '/blog/computer-network/protocol/http/https',
-                        },
-                      ],
-                      collapsed: true,
-                    },
-                  ],
-                  collapsed: true,
-                },
-              ],
-              collapsed: true,
-            },
-            {
               text: '个人规范',
               link: '/blog/convention/',
               items: [
