@@ -10,9 +10,6 @@ hero:
       text: Blog
       link: /blog/
     - theme: alt
-      text: Collections
-      link: /collections/
-    - theme: alt
       text: Packages
       link: /packages/
 ---

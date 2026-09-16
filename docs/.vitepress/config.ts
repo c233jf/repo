@@ -19,7 +19,6 @@ const config = defineConfig({
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Blog', link: '/blog/' },
-      { text: 'Collections', link: '/collections/' },
       { text: 'Packages', link: '/packages/' },
     ],
     search: {
@@ -27,66 +26,6 @@ const config = defineConfig({
     },
 
     sidebar: {
-      '/collections/': [
-        {
-          text: 'Collections',
-          link: '/collections/',
-          items: [
-            {
-              text: 'IT',
-              collapsed: true,
-              items: [
-                {
-                  text: 'AI',
-                  link: '/collections/it/ai/',
-                },
-                {
-                  text: '运维',
-                  link: '/collections/it/dev-ops/',
-                },
-                {
-                  text: '开发工具',
-                  link: '/collections/it/dev-tools/',
-                },
-                {
-                  text: '逆向工具',
-                  link: '/collections/it/reverse-engineering/',
-                },
-                {
-                  text: '编程语言',
-                  items: [
-                    {
-                      text: 'C++',
-                      link: '/collections/it/language/c++/',
-                    },
-                    {
-                      text: 'Go',
-                      link: '/collections/it/language/go/',
-                    },
-                    {
-                      text: 'JavaScript',
-                      link: '/collections/it/language/javascript/',
-                    },
-                    {
-                      text: 'Python',
-                      link: '/collections/it/language/python/',
-                    },
-                  ],
-                  collapsed: true,
-                },
-                {
-                  text: '数据库',
-                  link: '/collections/it/database/',
-                },
-              ],
-            },
-            {
-              text: '资源站',
-              link: '/collections/resource/',
-            },
-          ],
-        },
-      ],
       '/packages/': [
         {
           text: 'Packages',
