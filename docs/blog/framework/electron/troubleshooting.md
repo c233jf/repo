@@ -9,7 +9,7 @@ next: false
 
 该问题是使用 [Electron Forge](https://www.electronforge.io/) 中的 `Vite + TypeScript` 模板时遇到的。
 
-首先我们根据 [这篇文章](../../builder/vite/troubleshooting.md#typeorm-and-sqlite3) 调整一下 `vite.main.config.ts` 内容：
+首先调整一下 `vite.main.config.ts` 内容：
 
 ```ts
 import { defineConfig } from 'vite'

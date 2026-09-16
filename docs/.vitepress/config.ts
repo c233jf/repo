@@ -38,38 +38,6 @@ const config = defineConfig({
           text: 'Blog',
           items: [
             {
-              text: '构建工具',
-              items: [
-                {
-                  text: 'Vite',
-                  collapsed: true,
-                  items: [
-                    {
-                      text: '代码分块',
-                      link: '/blog/builder/vite/chunking.md',
-                    },
-                    {
-                      text: '摇树',
-                      link: '/blog/builder/vite/tree-shaking.md',
-                    },
-                    {
-                      text: '最小化',
-                      link: '/blog/builder/vite/minify.md',
-                    },
-                    {
-                      text: 'Troubleshooting',
-                      link: '/blog/builder/vite/troubleshooting.md',
-                    },
-                  ],
-                },
-                {
-                  text: 'CMake',
-                  link: '/blog/builder/cmake/',
-                },
-              ],
-              collapsed: true,
-            },
-            {
               text: '计算机网络',
               items: [
                 {

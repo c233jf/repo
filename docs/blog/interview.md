@@ -44,12 +44,6 @@
 
 使用 CSS 属性 `resize: horizontal;`
 
-### 简单描述一下使用打包工具做了什么优化
-
-- [代码分块（Chunking）](builder/vite/chunking.md)
-- [摇树（Tree Shaking）](builder/vite/tree-shaking.md)
-- [最小化混淆（Minify）](builder/vite/minify.md)
-
 ### 有没有接触过 SSR，简单描述一下
 
 - [服务端渲染](https://cn.vuejs.org/guide/scaling-up/ssr.html)
