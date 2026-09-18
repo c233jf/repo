@@ -38,37 +38,6 @@ const config = defineConfig({
           text: 'Blog',
           items: [
             {
-              text: '个人规范',
-              link: '/blog/convention/',
-              items: [
-                {
-                  text: '语言规范',
-                  link: '/blog/convention/language/',
-                },
-                {
-                  text: '框架',
-                  link: '/blog/convention/framework/',
-                },
-                {
-                  text: '网页规范',
-                  link: '/blog/convention/page/',
-                },
-                {
-                  text: '静态资源',
-                  link: '/blog/convention/assets/',
-                },
-                {
-                  text: '构建工具',
-                  link: '/blog/convention/builder/',
-                },
-                {
-                  text: '项目配置',
-                  link: '/blog/convention/config/',
-                },
-              ],
-              collapsed: true,
-            },
-            {
               text: '数据结构',
               link: '/blog/data-structure/',
               items: [
