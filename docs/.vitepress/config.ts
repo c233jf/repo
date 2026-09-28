@@ -38,20 +38,6 @@ const config = defineConfig({
           text: 'Blog',
           items: [
             {
-              text: 'DevOps',
-              items: [
-                {
-                  text: 'CI/CD',
-                  items: [
-                    { text: 'Aliyun', link: '/blog/dev-ops/ci-cd/aliyun.md' },
-                    { text: 'Lint', link: '/blog/dev-ops/ci-cd/lint.md' },
-                  ],
-                  collapsed: true,
-                },
-              ],
-              collapsed: true,
-            },
-            {
               text: '框架',
               items: [
                 {
