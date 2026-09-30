@@ -12,7 +12,8 @@ import { resolve } from 'node:path'
 // https://vitepress.dev/reference/site-config
 const config = defineConfig({
   title: "HBee's Repo",
-  description: '收集个人使用过的工具、库以及自己练习所编写的代码',
+  description:
+    '包含个人代码片段、代码练习、部分 demo 以及个人仓库通用的 packages',
   lastUpdated: true,
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
