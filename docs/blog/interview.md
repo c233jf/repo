@@ -10,28 +10,17 @@
 
 ### v-model，即数据双向绑定原理是什么
 
-[v-model 原理](framework/vue/principle/directives/v-model/)
-
 ### 为什么要使用 Virtual DOM 替代真实 DOM
-
-[Renderer](framework/vue/renderer/)
 
 ### vue 的 diff 算法
 
-[Diff 算法](framework/vue/diff.md)
-
 ### 响应式更新原理
 
-- [Reactivity](framework/vue/reactivity/)
 - [深入响应式系统](https://cn.vuejs.org/guide/extras/reactivity-in-depth.html)
 
 ### 为什么 Vue3 使用 Proxy 替代访问器描述符（getter / setter）
 
-[不能自动对添加的属性进行依赖追踪](framework/vue/reactivity/#实现-reactive)
-
 ### Vue3 与 Vue2 有什么区别
-
-[博客](framework/vue/difference.md)
 
 ### 描述一下父子组件通信的方式
 
