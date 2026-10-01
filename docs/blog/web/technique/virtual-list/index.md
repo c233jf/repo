@@ -27,6 +27,8 @@
 
 <VirtualList2 :height="500" :estimated-item-height="50" />
 
+<<< ./components/VirtualList.vue
+
 ## 缺点
 
 虽然虚拟化表格解决了超大数据渲染的性能问题，但它并不是完美无瑕的。该方案有以下两个缺点：
