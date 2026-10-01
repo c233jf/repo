@@ -4,7 +4,7 @@ layout: home
 
 hero:
   name: "HBee's Repo"
-  text: '个人仓库（包含个人博客、代码片段以及收集的各种网站）'
+  text: '包含个人代码片段、代码练习、部分 demo 、个人仓库通用的 packages、个人作品展示'
   actions:
     - theme: brand
       text: Blog
