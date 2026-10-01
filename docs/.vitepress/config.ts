@@ -210,61 +210,8 @@ const config = defineConfig({
               text: 'Web',
               items: [
                 {
-                  text: 'api',
-                  items: [
-                    {
-                      text: '事件',
-                      items: [
-                        {
-                          text: '性能',
-                          link: '/blog/web/api/event/performance/',
-                        },
-                      ],
-                      collapsed: true,
-                    },
-                    {
-                      text: '定时器',
-                      link: '/blog/web/api/timer/',
-                    },
-                  ],
-                  collapsed: true,
-                },
-                {
-                  text: '优化',
-                  link: '/blog/web/optimization/',
-                },
-                {
-                  text: '安全',
-                  link: '/blog/web/security/',
-                  items: [
-                    {
-                      text: '防盗链',
-                      link: '/blog/web/security/anti-stealing-link',
-                    },
-                    {
-                      text: '加密算法',
-                      link: '/blog/web/security/encryption/',
-                    },
-                  ],
-                  collapsed: true,
-                },
-                {
-                  text: '技巧',
-                  items: [
-                    {
-                      text: '客户端检测',
-                      link: '/blog/web/technique/client-detection/',
-                    },
-                    {
-                      text: 'DOM 操作',
-                      link: '/blog/web/technique/dom/',
-                    },
-                    {
-                      text: '虚拟化列表',
-                      link: '/blog/web/technique/virtual-list/',
-                    },
-                  ],
-                  collapsed: true,
+                  text: '虚拟化列表',
+                  link: '/blog/web/technique/virtual-list/',
                 },
               ],
               collapsed: true,
