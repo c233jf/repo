@@ -1,13 +1,13 @@
-import { canConstruct } from '../../blog/data-structure/leetcode/can-construct.ts'
-import { fizzBuzz } from '../../blog/data-structure/leetcode/fizz-buzz.ts'
-import { getMaxSubSum } from '../../blog/data-structure/leetcode/get-max-sub-sum.ts'
-import { maximumWealth } from '../../blog/data-structure/leetcode/maximum-wealth.ts'
+import { canConstruct } from '../../repo/data-structure/leetcode/can-construct.ts'
+import { fizzBuzz } from '../../repo/data-structure/leetcode/fizz-buzz.ts'
+import { getMaxSubSum } from '../../repo/data-structure/leetcode/get-max-sub-sum.ts'
+import { maximumWealth } from '../../repo/data-structure/leetcode/maximum-wealth.ts'
 import {
   ListNode,
   middleNode,
-} from '../../blog/data-structure/leetcode/middle-node.ts'
-import { numberOfSteps } from '../../blog/data-structure/leetcode/number-of-steps.ts'
-import { runningSum } from '../../blog/data-structure/leetcode/running-sum.ts'
+} from '../../repo/data-structure/leetcode/middle-node.ts'
+import { numberOfSteps } from '../../repo/data-structure/leetcode/number-of-steps.ts'
+import { runningSum } from '../../repo/data-structure/leetcode/running-sum.ts'
 
 describe('一维数组的动态和', () => {
   test('返回 [1,3,6,10]', () => {

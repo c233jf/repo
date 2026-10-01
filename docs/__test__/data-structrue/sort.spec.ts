@@ -1,16 +1,16 @@
-import { quickSort } from '../../blog/data-structure/sort/exchange/quick-sort.ts'
-import { binaryInsertionSort } from '../../blog/data-structure/sort/insertion/binary-insertion-sort.ts'
-import { shellSort } from '../../blog/data-structure/sort/insertion/shell-sort.ts'
-import { straightInsertionSort } from '../../blog/data-structure/sort/insertion/straight-insertion-sort.ts'
-import { Item } from '../../blog/data-structure/sort/item.ts'
-import { mergeSort } from '../../blog/data-structure/sort/merge/merge-sort.ts'
+import { quickSort } from '../../repo/data-structure/sort/exchange/quick-sort.ts'
+import { binaryInsertionSort } from '../../repo/data-structure/sort/insertion/binary-insertion-sort.ts'
+import { shellSort } from '../../repo/data-structure/sort/insertion/shell-sort.ts'
+import { straightInsertionSort } from '../../repo/data-structure/sort/insertion/straight-insertion-sort.ts'
+import { Item } from '../../repo/data-structure/sort/item.ts'
+import { mergeSort } from '../../repo/data-structure/sort/merge/merge-sort.ts'
 import {
   RadixSort,
   StaticListNode,
   radixSort,
-} from '../../blog/data-structure/sort/radix/radix-sort.ts'
-import { heapSort } from '../../blog/data-structure/sort/selection/heap-sort.ts'
-import { selectSort } from '../../blog/data-structure/sort/selection/select-sort.ts'
+} from '../../repo/data-structure/sort/radix/radix-sort.ts'
+import { heapSort } from '../../repo/data-structure/sort/selection/heap-sort.ts'
+import { selectSort } from '../../repo/data-structure/sort/selection/select-sort.ts'
 
 function createUnorderedList() {
   return [new Item(2), new Item(1), new Item(4), new Item(5)]

@@ -11,12 +11,12 @@ import {
   inorderTraverseThread,
   postorderTraverse,
   preorderTraverse,
-} from '../../blog/data-structure/tree/tree.ts'
+} from '../../repo/data-structure/tree/tree.ts'
 import {
   preorderTraverse as _preorderTraverse,
   inorderTraverse as _inorderTraverse,
   postorderTraverse as _postorderTraverse,
-} from '../../blog/data-structure/tree/tree-iterator.ts'
+} from '../../repo/data-structure/tree/tree-iterator.ts'
 
 describe('树和二叉树', () => {
   const expressionTree = createBiTree([

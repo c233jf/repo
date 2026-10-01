@@ -1,11 +1,11 @@
 import {
   add,
   createPolynList,
-} from '../../blog/data-structure/linear-list/examples/polynomial.ts'
+} from '../../repo/data-structure/linear-list/examples/polynomial.ts'
 import {
   union,
   unionOrdered,
-} from '../../blog/data-structure/linear-list/examples/set.ts'
+} from '../../repo/data-structure/linear-list/examples/set.ts'
 import {
   List,
   createListFromHead,
@@ -14,7 +14,7 @@ import {
   insert,
   createListFromReverse,
   del,
-} from '../../blog/data-structure/linear-list/list.ts'
+} from '../../repo/data-structure/linear-list/list.ts'
 
 describe('链表', () => {
   describe('初始化', () => {

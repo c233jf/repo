@@ -19,7 +19,7 @@ const config = defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Blog', link: '/blog/' },
+      { text: 'Repo', link: '/repo/' },
       { text: 'Packages', link: '/packages/' },
     ],
     search: {
@@ -34,9 +34,9 @@ const config = defineConfig({
           items: [{ text: 'Create Package', link: '/packages/create-package' }],
         },
       ],
-      '/blog': [
+      '/repo': [
         {
-          text: 'Blog',
+          text: 'Repo',
           items: [
             {
               text: '语言',
@@ -46,18 +46,18 @@ const config = defineConfig({
                   items: [
                     {
                       text: 'Hello World',
-                      link: '/blog/language/cpp/helloworld/',
+                      link: '/repo/language/cpp/helloworld/',
                     },
                     {
                       text: '基本类型',
                       items: [
                         {
                           text: '字符和字符串',
-                          link: '/blog/language/cpp/fundamental-types/string/',
+                          link: '/repo/language/cpp/fundamental-types/string/',
                         },
                         {
                           text: 'nullptr',
-                          link: '/blog/language/cpp/fundamental-types/nullptr/',
+                          link: '/repo/language/cpp/fundamental-types/nullptr/',
                         },
                       ],
                       collapsed: true,
@@ -67,11 +67,11 @@ const config = defineConfig({
                       items: [
                         {
                           text: 'auto',
-                          link: '/blog/language/cpp/declarations-and-definitions/auto/',
+                          link: '/repo/language/cpp/declarations-and-definitions/auto/',
                         },
                         {
                           text: 'decltype',
-                          link: '/blog/language/cpp/declarations-and-definitions/decltype/',
+                          link: '/repo/language/cpp/declarations-and-definitions/decltype/',
                         },
                       ],
                       collapsed: true,
@@ -81,36 +81,36 @@ const config = defineConfig({
                       items: [
                         {
                           text: '强制转换',
-                          link: '/blog/language/cpp/expressions/casting/',
+                          link: '/repo/language/cpp/expressions/casting/',
                         },
                       ],
                       collapsed: true,
                     },
                     {
                       text: '运算符重载',
-                      link: '/blog/language/cpp/operator-overloading/',
+                      link: '/repo/language/cpp/operator-overloading/',
                     },
                     {
                       text: 'Lambda 表达式',
-                      link: '/blog/language/cpp/Lambda/',
+                      link: '/repo/language/cpp/Lambda/',
                     },
                     {
                       text: '指针',
                       items: [
                         {
                           text: '智能指针',
-                          link: '/blog/language/cpp/pointers/smart-pointers/',
+                          link: '/repo/language/cpp/pointers/smart-pointers/',
                         },
                       ],
                       collapsed: true,
                     },
                     {
                       text: '异常',
-                      link: '/blog/language/cpp/exception/',
+                      link: '/repo/language/cpp/exception/',
                     },
                     {
                       text: '模板',
-                      link: '/blog/language/cpp/templates/',
+                      link: '/repo/language/cpp/templates/',
                     },
                   ],
                   collapsed: true,
@@ -120,18 +120,18 @@ const config = defineConfig({
                   items: [
                     {
                       text: '内存管理',
-                      link: '/blog/language/javascript/memory-management',
+                      link: '/repo/language/javascript/memory-management',
                     },
                     {
                       text: '语句和声明',
                       items: [
                         {
                           text: '变量声明',
-                          link: '/blog/language/javascript/statements/var/',
+                          link: '/repo/language/javascript/statements/var/',
                         },
                         {
                           text: 'Async / Await',
-                          link: '/blog/language/javascript/statements/async-await/',
+                          link: '/repo/language/javascript/statements/async-await/',
                         },
                       ],
                       collapsed: true,
@@ -141,7 +141,7 @@ const config = defineConfig({
                       items: [
                         {
                           text: '闭包',
-                          link: '/blog/language/javascript/functions/closure',
+                          link: '/repo/language/javascript/functions/closure',
                         },
                       ],
                       collapsed: true,
@@ -151,7 +151,7 @@ const config = defineConfig({
                       items: [
                         {
                           text: 'WeakMap',
-                          link: '/blog/language/javascript/global-objects/weakmap',
+                          link: '/repo/language/javascript/global-objects/weakmap',
                         },
                       ],
                       collapsed: true,
@@ -164,11 +164,11 @@ const config = defineConfig({
                   items: [
                     {
                       text: 'HTML5',
-                      link: '/blog/language/html/html5/',
+                      link: '/repo/language/html/html5/',
                     },
                     {
                       text: '语义化',
-                      link: '/blog/language/html/semantic/',
+                      link: '/repo/language/html/semantic/',
                     },
                   ],
                   collapsed: true,
@@ -178,11 +178,11 @@ const config = defineConfig({
                   items: [
                     {
                       text: 'CSS3',
-                      link: '/blog/language/css/css3/',
+                      link: '/repo/language/css/css3/',
                     },
                     {
                       text: '盒模型',
-                      link: '/blog/language/css/box-model/',
+                      link: '/repo/language/css/box-model/',
                     },
                   ],
                   collapsed: true,
@@ -195,7 +195,7 @@ const config = defineConfig({
                       items: [
                         {
                           text: '高效的字符串连接',
-                          link: '/blog/language/python/best_practices/string/join.md',
+                          link: '/repo/language/python/best_practices/string/join.md',
                         },
                       ],
                       collapsed: true,
@@ -211,7 +211,7 @@ const config = defineConfig({
               items: [
                 {
                   text: '虚拟化列表',
-                  link: '/blog/web/technique/virtual-list/',
+                  link: '/repo/web/technique/virtual-list/',
                 },
               ],
               collapsed: true,

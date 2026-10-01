@@ -1,11 +1,11 @@
-import { createListFromReverse } from '../../blog/data-structure/linear-list/list.ts'
-import { binarySearch } from '../../blog/data-structure/search/linear-list/binary-search.ts'
-import { sequentialSearch } from '../../blog/data-structure/search/linear-list/sequential-search.ts'
-import { createBST } from '../../blog/data-structure/search/tree/create-bst.ts'
-import { deleteBSTNode } from '../../blog/data-structure/search/tree/delete-bst-node.ts'
-import { insertBST } from '../../blog/data-structure/search/tree/insert-bst.ts'
-import { searchBST } from '../../blog/data-structure/search/tree/search-bst.ts'
-import { createBiTree } from '../../blog/data-structure/tree/tree.ts'
+import { createListFromReverse } from '../../repo/data-structure/linear-list/list.ts'
+import { binarySearch } from '../../repo/data-structure/search/linear-list/binary-search.ts'
+import { sequentialSearch } from '../../repo/data-structure/search/linear-list/sequential-search.ts'
+import { createBST } from '../../repo/data-structure/search/tree/create-bst.ts'
+import { deleteBSTNode } from '../../repo/data-structure/search/tree/delete-bst-node.ts'
+import { insertBST } from '../../repo/data-structure/search/tree/insert-bst.ts'
+import { searchBST } from '../../repo/data-structure/search/tree/search-bst.ts'
+import { createBiTree } from '../../repo/data-structure/tree/tree.ts'
 
 describe('查找', () => {
   describe('顺序查找', () => {
