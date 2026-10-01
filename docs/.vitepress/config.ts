@@ -207,25 +207,6 @@ const config = defineConfig({
               collapsed: true,
             },
             {
-              text: '编程范式',
-              link: '/blog/programming-paradigm/',
-              items: [
-                {
-                  text: '命令式编程',
-                  link: '/blog/programming-paradigm/imperative-programming/',
-                },
-                {
-                  text: '过程式编程',
-                  link: '/blog/programming-paradigm/procedural-programming/',
-                },
-                {
-                  text: '依赖注入',
-                  link: '/blog/programming-paradigm/dependency-injection/',
-                },
-              ],
-              collapsed: true,
-            },
-            {
               text: '测试',
               link: '/blog/testing/vitest/',
               items: [
