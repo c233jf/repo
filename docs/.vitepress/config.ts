@@ -116,34 +116,6 @@ const config = defineConfig({
                   collapsed: true,
                 },
                 {
-                  text: 'HTML',
-                  items: [
-                    {
-                      text: 'HTML5',
-                      link: '/repo/language/html/html5/',
-                    },
-                    {
-                      text: '语义化',
-                      link: '/repo/language/html/semantic/',
-                    },
-                  ],
-                  collapsed: true,
-                },
-                {
-                  text: 'CSS',
-                  items: [
-                    {
-                      text: 'CSS3',
-                      link: '/repo/language/css/css3/',
-                    },
-                    {
-                      text: '盒模型',
-                      link: '/repo/language/css/box-model/',
-                    },
-                  ],
-                  collapsed: true,
-                },
-                {
                   text: 'Python',
                   items: [
                     {
