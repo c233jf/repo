@@ -119,10 +119,6 @@ const config = defineConfig({
                   text: 'JavaScript',
                   items: [
                     {
-                      text: '内存管理',
-                      link: '/repo/language/javascript/memory-management',
-                    },
-                    {
                       text: '语句和声明',
                       items: [
                         {
