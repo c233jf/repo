@@ -116,46 +116,6 @@ const config = defineConfig({
                   collapsed: true,
                 },
                 {
-                  text: 'JavaScript',
-                  items: [
-                    {
-                      text: '语句和声明',
-                      items: [
-                        {
-                          text: '变量声明',
-                          link: '/repo/language/javascript/statements/var/',
-                        },
-                        {
-                          text: 'Async / Await',
-                          link: '/repo/language/javascript/statements/async-await/',
-                        },
-                      ],
-                      collapsed: true,
-                    },
-                    {
-                      text: '函数',
-                      items: [
-                        {
-                          text: '闭包',
-                          link: '/repo/language/javascript/functions/closure',
-                        },
-                      ],
-                      collapsed: true,
-                    },
-                    {
-                      text: '全局对象',
-                      items: [
-                        {
-                          text: 'WeakMap',
-                          link: '/repo/language/javascript/global-objects/weakmap',
-                        },
-                      ],
-                      collapsed: true,
-                    },
-                  ],
-                  collapsed: true,
-                },
-                {
                   text: 'HTML',
                   items: [
                     {
