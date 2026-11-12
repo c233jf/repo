@@ -33,16 +33,13 @@ type RemoveLeadingZeros<T extends string> = T extends '0'
     ? RemoveLeadingZeros<Rest>
     : T
 
-type InnerMinusOne<T extends string> =
-  T extends `${infer X extends number}${infer Y}`
-    ? X extends 0
-      ? `9${InnerMinusOne<Y>}`
-      : `${[-1, 0, 1, 2, 3, 4, 5, 6, 7, 8][X]}${Y}`
-    : ''
-
-type Reverse<T extends string> = T extends `${infer X}${infer Y}`
-  ? `${Reverse<Y>}${X}`
+type InnerMinusOne<T extends string> = T extends `${infer X extends number}${infer Y}`
+  ? X extends 0
+    ? `9${InnerMinusOne<Y>}`
+    : `${[-1, 0, 1, 2, 3, 4, 5, 6, 7, 8][X]}${Y}`
   : ''
+
+type Reverse<T extends string> = T extends `${infer X}${infer Y}` ? `${Reverse<Y>}${X}` : ''
 
 type MinusOne<T extends number> = ParseInt<
   RemoveLeadingZeros<Reverse<InnerMinusOne<Reverse<`${T}`>>>>

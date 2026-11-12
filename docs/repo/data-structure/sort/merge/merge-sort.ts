@@ -1,13 +1,7 @@
 import { Item } from '../item.ts'
 
 // #region merge
-function merge(
-  records: Item[],
-  result: Item[],
-  low: number,
-  mid: number,
-  high: number
-) {
+function merge(records: Item[], result: Item[], low: number, mid: number, high: number) {
   let i = low
   let j = mid + 1
   let k = low
@@ -31,12 +25,7 @@ function merge(
 // #endregion merge
 
 // #region mergeSort
-function _mergeSort(
-  records: Item[],
-  result = records,
-  low = 0,
-  high = records.length - 1
-) {
+function _mergeSort(records: Item[], result = records, low = 0, high = records.length - 1) {
   if (low === high) result[low] = records[low]
   else {
     const temp: Item[] = []

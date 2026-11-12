@@ -1,4 +1,4 @@
-import { type UserConfig, defineConfig, presetIcons, presetUno } from 'unocss'
+import { defineConfig, presetIcons, presetWind4 } from 'unocss'
 
 export default defineConfig({
   shortcuts: {
@@ -8,13 +8,10 @@ export default defineConfig({
     presetIcons({
       collections: {
         'vscode-icons': () =>
-          import('@iconify-json/vscode-icons/icons.json').then(
-            (i) => i.default,
-          ),
-        mdi: () =>
-          import('@iconify-json/mdi/icons.json').then((i) => i.default),
+          import('@iconify-json/vscode-icons/icons.json').then((i) => i.default),
+        mdi: () => import('@iconify-json/mdi/icons.json').then((i) => i.default),
       },
     }),
-    presetUno(),
+    presetWind4(),
   ],
-}) as UserConfig
+})

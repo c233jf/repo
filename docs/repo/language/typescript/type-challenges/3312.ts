@@ -20,9 +20,7 @@
 
 /* _____________ 你的代码 _____________ */
 
-type MyParameters<T extends (...args: any[]) => any> = T extends (
-  ...args: infer U
-) => any
+type MyParameters<T extends (...args: any[]) => any> = T extends (...args: infer U) => any
   ? U
   : never
 

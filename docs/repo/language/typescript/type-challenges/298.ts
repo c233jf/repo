@@ -12,10 +12,7 @@
 
 /* _____________ 你的代码 _____________ */
 
-type LengthOfString<
-  S extends string,
-  T extends string[] = [],
-> = S extends `${infer _}${infer Rest}`
+type LengthOfString<S extends string, T extends string[] = []> = S extends `${infer _}${infer Rest}`
   ? LengthOfString<Rest, [...T, _]>
   : T['length']
 

@@ -21,9 +21,7 @@
 
 /* _____________ Your Code Here _____________ */
 
-type Reverse<T extends unknown[]> = T extends [infer F, ...infer R]
-  ? [...Reverse<R>, F]
-  : []
+type Reverse<T extends unknown[]> = T extends [infer F, ...infer R] ? [...Reverse<R>, F] : []
 type FlipArguments<T extends (...args: any[]) => unknown> = (
   ...args: Reverse<Parameters<T>>
 ) => ReturnType<T>
@@ -33,9 +31,7 @@ import type { Equal, Expect } from '@type-challenges/utils'
 
 export type cases = [
   Expect<Equal<FlipArguments<() => boolean>, () => boolean>>,
-  Expect<
-    Equal<FlipArguments<(foo: string) => number>, (foo: string) => number>
-  >,
+  Expect<Equal<FlipArguments<(foo: string) => number>, (foo: string) => number>>,
   Expect<
     Equal<
       FlipArguments<(arg0: string, arg1: number, arg2: boolean) => void>,

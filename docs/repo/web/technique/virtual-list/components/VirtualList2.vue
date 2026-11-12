@@ -49,9 +49,7 @@ const bufferSize = 3
 // 缓存所有渲染过的元素的高度
 // e[0] = 第一个元素的高度
 // n > 0 时：e[n] = e[n-1] + 当前索引元素的高度，n 为当前索引
-const accItemHeights = ref<number[]>(
-  data.map((_, i) => props.estimatedItemHeight * (i + 1)),
-)
+const accItemHeights = ref<number[]>(data.map((_, i) => props.estimatedItemHeight * (i + 1)))
 // 使用渲染之后的元素的平均高度来校准容器的高度
 const avgHeight = computed(() => {
   const { length } = accItemHeights.value
@@ -59,15 +57,10 @@ const avgHeight = computed(() => {
 })
 
 // 计算可视区域内的元素个数
-const visibleCount = computed(() =>
-  Math.ceil(props.height / props.estimatedItemHeight),
-)
+const visibleCount = computed(() => Math.ceil(props.height / props.estimatedItemHeight))
 const start = ref(0)
 const visibleData = computed(() =>
-  data.slice(
-    Math.max(0, start.value - bufferSize),
-    start.value + visibleCount.value + bufferSize,
-  ),
+  data.slice(Math.max(0, start.value - bufferSize), start.value + visibleCount.value + bufferSize),
 )
 
 const topPadding = computed(() => {
@@ -85,8 +78,7 @@ watchEffect(() => {
     const index = +ref.id
     if (isEstimated(index)) {
       const { height } = ref.getBoundingClientRect()
-      accItemHeights.value[index] =
-        index > 0 ? accItemHeights.value[index - 1] + height : height
+      accItemHeights.value[index] = index > 0 ? accItemHeights.value[index - 1] + height : height
     }
   })
 })

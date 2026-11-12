@@ -13,10 +13,7 @@ const user = {
   },
 }
 
-user.sayNow = partial(
-  user.say,
-  new Date().getHours() + ':' + new Date().getMinutes(),
-)
+user.sayNow = partial(user.say, new Date().getHours() + ':' + new Date().getMinutes())
 
 user.sayNow('Hello') // [6:56] John: Hello!
 // lodash 库提供类似的函数 _.partial(func, ...argsBound)。

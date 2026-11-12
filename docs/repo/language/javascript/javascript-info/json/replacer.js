@@ -14,9 +14,7 @@ room.occupiedBy = meetup
 
 consola.log(JSON.stringify(meetup, ['title', 'participants'])) // {"title":"Conference","participants":[{},{}]}
 
-consola.log(
-  JSON.stringify(meetup, ['title', 'participants', 'place', 'name', 'number']),
-) // {"title":"Conference","participants":[{"name":"John"},{"name":"Alice"}],"place":{"number":23}}
+consola.log(JSON.stringify(meetup, ['title', 'participants', 'place', 'name', 'number'])) // {"title":"Conference","participants":[{"name":"John"},{"name":"Alice"}],"place":{"number":23}}
 
 consola.log(
   JSON.stringify(meetup, (key, value) => {

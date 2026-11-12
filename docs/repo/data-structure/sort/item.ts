@@ -1,3 +1,9 @@
 export class Item {
-  constructor(public key: number, public other?: Record<string, any>) {}
+  key: number
+  other?: Record<string, any>
+
+  constructor(key: number, other?: Record<string, any>) {
+    this.key = key
+    this.other = other
+  }
 }

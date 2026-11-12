@@ -23,9 +23,7 @@ type String2Union<S extends string> = S extends `${infer First}${infer Rest}`
   ? First | String2Union<Rest>
   : never
 
-type AllCombinations<S extends string, U extends string = String2Union<S>> = [
-  U,
-] extends [never]
+type AllCombinations<S extends string, U extends string = String2Union<S>> = [U] extends [never]
   ? ''
   : '' | { [K in U]: `${K}${AllCombinations<Exclude<U, K>>}` }[U]
 

@@ -30,12 +30,7 @@ export type cases = [
   Expect<Equal<Concat<[], [1]>, [1]>>,
   Expect<Equal<Concat<typeof tuple, typeof tuple>, [1, 1]>>,
   Expect<Equal<Concat<[1, 2], [3, 4]>, [1, 2, 3, 4]>>,
-  Expect<
-    Equal<
-      Concat<['1', 2, '3'], [false, boolean, '4']>,
-      ['1', 2, '3', false, boolean, '4']
-    >
-  >,
+  Expect<Equal<Concat<['1', 2, '3'], [false, boolean, '4']>, ['1', 2, '3', false, boolean, '4']>>,
 ]
 
 // @ts-expect-error 不能将类型“null”分配给类型“readonly any[]”

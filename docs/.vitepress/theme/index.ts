@@ -20,7 +20,7 @@ export default {
       async () => {
         await nextTick()
         initZoom()
-      }
+      },
     )
   },
 }

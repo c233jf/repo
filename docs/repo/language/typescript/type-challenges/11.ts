@@ -47,17 +47,9 @@ export type cases = [
     >
   >,
   Expect<Equal<TupleToObject<typeof tupleNumber>, { 1: 1; 2: 2; 3: 3; 4: 4 }>>,
+  Expect<Equal<TupleToObject<typeof tupleSymbol>, { [sym1]: typeof sym1; [sym2]: typeof sym2 }>>,
   Expect<
-    Equal<
-      TupleToObject<typeof tupleSymbol>,
-      { [sym1]: typeof sym1; [sym2]: typeof sym2 }
-    >
-  >,
-  Expect<
-    Equal<
-      TupleToObject<typeof tupleMix>,
-      { 1: 1; '2': '2'; 3: 3; '4': '4'; [sym1]: typeof sym1 }
-    >
+    Equal<TupleToObject<typeof tupleMix>, { 1: 1; '2': '2'; 3: 3; '4': '4'; [sym1]: typeof sym1 }>
   >,
 ]
 

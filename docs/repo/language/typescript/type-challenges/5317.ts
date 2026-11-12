@@ -19,10 +19,7 @@
 
 /* _____________ 你的代码 _____________ */
 
-type LastIndexOf<T extends readonly unknown[], U> = T extends [
-  ...infer Rest,
-  infer Last,
-]
+type LastIndexOf<T extends readonly unknown[], U> = T extends [...infer Rest, infer Last]
   ? Equal<U, Last> extends true
     ? Rest['length']
     : LastIndexOf<Rest, U>

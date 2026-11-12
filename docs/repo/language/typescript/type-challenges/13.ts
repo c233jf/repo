@@ -33,10 +33,7 @@ type HelloWorld = string // expected to be a string
 /* _____________ 测试用例 _____________ */
 import type { Equal, Expect, NotAny } from '@type-challenges/utils'
 
-export type cases = [
-  Expect<NotAny<HelloWorld>>,
-  Expect<Equal<HelloWorld, string>>,
-]
+export type cases = [Expect<NotAny<HelloWorld>>, Expect<Equal<HelloWorld, string>>]
 
 /* _____________ 下一步 _____________ */
 /*

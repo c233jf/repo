@@ -8,5 +8,5 @@ class Rabbit extends Object {
 }
 
 const rabbit = new Rabbit('Rabbit')
-// eslint-disable-next-line no-prototype-builtins
+// oxlint-disable-next-line no-prototype-builtins
 consola.info(rabbit.hasOwnProperty('name')) // true

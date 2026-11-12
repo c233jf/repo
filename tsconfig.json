@@ -1,14 +1,9 @@
 {
-  "extends": "@chenjf/tsconfig/tsconfig.json",
   "compilerOptions": {
-    "moduleResolution": "Bundler",
-    "allowImportingTsExtensions": true,
     "noEmit": true,
-    "types": ["vitest/globals"]
-  },
-  "references": [
-    {
-      "path": "docs"
-    }
-  ]
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
+    "allowImportingTsExtensions": true,
+    "esModuleInterop": true
+  }
 }

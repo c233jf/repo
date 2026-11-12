@@ -5,7 +5,13 @@ export class List<T> {
 }
 
 export class ListNode<T> {
-  constructor(public data?: T, public next: ListNode<T> | null = null) {}
+  data?: T
+  next: ListNode<T> | null
+
+  constructor(data?: T, next: ListNode<T> | null = null) {
+    this.data = data
+    this.next = next
+  }
 }
 
 new List()

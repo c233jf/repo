@@ -39,10 +39,7 @@
 //   }
 // >
 
-type RequiredByKeys<T, K extends keyof T = keyof T> = Omit<
-  Omit<T, K> & Required<Pick<T, K>>,
-  never
->
+type RequiredByKeys<T, K extends keyof T = keyof T> = Omit<Omit<T, K> & Required<Pick<T, K>>, never>
 
 /* _____________ 测试用例 _____________ */
 import type { Equal, Expect } from '@type-challenges/utils'

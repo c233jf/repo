@@ -29,13 +29,8 @@ import type { Equal, Expect } from '@type-challenges/utils'
 export type cases = [
   Expect<Equal<StringToUnion<''>, never>>,
   Expect<Equal<StringToUnion<'t'>, 't'>>,
-  Expect<Equal<StringToUnion<'hello'>, 'h' | 'e' | 'l' | 'l' | 'o'>>,
-  Expect<
-    Equal<
-      StringToUnion<'coronavirus'>,
-      'c' | 'o' | 'r' | 'o' | 'n' | 'a' | 'v' | 'i' | 'r' | 'u' | 's'
-    >
-  >,
+  Expect<Equal<StringToUnion<'hello'>, 'h' | 'e' | 'l' | 'o'>>,
+  Expect<Equal<StringToUnion<'coronavirus'>, 'c' | 'o' | 'r' | 'n' | 'a' | 'v' | 'i' | 'u' | 's'>>,
 ]
 
 /* _____________ 下一步 _____________ */

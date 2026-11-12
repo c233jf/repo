@@ -66,7 +66,7 @@ describe('树和二叉树', () => {
           null,
           null,
           null,
-        ])
+        ]),
       ).toEqual({
         data: 'A',
         lchild: {

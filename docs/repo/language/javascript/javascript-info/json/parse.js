@@ -8,8 +8,7 @@ numbers = JSON.parse(numbers)
 consola.log(numbers) // [0, 1, 2, 3]
 
 // 字符串化对象
-const userData =
-  '{ "name": "John", "age": 35, "isAdmin": false, "friends": [0,1,2,3] }'
+const userData = '{ "name": "John", "age": 35, "isAdmin": false, "friends": [0,1,2,3] }'
 
 const user = JSON.parse(userData)
 

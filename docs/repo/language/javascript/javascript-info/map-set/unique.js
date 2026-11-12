@@ -5,16 +5,6 @@ function unique(arr) {
   return [...new Set(arr)]
 }
 
-const values = [
-  'Hare',
-  'Krishna',
-  'Hare',
-  'Krishna',
-  'Krishna',
-  'Krishna',
-  'Hare',
-  'Hare',
-  ':-O',
-]
+const values = ['Hare', 'Krishna', 'Hare', 'Krishna', 'Krishna', 'Krishna', 'Hare', 'Hare', ':-O']
 
 consola.log(unique(values)) // Hare, Krishna, :-O

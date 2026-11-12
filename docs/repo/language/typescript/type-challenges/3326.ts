@@ -34,10 +34,7 @@ export type cases = [
     >
   >,
   Expect<
-    Equal<
-      BEM<'btn', [], ['small', 'medium', 'large']>,
-      'btn--small' | 'btn--medium' | 'btn--large'
-    >
+    Equal<BEM<'btn', [], ['small', 'medium', 'large']>, 'btn--small' | 'btn--medium' | 'btn--large'>
   >,
 ]
 

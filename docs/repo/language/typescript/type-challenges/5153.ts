@@ -18,11 +18,10 @@
 
 /* _____________ Your Code Here _____________ */
 
-type IndexOf<
-  T extends readonly unknown[],
-  U,
-  R extends unknown[] = [],
-> = T extends [infer First, ...infer Rest]
+type IndexOf<T extends readonly unknown[], U, R extends unknown[] = []> = T extends [
+  infer First,
+  ...infer Rest,
+]
   ? Equal<First, U> extends true
     ? R['length']
     : IndexOf<Rest, U, [...R, First]>

@@ -23,7 +23,7 @@
 */
 
 /* _____________ 你的代码 _____________ */
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
+// oxlint-disable-next-line @typescript-eslint/no-unused-vars
 type Last<T extends any[]> = T extends [...infer U, infer V] ? V : never
 
 /* _____________ 测试用例 _____________ */

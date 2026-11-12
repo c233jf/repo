@@ -1,7 +1,7 @@
 import { consola } from 'consola'
 
 Function.prototype.defer = function (ms) {
-  // eslint-disable-next-line @typescript-eslint/no-this-alias
+  // oxlint-disable-next-line @typescript-eslint/no-this-alias
   const f = this
   return function (...args) {
     setTimeout(() => f.apply(this, args), ms)

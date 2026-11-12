@@ -19,11 +19,7 @@
 
 /* _____________ Your Code Here _____________ */
 
-type Chunk<
-  T extends unknown[],
-  N extends number,
-  R extends unknown[] = [],
-> = R['length'] extends N
+type Chunk<T extends unknown[], N extends number, R extends unknown[] = []> = R['length'] extends N
   ? [R, ...Chunk<T, N>]
   : T extends [infer First, ...infer Rest]
     ? Chunk<Rest, N, [...R, First]>

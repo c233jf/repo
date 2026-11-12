@@ -19,10 +19,10 @@
 
 /* _____________ Your Code Here _____________ */
 
-type Join<
-  T extends readonly unknown[],
-  U extends string | number = ',',
-> = T extends [infer First extends string | number, ...infer Rest]
+type Join<T extends readonly unknown[], U extends string | number = ','> = T extends [
+  infer First extends string | number,
+  ...infer Rest,
+]
   ? Rest extends []
     ? `${First}`
     : `${First}${U}${Join<Rest, U>}`

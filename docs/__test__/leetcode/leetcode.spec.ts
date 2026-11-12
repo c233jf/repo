@@ -2,10 +2,7 @@ import { canConstruct } from '../../repo/data-structure/leetcode/can-construct.t
 import { fizzBuzz } from '../../repo/data-structure/leetcode/fizz-buzz.ts'
 import { getMaxSubSum } from '../../repo/data-structure/leetcode/get-max-sub-sum.ts'
 import { maximumWealth } from '../../repo/data-structure/leetcode/maximum-wealth.ts'
-import {
-  ListNode,
-  middleNode,
-} from '../../repo/data-structure/leetcode/middle-node.ts'
+import { ListNode, middleNode } from '../../repo/data-structure/leetcode/middle-node.ts'
 import { numberOfSteps } from '../../repo/data-structure/leetcode/number-of-steps.ts'
 import { runningSum } from '../../repo/data-structure/leetcode/running-sum.ts'
 
@@ -43,7 +40,7 @@ describe('最富有客户的资产总量', () => {
       maximumWealth([
         [1, 2, 3],
         [3, 2, 1],
-      ])
+      ]),
     ).toBe(6)
   })
 
@@ -53,7 +50,7 @@ describe('最富有客户的资产总量', () => {
         [1, 5],
         [7, 3],
         [3, 5],
-      ])
+      ]),
     ).toBe(10)
   })
 
@@ -63,25 +60,14 @@ describe('最富有客户的资产总量', () => {
         [2, 8, 7],
         [7, 1, 3],
         [1, 9, 5],
-      ])
+      ]),
     ).toBe(17)
   })
 })
 
 describe('Fizz Buzz', () => {
   test('返回 ["1","2","Fizz","4","Buzz","Fizz","7","8","Fizz","Buzz"]', () => {
-    expect(fizzBuzz(10)).toEqual([
-      '1',
-      '2',
-      'Fizz',
-      '4',
-      'Buzz',
-      'Fizz',
-      '7',
-      '8',
-      'Fizz',
-      'Buzz',
-    ])
+    expect(fizzBuzz(10)).toEqual(['1', '2', 'Fizz', '4', 'Buzz', 'Fizz', '7', '8', 'Fizz', 'Buzz'])
   })
 
   test('返回 ["1","2","Fizz","4","Buzz","Fizz","7","8","Fizz","Buzz","11","Fizz","13","14","FizzBuzz"]', () => {
@@ -107,26 +93,16 @@ describe('Fizz Buzz', () => {
 
 describe('链表的中间结点', () => {
   test('返回 [3,4,5]', () => {
-    const head = new ListNode(
-      1,
-      new ListNode(2, new ListNode(3, new ListNode(4, new ListNode(5))))
-    )
-    expect(middleNode(head)).toEqual(
-      new ListNode(3, new ListNode(4, new ListNode(5)))
-    )
+    const head = new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4, new ListNode(5)))))
+    expect(middleNode(head)).toEqual(new ListNode(3, new ListNode(4, new ListNode(5))))
   })
 
   test('返回 [4,5,6]', () => {
     const head = new ListNode(
       1,
-      new ListNode(
-        2,
-        new ListNode(3, new ListNode(4, new ListNode(5, new ListNode(6))))
-      )
+      new ListNode(2, new ListNode(3, new ListNode(4, new ListNode(5, new ListNode(6))))),
     )
-    expect(middleNode(head)).toEqual(
-      new ListNode(4, new ListNode(5, new ListNode(6)))
-    )
+    expect(middleNode(head)).toEqual(new ListNode(4, new ListNode(5, new ListNode(6))))
   })
 })
 

@@ -1,16 +1,17 @@
 export class BiTNode<T> {
-  constructor(
-    public data: T,
-    public lchild?: BiTNode<T>,
-    public rchild?: BiTNode<T>
-  ) {}
+  data: T
+  lchild?: BiTNode<T>
+  rchild?: BiTNode<T>
+
+  constructor(data: T, lchild?: BiTNode<T>, rchild?: BiTNode<T>) {
+    this.data = data
+    this.lchild = lchild
+    this.rchild = rchild
+  }
 }
 
 //#region preorderTraverse
-export function preorderTraverse<T>(
-  tree?: BiTNode<T>,
-  pre: (T | undefined)[] = []
-) {
+export function preorderTraverse<T>(tree?: BiTNode<T>, pre: (T | undefined)[] = []) {
   if (tree) {
     pre.push(tree.data)
     preorderTraverse(tree.lchild, pre)
@@ -22,10 +23,7 @@ export function preorderTraverse<T>(
 //#endregion preorderTraverse
 
 //#region inorderTraverse
-export function inorderTraverse<T>(
-  tree?: BiTNode<T>,
-  pre: (T | undefined)[] = []
-) {
+export function inorderTraverse<T>(tree?: BiTNode<T>, pre: (T | undefined)[] = []) {
   if (tree) {
     inorderTraverse(tree.lchild, pre)
     pre.push(tree.data)
@@ -37,10 +35,7 @@ export function inorderTraverse<T>(
 //#endregion inorderTraverse
 
 //#region postorderTraverse
-export function postorderTraverse<T>(
-  tree?: BiTNode<T>,
-  pre: (T | undefined)[] = []
-) {
+export function postorderTraverse<T>(tree?: BiTNode<T>, pre: (T | undefined)[] = []) {
   if (tree) {
     postorderTraverse(tree.lchild, pre)
     postorderTraverse(tree.rchild, pre)
@@ -117,14 +112,21 @@ export class ThreadBiTNode<T> extends BiTNode<T> {
    * @param ltag 0: 指示结点的左孩子 1: 指示结点的前驱
    * @param rtag 0: 指示结点的右孩子 1: 指示结点的后继
    */
+  declare lchild?: ThreadBiTNode<T>
+  declare rchild?: ThreadBiTNode<T>
+  ltag?: 0 | 1
+  rtag?: 0 | 1
+
   constructor(
     data: T,
-    public lchild?: ThreadBiTNode<T>,
-    public rchild?: ThreadBiTNode<T>,
-    public ltag?: 0 | 1,
-    public rtag?: 0 | 1
+    lchild?: ThreadBiTNode<T>,
+    rchild?: ThreadBiTNode<T>,
+    ltag?: 0 | 1,
+    rtag?: 0 | 1,
   ) {
     super(data, lchild, rchild)
+    this.ltag = ltag
+    this.rtag = rtag
   }
 }
 
@@ -200,18 +202,20 @@ export function inorderTraverseThread<T>(tree: ThreadBiTNode<T>) {
 
 //#region HTNode
 export class HTNode {
-  constructor(
-    public weight: number,
-    public parent: number,
-    public lchild: number,
-    public rchild: number
-  ) {}
+  weight: number
+  parent: number
+  lchild: number
+  rchild: number
+
+  constructor(weight: number, parent: number, lchild: number, rchild: number) {
+    this.weight = weight
+    this.parent = parent
+    this.lchild = lchild
+    this.rchild = rchild
+  }
 }
 
-function select(
-  huffmanTrees: HTNode[],
-  end: number = huffmanTrees.length
-): [number, number] {
+function select(huffmanTrees: HTNode[], end: number = huffmanTrees.length): [number, number] {
   let p1 = 0
   let p2 = 0
 

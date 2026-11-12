@@ -6,7 +6,7 @@ consola.log(isNaN('str')) // true
 consola.log(Number.isNaN('str')) // false
 
 // NaN 不等于任何东西，包括它自身
-// eslint-disable-next-line use-isnan
+// oxlint-disable-next-line use-isnan
 consola.log(NaN === NaN) // false
 
 consola.log(isFinite('15')) // true
@@ -27,9 +27,9 @@ consola.log(isFinite('  ')) // true，空格字符串被视为 0
 
 consola.log(Object.is(0, -0)) // false
 // 从技术上讲这是对的，因为在内部，数字的符号位可能会不同，即使其他所有位均为零。
-// eslint-disable-next-line no-compare-neg-zero
+// oxlint-disable-next-line no-compare-neg-zero
 consola.log(0 === -0) // true
 
 consola.log(Object.is(NaN, NaN)) // true
-// eslint-disable-next-line use-isnan
+// oxlint-disable-next-line use-isnan
 consola.log(NaN === NaN) // false

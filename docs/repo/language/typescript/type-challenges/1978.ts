@@ -34,10 +34,9 @@ type PercentageParser<A extends string> = A extends `${infer Num}%`
   ? [...NumberParser<Num>, '%']
   : [...NumberParser<A>, '']
 
-type NumberParser<A extends string> =
-  A extends `${infer Sign extends '+' | '-'}${infer Num}`
-    ? [Sign, Num]
-    : ['', A]
+type NumberParser<A extends string> = A extends `${infer Sign extends '+' | '-'}${infer Num}`
+  ? [Sign, Num]
+  : ['', A]
 
 /* _____________ 测试用例 _____________ */
 import type { Equal, Expect } from '@type-challenges/utils'

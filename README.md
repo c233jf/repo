@@ -2,10 +2,14 @@
 
 包含个人代码片段、代码练习、部分 demo 、个人仓库通用的 packages、个人作品展示
 
+## 先决条件
+
+- [Vite+](https://viteplus.dev/)
+
 ## 安装项目依赖
 
 ```sh
-pnpm i
+vp install
 ```
 
 ## 运行
@@ -13,7 +17,7 @@ pnpm i
 ### 使用命令行
 
 ```sh
-pnpm docs:dev
+vpr docs:dev
 ```
 
 ### 使用 Vagrant
@@ -38,8 +42,8 @@ vagrant ssh
 # cd 到 repo 目录下
 cd repo
 # 运行项目
-pnpm i
-pnpm docs:dev
+vp install
+vpr docs:dev
 ```
 
 #### 使用 VSCode 进行远程开发
@@ -89,12 +93,6 @@ Host vagrant-vm
 
 连接成功后便可以使用 VSCode 在 VM 上进行开发（Cursor 同理）。
 
-## 包
-
-- [create-package](./packages/create-package/README.md)
-- [eslint-config](./packages/eslint-config/README.md)
-- [tsconfig](./packages/tsconfig/README.md)
-
 ## Troubleshooting
 
 ### 运行 install-dependencies provision 报 `source: command not found`
@@ -113,31 +111,6 @@ vagrant provision 默认通过 `sudo` 提权到 `root` 用户执行脚本。
 #### 解决
 
 配置 provision 的 `privileged: false`，并且手动为 install-dependencies 脚本中需要提权的命令使用 `sudo`。
-
-### 运行 install-dependencies provision 报 `pnpm: command not found`
-
-#### 原因
-
-在 Vagrant 的 Shell Provisioner 中，脚本默认会在 `/tmp/vagrant-shell` 目录执行，这可能导致命令找不到的问题。
-
-- **环境变量不同**：`/tmp/vagrant-shell` 是临时目录，与用户登录环境（如 `~/.bashrc` 加载的环境变量）隔离
-- **PATH 变量缺失**：关键路径（如 `/usr/local/bin`, `$HOME/.local/bin`）可能未加入 `PATH`
-
-#### 解决
-
-使用绝对路径调用命令。
-
-### 运行 install-dependencies provision 报 `ERR_PNPM_CANNOT_MANAGE_NODE Unable to manage Node.js because pnpm was not installed using the standalone installation script`
-
-#### 原因
-
-未明，可能是 shell 环境的问题。
-
-#### 解决
-
-在 [pnpm-workspace.yaml](./pnpm-workspace.yaml) 中设置项目运行时的 Node.js 版本。
-
-参考：[useNodeVersion](https://pnpm.io/zh/settings#usenodeversion)
 
 ### `git push` 失败，报 `Bad configuration option: usekeychain`
 

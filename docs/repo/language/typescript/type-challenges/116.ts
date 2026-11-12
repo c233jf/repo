@@ -18,11 +18,7 @@
 
 /* _____________ 你的代码 _____________ */
 
-type Replace<
-  S extends string,
-  From extends string,
-  To extends string,
-> = From extends ''
+type Replace<S extends string, From extends string, To extends string> = From extends ''
   ? S
   : S extends `${infer Prefix}${From}${infer Suffix}`
     ? `${Prefix}${To}${Suffix}`

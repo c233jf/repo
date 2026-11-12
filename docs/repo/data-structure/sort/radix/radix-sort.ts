@@ -2,15 +2,16 @@
 const RADIX = 10
 
 export class StaticListNode {
-  constructor(public keys: number[], public next: number) {}
+  keys: number[]
+  next: number
+
+  constructor(keys: number[], next: number) {
+    this.keys = keys
+    this.next = next
+  }
 }
 
-function distribute(
-  link: StaticListNode[],
-  heads: number[],
-  tails: number[],
-  exp: number
-) {
+function distribute(link: StaticListNode[], heads: number[], tails: number[], exp: number) {
   let p = link[0].next // 取头结点指向的元素。
   while (p) {
     const i = link[p].keys[exp]

@@ -35,8 +35,6 @@ export const eventMixin = {
     }
 
     // 调用事件处理程序（handler）
-    this._eventHandlers[eventName].forEach((handler) =>
-      handler.apply(this, args),
-    )
+    this._eventHandlers[eventName].forEach((handler) => handler.apply(this, args))
   },
 }

@@ -30,8 +30,7 @@ export function unionOrdered<T>(a: List<T>, b: List<T>) {
   let prevc = _union.headNode
 
   while (preva && prevb) {
-    if (!preva.data || !prevb.data)
-      throw new Error('Elements must be sortable!')
+    if (!preva.data || !prevb.data) throw new Error('Elements must be sortable!')
 
     if (preva.data <= prevb.data) {
       if (preva.data === prevb.data) {

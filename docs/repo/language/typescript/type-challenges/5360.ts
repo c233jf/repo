@@ -20,19 +20,16 @@
 
 /* _____________ 你的代码 _____________ */
 
-type Includes<T extends readonly unknown[], U> = T extends [
-  infer First,
-  ...infer Rest,
-]
+type Includes<T extends readonly unknown[], U> = T extends [infer First, ...infer Rest]
   ? Equal<First, U> extends true
     ? true
     : Includes<Rest, U>
   : false
 
-type Unique<
-  T extends readonly unknown[],
-  R extends readonly unknown[] = [],
-> = T extends [infer First, ...infer Rest]
+type Unique<T extends readonly unknown[], R extends readonly unknown[] = []> = T extends [
+  infer First,
+  ...infer Rest,
+]
   ? Includes<R, First> extends true
     ? Unique<Rest, R>
     : Unique<Rest, [...R, First]>
@@ -51,12 +48,7 @@ export type cases = [
       [string, number, 1, 'a', 2, 'b']
     >
   >,
-  Expect<
-    Equal<
-      Unique<[unknown, unknown, any, any, never, never]>,
-      [unknown, any, never]
-    >
-  >,
+  Expect<Equal<Unique<[unknown, unknown, any, any, never, never]>, [unknown, any, never]>>,
 ]
 
 /* _____________ 下一步 _____________ */

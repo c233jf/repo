@@ -80,8 +80,7 @@ describe('基数排序', () => {
 
   test('返回 next 以 [4,0,1,2,3] 排列的对象列表', () => {
     const arr = [-1, 5, 4, 2, 1].map(
-      (key, idx, arr) =>
-        new StaticListNode([key], idx !== arr.length - 1 ? idx + 1 : 0)
+      (key, idx, arr) => new StaticListNode([key], idx !== arr.length - 1 ? idx + 1 : 0),
     )
     radixSort(arr, 0)
     expect(arr).toEqual([

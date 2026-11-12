@@ -45,7 +45,7 @@ describe('栈和队列', () => {
           { name: 'Chen', sex: 'male' },
           { name: 'Julie', sex: 'female' },
           { name: 'Andy', sex: 'male' },
-        ])
+        ]),
       ).toEqual({ name: 'Andy', sex: 'male' })
     })
 
@@ -55,7 +55,7 @@ describe('栈和队列', () => {
           { name: 'Chen', sex: 'male' },
           { name: 'Julie', sex: 'female' },
           { name: 'Mai', sex: 'female' },
-        ])
+        ]),
       ).toEqual({ name: 'Mai', sex: 'female' })
     })
 
@@ -64,7 +64,7 @@ describe('栈和队列', () => {
         dance([
           { name: 'Chen', sex: 'male' },
           { name: 'Julie', sex: 'female' },
-        ])
+        ]),
       ).toBeUndefined()
     })
   })

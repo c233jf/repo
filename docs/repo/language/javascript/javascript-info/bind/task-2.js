@@ -4,7 +4,7 @@ function f() {
   consola.log(this)
 }
 
-// eslint-disable-next-line no-func-assign
+// oxlint-disable-next-line no-func-assign
 f = f.bind({ name: 'John' }).bind({ name: 'Pete' })
 
 f() // { name: 'John' }

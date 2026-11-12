@@ -26,9 +26,7 @@ type Fibonacci<
   A extends number[] = [1],
   B extends number[] = [],
   C extends number[] = [1],
-> = T extends C['length']
-  ? A['length']
-  : Fibonacci<T, [...A, ...B], A, [...C, 1]>
+> = T extends C['length'] ? A['length'] : Fibonacci<T, [...A, ...B], A, [...C, 1]>
 
 /* _____________ 测试用例 _____________ */
 import type { Equal, Expect } from '@type-challenges/utils'

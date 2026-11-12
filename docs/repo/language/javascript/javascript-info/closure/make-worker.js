@@ -8,7 +8,7 @@ function makeWorker() {
   }
 }
 
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
+// oxlint-disable-next-line @typescript-eslint/no-unused-vars
 const name = 'John'
 
 const work = makeWorker()

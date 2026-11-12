@@ -1,6 +1,6 @@
 import { consola } from 'consola'
 
-// eslint-disable-next-line @typescript-eslint/no-loss-of-precision
+// oxlint-disable-next-line @typescript-eslint/no-loss-of-precision
 consola.log(1e500) // Infinity
 
 consola.log(0.1 + 0.2 === 0.3) // false

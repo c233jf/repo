@@ -1,11 +1,5 @@
-import {
-  add,
-  createPolynList,
-} from '../../repo/data-structure/linear-list/examples/polynomial.ts'
-import {
-  union,
-  unionOrdered,
-} from '../../repo/data-structure/linear-list/examples/set.ts'
+import { add, createPolynList } from '../../repo/data-structure/linear-list/examples/polynomial.ts'
+import { union, unionOrdered } from '../../repo/data-structure/linear-list/examples/set.ts'
 import {
   List,
   createListFromHead,
@@ -171,7 +165,7 @@ describe('链表', () => {
           { coef: 7, expn: 0 },
           { coef: 3, expn: 1 },
           { coef: 9, expn: 8 },
-        ])
+        ]),
       )
     })
 
@@ -186,7 +180,7 @@ describe('链表', () => {
           { coef: 7, expn: 0 },
           { coef: 9, expn: 8 },
           { coef: 3, expn: 9 },
-        ])
+        ]),
       )
     })
   })

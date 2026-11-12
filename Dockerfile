@@ -1,21 +1,14 @@
-FROM node:lts-bookworm-slim AS base
-RUN apt-get update && apt-get install -y git
-# 构建在某个时间开始突然失败，初步怀疑是 pnpm 版本问题，所以锁定版本
-# https://github.com/pnpm/pnpm/issues/9744
-RUN npm install -g pnpm@10.11.1
+FROM ghcr.io/voidzero-dev/vite-plus:1.0.0 AS build
 
-FROM base AS build
+ENV CI=true
 WORKDIR /repo
 
-COPY pnpm-lock.yaml pnpm-workspace.yaml .npmrc ./
-COPY packages/tsconfig packages/tsconfig
-RUN pnpm fetch
+COPY --chown=vp:vp package.json pnpm-lock.yaml pnpm-workspace.yaml ./
 
-COPY package.json ./
-RUN pnpm i --offline --frozen-lockfile
+RUN vp install --frozen-lockfile
 
-COPY docs docs
-RUN pnpm docs:build
+COPY --chown=vp:vp docs docs
+RUN vpr docs:build
 
 FROM nginx:alpine
 COPY --from=build /repo/docs/.vitepress/dist /usr/share/nginx/html

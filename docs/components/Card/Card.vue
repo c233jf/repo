@@ -1,7 +1,5 @@
 <template>
-  <div
-    class="bg-white rounded-lg shadow-md border border-solid border-gray-200"
-  >
+  <div class="bg-white rounded-lg shadow-md border border-solid border-gray-200">
     <div
       class="flex items-center justify-between border-b border-b-solid border-gray-200 px-4 py-2"
     >

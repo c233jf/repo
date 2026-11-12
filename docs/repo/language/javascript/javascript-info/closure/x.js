@@ -1,6 +1,6 @@
 import { consola } from 'consola'
 
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
+// oxlint-disable-next-line @typescript-eslint/no-unused-vars
 const x = 1
 
 function func() {

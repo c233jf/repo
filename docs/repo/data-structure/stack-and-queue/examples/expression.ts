@@ -1,5 +1,20 @@
 const operators = ['+', '-', '*', '/', '(', ')', ';']
 
+function apply(left: number, operator: string, right: number) {
+  switch (operator) {
+    case '+':
+      return left + right
+    case '-':
+      return left - right
+    case '*':
+      return left * right
+    case '/':
+      return left / right
+    default:
+      return NaN
+  }
+}
+
 export function precede(operator1: string, operator2: string) {
   switch (operator1) {
     case '+':
@@ -50,7 +65,7 @@ export function arithmetic(expression: string) {
         operator = optr.pop()!
         opnd1 = +opnd.pop()!
         opnd2 = +opnd.pop()!
-        opnd.push(eval(`${opnd2}${operator}${opnd1}`))
+        opnd.push(apply(opnd2, operator, opnd1))
         if (optr.length) {
           i-- // 不要读取下一个字符
         }

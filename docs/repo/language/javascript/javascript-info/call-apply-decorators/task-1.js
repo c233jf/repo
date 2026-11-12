@@ -14,7 +14,7 @@ function spy(func) {
   return wrapper
 }
 
-// eslint-disable-next-line no-func-assign
+// oxlint-disable-next-line no-func-assign
 work = spy(work)
 
 work(1, 2) // 3

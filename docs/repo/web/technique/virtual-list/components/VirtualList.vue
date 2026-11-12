@@ -50,9 +50,7 @@ const visibleData = computed(() =>
   ),
 )
 
-const topPadding = computed(
-  () => Math.max(0, start.value - bufferSize) * itemHeight,
-)
+const topPadding = computed(() => Math.max(0, start.value - bufferSize) * itemHeight)
 const container = shallowRef<HTMLDivElement | null>(null)
 
 let _scrollTop = 0

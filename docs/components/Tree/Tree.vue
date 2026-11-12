@@ -6,9 +6,7 @@
     >
       <div :class="[...getItemCls(item), getIcon(item)]"></div>
       <span class="mr-2">{{ item.text }}</span>
-      <span v-if="item.annotation" class="text-lime-600"
-        >// {{ item.annotation }}</span
-      >
+      <span v-if="item.annotation" class="text-lime-600">// {{ item.annotation }}</span>
     </div>
     <div v-if="hasChildren(item) && !item.collapsed" class="ml-2">
       <Tree :data="item.items!" />

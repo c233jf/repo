@@ -25,11 +25,7 @@
 
 /* _____________ 你的代码 _____________ */
 
-type MyReturnType<T extends (...args: any) => any> = T extends (
-  ...args: any
-) => infer R
-  ? R
-  : never
+type MyReturnType<T extends (...args: any) => any> = T extends (...args: any) => infer R ? R : never
 
 /* _____________ 测试用例 _____________ */
 import type { Equal, Expect } from '@type-challenges/utils'
@@ -51,7 +47,7 @@ type ComplexObject = {
 }
 
 const fn = (v: boolean) => (v ? 1 : 2)
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
+// oxlint-disable-next-line @typescript-eslint/no-unused-vars
 const fn1 = (v: boolean, w: any) => (v ? 1 : 2)
 
 /* _____________ 下一步 _____________ */

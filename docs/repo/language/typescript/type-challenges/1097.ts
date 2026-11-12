@@ -20,9 +20,7 @@
 
 /* _____________ Your Code Here _____________ */
 
-type IsUnion<T, U = T> = (
-  T extends T ? (U extends T ? true : unknown) : never
-) extends true
+type IsUnion<T, U = T> = (T extends T ? (U extends T ? true : unknown) : never) extends true
   ? false
   : true
 

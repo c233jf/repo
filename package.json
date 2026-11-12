@@ -1,75 +1,65 @@
 {
   "name": "@chenjf/repo",
+  "version": "1.4.0",
+  "private": true,
   "description": "tools, libs and packages collection",
-  "scripts": {
-    "test": "vitest",
-    "coverage": "vitest run --coverage",
-    "prepare": "husky",
-    "pub": "pnpm -r publish --access public",
-    "pub:dry": "pnpm -r publish --dry-run",
-    "docs:dev": "vitepress dev docs",
-    "docs:build": "vitepress build docs",
-    "docs:preview": "vitepress preview docs",
-    "commit": "commit"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/c233jf/repo",
-    "commit": "commit"
-  },
   "keywords": [
     "monorepo",
     "typescript",
     "use"
   ],
-  "author": "chenjf",
   "license": "ISC",
-  "private": true,
+  "author": "chenjf",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/c233jf/repo",
+    "commit": "commit"
+  },
   "type": "module",
-  "devDependencies": {
-    "@chenjf/tsconfig": "workspace:^1.0.0",
-    "@commitlint/cli": "^19.3.0",
-    "@commitlint/config-conventional": "^19.2.2",
-    "@commitlint/prompt-cli": "^19.3.1",
-    "@eslint/js": "^9.4.0",
-    "@faker-js/faker": "^8.0.2",
-    "@iconify-json/mdi": "^1.2.3",
-    "@iconify-json/vscode-icons": "^1.1.33",
-    "@type-challenges/utils": "^0.1.1",
-    "@types/markdown-it-footnote": "^3.0.0",
-    "consola": "^3.2.3",
-    "eslint": "^9.4.0",
-    "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-vue": "^9.26.0",
-    "globals": "^15.4.0",
-    "husky": "^9.0.11",
-    "lint-staged": "^15.2.5",
-    "markdown-it-footnote": "^4.0.0",
-    "markdown-it-mathjax3": "^4.3.2",
-    "markdown-it-task-lists": "^2.1.1",
-    "mermaid": "^10.9.1",
-    "prettier": "^3.3.1",
-    "rimraf": "^5.0.1",
-    "rollup-plugin-visualizer": "^5.12.0",
-    "tsx": "^4.0.0",
-    "typescript": "^5.0.0",
-    "typescript-eslint": "^7.12.0",
-    "unocss": "^0.65.0",
-    "unplugin-auto-import": "^0.19.0",
-    "unplugin-vue-components": "^0.28.0",
-    "vite": "^5.1.4",
-    "vitepress": "1.6.4",
-    "vitepress-plugin-mermaid": "^2.0.16",
-    "vitest": "^1.4.0"
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
   },
-  "lint-staged": {
-    "*.{js,ts,vue,tsx}": "eslint --cache --fix",
-    "*.{js,css,md,ts,vue,tsx}": "prettier --write"
-  },
-  "version": "1.4.0",
   "dependencies": {
-    "@vueuse/core": "^10.11.0",
-    "medium-zoom": "^1.0.8"
+    "@vueuse/core": "catalog:",
+    "medium-zoom": "catalog:",
+    "vue": "catalog:"
   },
-  "packageManager": "pnpm@10.27.0"
+  "devDependencies": {
+    "@commitlint/cli": "catalog:",
+    "@commitlint/config-conventional": "catalog:",
+    "@commitlint/types": "catalog:",
+    "@faker-js/faker": "catalog:",
+    "@iconify-json/mdi": "catalog:",
+    "@iconify-json/vscode-icons": "catalog:",
+    "@type-challenges/utils": "catalog:",
+    "@types/markdown-it-footnote": "catalog:",
+    "consola": "catalog:",
+    "markdown-it-footnote": "catalog:",
+    "markdown-it-mathjax3": "catalog:",
+    "markdown-it-task-lists": "catalog:",
+    "mermaid": "catalog:",
+    "rollup-plugin-visualizer": "catalog:",
+    "tsx": "catalog:",
+    "typescript": "catalog:",
+    "unocss": "catalog:",
+    "unplugin-auto-import": "catalog:",
+    "unplugin-vue-components": "catalog:",
+    "vite": "catalog:",
+    "vite-plus": "catalog:",
+    "vitepress": "2.0.0-alpha.21",
+    "vitepress-plugin-mermaid": "catalog:",
+    "vitest": "catalog:"
+  },
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "12.18.0",
+      "onFail": "download"
+    }
+  },
+  "engines": {
+    "node": ">=22.18.0"
+  }
 }

@@ -34,24 +34,15 @@ type AnyOf<T extends readonly any[]> = T[number] extends
 import type { Equal, Expect } from '@type-challenges/utils'
 
 export type cases = [
-  Expect<
-    Equal<AnyOf<[1, 'test', true, [1], { name: 'test' }, { 1: 'test' }]>, true>
-  >,
+  Expect<Equal<AnyOf<[1, 'test', true, [1], { name: 'test' }, { 1: 'test' }]>, true>>,
   Expect<Equal<AnyOf<[1, '', false, [], Record<string, never>]>, true>>,
   Expect<Equal<AnyOf<[0, 'test', false, [], Record<string, never>]>, true>>,
   Expect<Equal<AnyOf<[0, '', true, [], Record<string, never>]>, true>>,
   Expect<Equal<AnyOf<[0, '', false, [1], Record<string, never>]>, true>>,
   Expect<Equal<AnyOf<[0, '', false, [], { name: 'test' }]>, true>>,
   Expect<Equal<AnyOf<[0, '', false, [], { 1: 'test' }]>, true>>,
-  Expect<
-    Equal<AnyOf<[0, '', false, [], { name: 'test' }, { 1: 'test' }]>, true>
-  >,
-  Expect<
-    Equal<
-      AnyOf<[0, '', false, [], Record<string, never>, undefined, null]>,
-      false
-    >
-  >,
+  Expect<Equal<AnyOf<[0, '', false, [], { name: 'test' }, { 1: 'test' }]>, true>>,
+  Expect<Equal<AnyOf<[0, '', false, [], Record<string, never>, undefined, null]>, false>>,
   Expect<Equal<AnyOf<[]>, false>>,
 ]
 
